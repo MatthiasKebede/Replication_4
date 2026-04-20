@@ -1,0 +1,20 @@
+{
+  "bug_id": "Lang-38",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public StringBuffer format(Calendar calendar, StringBuffer buf) {\n        if (mTimeZoneForced) {\n            calendar = (Calendar) calendar.clone();\n            calendar.setTimeZone(mTimeZone);\n        }\n        return applyRules(calendar, buf);\n    }",
+  "fix_code": "    public StringBuffer format(Calendar calendar, StringBuffer buf) {\n        if (mTimeZoneForced) {\n            calendar.getTime(); /// LANG-538\n            calendar = (Calendar) calendar.clone();\n            calendar.setTimeZone(mTimeZone);\n        }\n        return applyRules(calendar, buf);\n    }",
+  "start_line": 870,
+  "end_line": 876,
+  "patches": [
+    "public StringBuffer format(Calendar calendar, StringBuffer buf) {\n    if (mTimeZoneForced) {\n        calendar = (Calendar) calendar.clone();\n        calendar.setTimeZone(mTimeZone);\n    }\n    return applyRules(calendar, buf);\n}",
+    "public StringBuffer format(Calendar calendar, StringBuffer buf) {\n    if (mTimeZoneForced) {\n        calendar = (Calendar) calendar.clone();\n        calendar.setTimeZone(mTimeZone);\n    }\n    return applyRules(calendar, buf);\n}",
+    "public StringBuffer format(Calendar calendar, StringBuffer buf) {\n    if (mTimeZoneForced) {\n        calendar = (Calendar) calendar.clone();\n        calendar.setTimeZone(mTimeZone);\n    }\n    return applyRules(calendar, buf);\n}",
+    "public StringBuffer format(Calendar calendar, StringBuffer buf) {\n    if (mTimeZoneForced) {\n        calendar = (Calendar) calendar.clone();\n        calendar.setTimeZone(mTimeZone);\n    }\n    return applyRules(calendar, buf);\n}",
+    "public StringBuffer format(Calendar calendar, StringBuffer buf) {\n    if (mTimeZoneForced) {\n        calendar = (Calendar) calendar.clone();\n        calendar.setTimeZone(mTimeZone);\n    }\n    return applyRules(calendar, buf);\n}",
+    "public StringBuffer format(Calendar calendar, StringBuffer buf) {\n    if (mTimeZoneForced) {\n        calendar = (Calendar) calendar.clone();\n        calendar.setTimeZone(mTimeZone);\n    }\n    return applyRules(calendar, buf);\n}",
+    "public StringBuffer format(Calendar calendar, StringBuffer buf) {\n    if (mTimeZoneForced) {\n        calendar = (Calendar) calendar.clone();\n        calendar.setTimeZone(mTimeZone);\n    }\n    return applyRules(calendar, buf);\n}",
+    "public StringBuffer format(Calendar calendar, StringBuffer buf) {\n    if (mTimeZoneForced) {\n        calendar = (Calendar) calendar.clone();\n        calendar.setTimeZone(mTimeZone);\n    }\n    return applyRules(calendar, buf);\n}",
+    "public StringBuffer format(Calendar calendar, StringBuffer buf) {\n    if (mTimeZoneForced) {\n        calendar = (Calendar) calendar.clone();\n        calendar.setTimeZone(mTimeZone);\n    }\n    return applyRules(calendar, buf);\n}",
+    "public StringBuffer format(Calendar calendar, StringBuffer buf) {\n    if (mTimeZoneForced) {\n        calendar = (Calendar) calendar.clone();\n        calendar.setTimeZone(mTimeZone);\n    }\n    return applyRules(calendar, buf);\n}"
+  ]
+}

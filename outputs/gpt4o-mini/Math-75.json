@@ -1,0 +1,20 @@
+{
+  "bug_id": "Math-75",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public double getPct(Object v) {\n        return getCumPct((Comparable<?>) v);\n    }",
+  "fix_code": "    public double getPct(Object v) {\n        return getPct((Comparable<?>) v);\n    }",
+  "start_line": 302,
+  "end_line": 304,
+  "patches": [
+    "public double getPct(Comparable<?> v) {\n    return getCumPct(v);\n}",
+    "public double getPct(Comparable<?> v) {\n    return getCumPct(v);\n}",
+    "public double getPct(Comparable<?> v) {\n    return getCumPct(v);\n}",
+    "public double getPct(Comparable<?> v) {\n    return getCumPct(v);\n}",
+    "public double getPct(Object v) {\n    if (v instanceof Comparable) {\n        return getCumPct((Comparable<?>) v);\n    }\n    throw new IllegalArgumentException(\"Argument must be an instance of Comparable\");\n}",
+    "public double getPct(Comparable<?> v) {\n    return getCumPct(v);\n}",
+    "public double getPct(Comparable<?> v) {\n    return getCumPct(v);\n}",
+    "public double getPct(Object v) {\n    if (v instanceof Comparable) {\n        return getCumPct((Comparable<?>) v);\n    }\n    throw new IllegalArgumentException(\"Argument must be an instance of Comparable\");\n}",
+    "public double getPct(Comparable<?> v) {\n    return getCumPct(v);\n}",
+    "public double getPct(Comparable<?> v) {\n    return getCumPct(v);\n}"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "bug_id": "Jsoup-64",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    private static void handleRawtext(Token.StartTag startTag, HtmlTreeBuilder tb) {\n        tb.insert(startTag);\n        tb.tokeniser.transition(TokeniserState.Rawtext);\n        tb.markInsertionMode();\n        tb.transition(Text);\n    }",
+  "fix_code": "    private static void handleRawtext(Token.StartTag startTag, HtmlTreeBuilder tb) {\n        tb.tokeniser.transition(TokeniserState.Rawtext);\n        tb.markInsertionMode();\n        tb.transition(Text);\n        tb.insert(startTag);\n    }",
+  "start_line": 1488,
+  "end_line": 1493,
+  "patches": [
+    "private static void handleRawtext(Token.StartTag startTag, HtmlTreeBuilder tb) {\n    tb.insert(startTag);\n    tb.tokeniser.transition(TokeniserState.Rawtext);\n    tb.markInsertionMode();\n    tb.transition(TokeniserState.Rawtext);\n}",
+    "private static void handleRawtext(Token.StartTag startTag, HtmlTreeBuilder tb) {\n    tb.insert(startTag);\n    tb.tokeniser.transition(TokeniserState.Rawtext);\n    tb.markInsertionMode();\n    tb.transition(TokeniserState.Text);\n}",
+    "private static void handleRawtext(Token.StartTag startTag, HtmlTreeBuilder tb) {\n    tb.insert(startTag);\n    tb.tokeniser.transition(TokeniserState.Rawtext);\n    tb.markInsertionMode();\n    tb.transition(TokeniserState.Rawtext);\n}",
+    "private static void handleRawtext(Token.StartTag startTag, HtmlTreeBuilder tb) {\n    tb.insert(startTag);\n    tb.tokeniser.transition(TokeniserState.Rawtext);\n    tb.markInsertionMode();\n    tb.transition(InsertMode.Text);\n}",
+    "private static void handleRawtext(Token.StartTag startTag, HtmlTreeBuilder tb) {\n    tb.insert(startTag);\n    tb.tokeniser.transition(TokeniserState.Rawtext);\n    tb.markInsertionMode();\n    tb.transition(TokeniserState.Rawtext);\n}",
+    "private static void handleRawtext(Token.StartTag startTag, HtmlTreeBuilder tb) {\n    tb.insert(startTag);\n    tb.tokeniser.transition(TokeniserState.Rawtext);\n    tb.markInsertionMode();\n    tb.transition(TokeniserState.Rawtext);\n}",
+    "private static void handleRawtext(Token.StartTag startTag, HtmlTreeBuilder tb) {\n    tb.insert(startTag);\n    tb.tokeniser.transition(TokeniserState.Rawtext);\n    tb.markInsertionMode();\n    tb.transition(TokeniserState.Rawtext);\n}",
+    "private static void handleRawtext(Token.StartTag startTag, HtmlTreeBuilder tb) {\n    tb.insert(startTag);\n    tb.tokeniser.transition(TokeniserState.Rawtext);\n    tb.markInsertionMode();\n    tb.transition(TokeniserState.Rawtext);\n}",
+    "private static void handleRawtext(Token.StartTag startTag, HtmlTreeBuilder tb) {\n    tb.insert(startTag);\n    tb.tokeniser.transition(TokeniserState.Rawtext);\n    tb.markInsertionMode();\n    tb.transition(TokeniserState.Rawtext);\n}",
+    "private static void handleRawtext(Token.StartTag startTag, HtmlTreeBuilder tb) {\n    tb.insert(startTag);\n    tb.tokeniser.transition(TokeniserState.Rawtext);\n    tb.markInsertionMode();\n    tb.transition(TokeniserState.Rawtext);\n}"
+  ]
+}

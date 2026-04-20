@@ -1,0 +1,20 @@
+{
+  "bug_id": "Math-53",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public Complex add(Complex rhs)\n        throws NullArgumentException {\n        MathUtils.checkNotNull(rhs);\n        return createComplex(real + rhs.getReal(),\n            imaginary + rhs.getImaginary());\n    }",
+  "fix_code": "    public Complex add(Complex rhs)\n        throws NullArgumentException {\n        MathUtils.checkNotNull(rhs);\n        if (isNaN || rhs.isNaN) {\n            return NaN;\n        }\n        return createComplex(real + rhs.getReal(),\n            imaginary + rhs.getImaginary());\n    }",
+  "start_line": 150,
+  "end_line": 155,
+  "patches": [
+    "public Complex add(Complex rhs) throws NullArgumentException {\n    MathUtils.checkNotNull(rhs);\n    return createComplex(real + rhs.getReal(), imaginary + rhs.getImaginary());\n}",
+    "public Complex add(Complex rhs) throws NullArgumentException {\n    MathUtils.checkNotNull(rhs);\n    return new Complex(real + rhs.getReal(), imaginary + rhs.getImaginary());\n}",
+    "public Complex add(Complex rhs) throws NullArgumentException {\n    MathUtils.checkNotNull(rhs);\n    return new Complex(real + rhs.getReal(), imaginary + rhs.getImaginary());\n}",
+    "public Complex add(Complex rhs) throws NullArgumentException {\n    MathUtils.checkNotNull(rhs);\n    return new Complex(real + rhs.getReal(), imaginary + rhs.getImaginary());\n}",
+    "public Complex add(Complex rhs) throws NullArgumentException {\n    MathUtils.checkNotNull(rhs);\n    return new Complex(real + rhs.getReal(), imaginary + rhs.getImaginary());\n}",
+    "public Complex add(Complex rhs) throws NullArgumentException {\n    MathUtils.checkNotNull(rhs);\n    return new Complex(real + rhs.getReal(), imaginary + rhs.getImaginary());\n}",
+    "public Complex add(Complex rhs) throws NullArgumentException {\n    MathUtils.checkNotNull(rhs);\n    return new Complex(real + rhs.getReal(), imaginary + rhs.getImaginary());\n}",
+    "public Complex add(Complex rhs) throws NullArgumentException {\n    MathUtils.checkNotNull(rhs);\n    return createComplex(real + rhs.getReal(), imaginary + rhs.getImaginary());\n}",
+    "public Complex add(Complex rhs) throws NullArgumentException {\n    MathUtils.checkNotNull(rhs);\n    return createComplex(real + rhs.getReal(), imaginary + rhs.getImaginary());\n}",
+    "public Complex add(Complex rhs) throws NullArgumentException {\n    MathUtils.checkNotNull(rhs);\n    return createComplex(real + rhs.getReal(), imaginary + rhs.getImaginary());\n}"
+  ]
+}

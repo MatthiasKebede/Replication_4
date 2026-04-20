@@ -1,0 +1,20 @@
+{
+  "bug_id": "Jsoup-37",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public String html() {\n        StringBuilder accum = new StringBuilder();\n        html(accum);\n        return accum.toString().trim();\n    }",
+  "fix_code": "    public String html() {\n        StringBuilder accum = new StringBuilder();\n        html(accum);\n        return getOutputSettings().prettyPrint() ? accum.toString().trim() : accum.toString();\n    }",
+  "start_line": 1098,
+  "end_line": 1102,
+  "patches": [
+    "public String html() {\n    StringBuilder accum = new StringBuilder();\n    html(accum); // Assuming this method is defined elsewhere and populates accum\n    return accum.toString(); // Removed the trim() to ensure the original HTML structure is preserved\n}",
+    "public String html() {\n    StringBuilder accum = new StringBuilder();\n    html(accum); // Assuming this is a method call to append HTML content to accum\n    return accum.toString(); // Removed the trim() to maintain formatting\n}",
+    "public String html() {\n    StringBuilder accum = new StringBuilder();\n    html(accum); // Assuming html(accum) is a method that appends HTML content to accum\n    return accum.toString(); // Removed the trim() to preserve the original HTML formatting\n}",
+    "public String html() {\n    StringBuilder accum = new StringBuilder();\n    html(accum); // Assuming this is a method that appends to accum\n    return accum.toString(); // Removed the trim() to preserve whitespace\n}",
+    "public String html() {\n    StringBuilder accum = new StringBuilder();\n    html(accum); // Assuming this method exists and populates accum correctly\n    return accum.toString(); // Removed the trim() to maintain the original formatting\n}",
+    "public String html() {\n    StringBuilder accum = new StringBuilder();\n    html(accum); // Assuming this method is defined elsewhere and appends to accum\n    return accum.toString(); // Removed trim() to ensure all content is returned\n}",
+    "public String html() {\n    StringBuilder accum = new StringBuilder();\n    html(accum, 0); // Assuming the method signature should include an integer parameter for indentation level\n    return accum.toString().trim();\n}",
+    "public String html() {\n    StringBuilder accum = new StringBuilder();\n    html(accum); // Assuming this is a method that appends HTML to accum\n    return accum.toString(); // Removed trim() to preserve whitespace\n}",
+    "public String html() {\n    StringBuilder accum = new StringBuilder();\n    html(accum); // Assuming this method is defined elsewhere and populates accum correctly\n    return accum.toString(); // Removed the trim() to maintain the original HTML formatting\n}",
+    "public String html() {\n    StringBuilder accum = new StringBuilder();\n    html(accum); // Assuming html(accum) is a method that appends HTML content to accum\n    return accum.toString(); // Removed the trim() to return the raw HTML content\n}"
+  ]
+}

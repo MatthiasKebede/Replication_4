@@ -1,0 +1,20 @@
+{
+  "bug_id": "Chart-24",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public Paint getPaint(double value) {\n        double v = Math.max(value, this.lowerBound);\n        v = Math.min(v, this.upperBound);\n        int g = (int) ((value - this.lowerBound) / (this.upperBound \n                - this.lowerBound) * 255.0);\n        return new Color(g, g, g);\n    }",
+  "fix_code": "    public Paint getPaint(double value) {\n        double v = Math.max(value, this.lowerBound);\n        v = Math.min(v, this.upperBound);\n        int g = (int) ((v - this.lowerBound) / (this.upperBound \n                - this.lowerBound) * 255.0);\n        return new Color(g, g, g);\n    }",
+  "start_line": 123,
+  "end_line": 129,
+  "patches": [
+    "public Paint getPaint(double value) {\n    double v = Math.max(value, this.lowerBound);\n    v = Math.min(v, this.upperBound);\n    int g = (int) ((v - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0);\n    return new Color(g, g, g);\n}",
+    "public Paint getPaint(double value) {\n    double v = Math.max(value, this.lowerBound);\n    v = Math.min(v, this.upperBound);\n    int g = (int) ((v - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0);\n    return new Color(g, g, g);\n}",
+    "public Paint getPaint(double value) {\n    double v = Math.max(value, this.lowerBound);\n    v = Math.min(v, this.upperBound);\n    int g = (int) ((v - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0);\n    return new Color(g, g, g);\n}",
+    "public Paint getPaint(double value) {\n    double v = Math.max(value, this.lowerBound);\n    v = Math.min(v, this.upperBound);\n    int g = (int) ((v - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0);\n    return new Color(g, g, g);\n}",
+    "public Paint getPaint(double value) {\n    double v = Math.max(value, this.lowerBound);\n    v = Math.min(v, this.upperBound);\n    int g = (int) ((v - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0);\n    return new Color(g, g, g);\n}",
+    "public Paint getPaint(double value) {\n    double v = Math.max(value, this.lowerBound);\n    v = Math.min(v, this.upperBound);\n    int g = (int) ((v - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0);\n    return new Color(g, g, g);\n}",
+    "public Paint getPaint(double value) {\n    double v = Math.max(value, this.lowerBound);\n    v = Math.min(v, this.upperBound);\n    int g = (int) ((v - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0);\n    return new Color(g, g, g);\n}",
+    "public Paint getPaint(double value) {\n    double v = Math.max(value, this.lowerBound);\n    v = Math.min(v, this.upperBound);\n    int g = (int) ((v - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0);\n    return new Color(g, g, g);\n}",
+    "public Paint getPaint(double value) {\n    double v = Math.max(value, this.lowerBound);\n    v = Math.min(v, this.upperBound);\n    int g = (int) ((v - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0);\n    return new Color(g, g, g);\n}",
+    "public Paint getPaint(double value) {\n    double v = Math.max(value, this.lowerBound);\n    v = Math.min(v, this.upperBound);\n    int g = (int) ((v - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0);\n    return new Color(g, g, g);\n}"
+  ]
+}

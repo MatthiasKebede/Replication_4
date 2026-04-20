@@ -1,0 +1,10 @@
+{
+  "bug_id": "Math-79",
+  "bug_id_d4j": "Math_79",
+  "project": "Math",
+  "bug_number": "79",
+  "source_file": "src/main/java/org/apache/commons/math/util/MathUtils.java",
+  "checkout_path": "/tmp/d4j_checkouts/Math_79_buggy",
+  "original_source": "/tmp/d4j_checkouts/Math_79_buggy/src/main/java/org/apache/commons/math/util/MathUtils.java",
+  "n_patches": 10
+}

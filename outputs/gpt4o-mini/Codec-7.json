@@ -1,0 +1,20 @@
+{
+  "bug_id": "Codec-7",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public static String encodeBase64String(byte[] binaryData) {\n        return StringUtils.newStringUtf8(encodeBase64(binaryData, true));\n    }",
+  "fix_code": "    public static String encodeBase64String(byte[] binaryData) {\n        return StringUtils.newStringUtf8(encodeBase64(binaryData, false));\n    }",
+  "start_line": 669,
+  "end_line": 671,
+  "patches": [
+    "public static String encodeBase64String(byte[] binaryData) {\n    return new String(encodeBase64(binaryData, true), StandardCharsets.UTF_8);\n}",
+    "public static String encodeBase64String(byte[] binaryData) {\n    return StringUtils.newStringUtf8(Base64.encodeBase64(binaryData));\n}",
+    "public static String encodeBase64String(byte[] binaryData) {\n    return StringUtils.newStringUtf8(Base64.encodeBase64(binaryData));\n}",
+    "public static String encodeBase64String(byte[] binaryData) {\n    return Base64.getEncoder().encodeToString(binaryData);\n}",
+    "public static String encodeBase64String(byte[] binaryData) {\n    return new String(encodeBase64(binaryData, true), StandardCharsets.UTF_8);\n}",
+    "public static String encodeBase64String(byte[] binaryData) {\n    return StringUtils.newStringUtf8(Base64.encodeBase64(binaryData, true));\n}",
+    "public static String encodeBase64String(byte[] binaryData) {\n    return new String(encodeBase64(binaryData, true), StandardCharsets.UTF_8);\n}",
+    "public static String encodeBase64String(byte[] binaryData) {\n    return StringUtils.newStringUtf8(Base64.encodeBase64(binaryData));\n}",
+    "public static String encodeBase64String(byte[] binaryData) {\n    return Base64.getEncoder().encodeToString(binaryData);\n}",
+    "public static String encodeBase64String(byte[] binaryData) {\n    return new String(encodeBase64(binaryData, true), StandardCharsets.UTF_8);\n}"
+  ]
+}

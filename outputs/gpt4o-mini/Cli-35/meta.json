@@ -1,0 +1,10 @@
+{
+  "bug_id": "Cli-35",
+  "bug_id_d4j": "Cli_35",
+  "project": "Cli",
+  "bug_number": "35",
+  "source_file": "src/main/java/org/apache/commons/cli/Options.java",
+  "checkout_path": "/tmp/d4j_checkouts/Cli_35_buggy",
+  "original_source": "/tmp/d4j_checkouts/Cli_35_buggy/src/main/java/org/apache/commons/cli/Options.java",
+  "n_patches": 10
+}

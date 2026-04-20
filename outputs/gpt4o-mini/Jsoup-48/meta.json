@@ -1,0 +1,10 @@
+{
+  "bug_id": "Jsoup-48",
+  "bug_id_d4j": "Jsoup_48",
+  "project": "Jsoup",
+  "bug_number": "48",
+  "source_file": "src/main/java/org/jsoup/helper/HttpConnection.java",
+  "checkout_path": "/tmp/d4j_checkouts/Jsoup_48_buggy",
+  "original_source": "/tmp/d4j_checkouts/Jsoup_48_buggy/src/main/java/org/jsoup/helper/HttpConnection.java",
+  "n_patches": 10
+}

@@ -1,0 +1,20 @@
+{
+  "bug_id": "Jsoup-41",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public boolean equals(Object o) {\n        if (this == o) return true;\n        if (o == null || getClass() != o.getClass()) return false;\n        if (!super.equals(o)) return false;\n\n        Element element = (Element) o;\n\n        return this == o;\n    }",
+  "fix_code": "    public boolean equals(Object o) {\n        if (this == o) return true;\n        if (o == null || getClass() != o.getClass()) return false;\n        if (!super.equals(o)) return false;\n\n        Element element = (Element) o;\n\n        return tag.equals(element.tag);\n    }",
+  "start_line": 1168,
+  "end_line": 1176,
+  "patches": [
+    "public boolean equals(Object o) {\n    if (this == o) return true;\n    if (o == null || getClass() != o.getClass()) return false;\n    if (!super.equals(o)) return false;\n\n    Element element = (Element) o;\n\n    return this.equals(element);\n}",
+    "public boolean equals(Object o) {\n    if (this == o) return true;\n    if (o == null || getClass() != o.getClass()) return false;\n    if (!super.equals(o)) return false;\n\n    Element element = (Element) o;\n\n    return this.equals(element);\n}",
+    "public boolean equals(Object o) {\n    if (this == o) return true;\n    if (o == null || getClass() != o.getClass()) return false;\n    if (!super.equals(o)) return false;\n\n    Element element = (Element) o;\n\n    return this.someField.equals(element.someField); // Replace someField with actual fields to compare\n}",
+    "public boolean equals(Object o) {\n    if (this == o) return true;\n    if (o == null || getClass() != o.getClass()) return false;\n    if (!super.equals(o)) return false;\n\n    Element element = (Element) o;\n\n    return this.equals(element);\n}",
+    "public boolean equals(Object o) {\n    if (this == o) return true;\n    if (o == null || getClass() != o.getClass()) return false;\n    if (!super.equals(o)) return false;\n\n    Element element = (Element) o;\n\n    return this.id.equals(element.id) && this.tagName.equals(element.tagName);\n}",
+    "public boolean equals(Object o) {\n    if (this == o) return true;\n    if (o == null || getClass() != o.getClass()) return false;\n    if (!super.equals(o)) return false;\n\n    Element element = (Element) o;\n\n    return this.equals(element);\n}",
+    "public boolean equals(Object o) {\n    if (this == o) return true;\n    if (o == null || getClass() != o.getClass()) return false;\n    if (!super.equals(o)) return false;\n\n    Element element = (Element) o;\n\n    return this.id.equals(element.id) && this.tagName.equals(element.tagName);\n}",
+    "public boolean equals(Object o) {\n    if (this == o) return true;\n    if (o == null || getClass() != o.getClass()) return false;\n    if (!super.equals(o)) return false;\n\n    Element element = (Element) o;\n\n    return this.id.equals(element.id) && this.tagName.equals(element.tagName);\n}",
+    "public boolean equals(Object o) {\n    if (this == o) return true;\n    if (o == null || getClass() != o.getClass()) return false;\n    if (!super.equals(o)) return false;\n\n    Element element = (Element) o;\n\n    return this.equals(element);\n}",
+    "public boolean equals(Object o) {\n    if (this == o) return true;\n    if (o == null || getClass() != o.getClass()) return false;\n    if (!super.equals(o)) return false;\n\n    Element element = (Element) o;\n\n    return this.id.equals(element.id) && this.tagName.equals(element.tagName);\n}"
+  ]
+}

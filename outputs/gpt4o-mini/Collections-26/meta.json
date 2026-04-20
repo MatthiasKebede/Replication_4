@@ -1,0 +1,10 @@
+{
+  "bug_id": "Collections-26",
+  "bug_id_d4j": "Collections_26",
+  "project": "Collections",
+  "bug_number": "26",
+  "source_file": "src/main/java/org/apache/commons/collections4/keyvalue/MultiKey.java",
+  "checkout_path": "/tmp/d4j_checkouts/Collections_26_buggy",
+  "original_source": "/tmp/d4j_checkouts/Collections_26_buggy/src/main/java/org/apache/commons/collections4/keyvalue/MultiKey.java",
+  "n_patches": 10
+}

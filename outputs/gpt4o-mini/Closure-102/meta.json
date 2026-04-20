@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-102",
+  "bug_id_d4j": "Closure_102",
+  "project": "Closure",
+  "bug_number": "102",
+  "source_file": "src/com/google/javascript/jscomp/Normalize.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_102_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_102_buggy/src/com/google/javascript/jscomp/Normalize.java",
+  "n_patches": 10
+}

@@ -1,0 +1,20 @@
+{
+  "bug_id": "Jsoup-88",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public String getValue() {\n        return val;\n    }",
+  "fix_code": "    public String getValue() {\n        return Attributes.checkNotNull(val);\n    }",
+  "start_line": 79,
+  "end_line": 81,
+  "patches": [
+    "public String getValue() {\n    return val != null ? val : \"\";\n}",
+    "public String getValue() {\n    return val != null ? val : \"\";\n}",
+    "public String getValue() {\n    return val != null ? val : \"\";\n}",
+    "public String getValue() {\n        return val != null ? val : \"\";\n    }",
+    "public String getValue() {\n        if (val == null) {\n            return \"\";\n        }\n        return val;\n    }",
+    "public String getValue() {\n    return val != null ? val : \"\";\n}",
+    "public String getValue() {\n    return val != null ? val : \"\";\n}",
+    "public String getValue() {\n        return val != null ? val : \"\";\n    }",
+    "public String getValue() {\n        return val != null ? val : \"\";\n    }",
+    "public String getValue() {\n        return val != null ? val : \"\";\n    }"
+  ]
+}

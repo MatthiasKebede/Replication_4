@@ -1,0 +1,10 @@
+{
+  "bug_id": "Time-15",
+  "bug_id_d4j": "Time_15",
+  "project": "Time",
+  "bug_number": "15",
+  "source_file": "src/main/java/org/joda/time/field/FieldUtils.java",
+  "checkout_path": "/tmp/d4j_checkouts/Time_15_buggy",
+  "original_source": "/tmp/d4j_checkouts/Time_15_buggy/src/main/java/org/joda/time/field/FieldUtils.java",
+  "n_patches": 10
+}

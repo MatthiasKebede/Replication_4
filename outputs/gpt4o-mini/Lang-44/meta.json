@@ -1,0 +1,10 @@
+{
+  "bug_id": "Lang-44",
+  "bug_id_d4j": "Lang_44",
+  "project": "Lang",
+  "bug_number": "44",
+  "source_file": "src/java/org/apache/commons/lang/NumberUtils.java",
+  "checkout_path": "/tmp/d4j_checkouts/Lang_44_buggy",
+  "original_source": "/tmp/d4j_checkouts/Lang_44_buggy/src/java/org/apache/commons/lang/NumberUtils.java",
+  "n_patches": 10
+}

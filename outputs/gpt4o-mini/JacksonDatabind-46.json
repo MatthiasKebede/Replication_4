@@ -1,0 +1,20 @@
+{
+  "bug_id": "JacksonDatabind-46",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public StringBuilder getGenericSignature(StringBuilder sb)\n    {\n        _classSignature(_class, sb, false);\n        sb.append('<');\n        sb = _referencedType.getGenericSignature(sb);\n        sb.append(';');\n        return sb;\n    }",
+  "fix_code": "    public StringBuilder getGenericSignature(StringBuilder sb)\n    {\n        _classSignature(_class, sb, false);\n        sb.append('<');\n        sb = _referencedType.getGenericSignature(sb);\n        sb.append(\">;\");\n        return sb;\n    }",
+  "start_line": 151,
+  "end_line": 158,
+  "patches": [
+    "public StringBuilder getGenericSignature(StringBuilder sb)\n{\n    _classSignature(_class, sb, false);\n    sb.append('<');\n    _referencedType.getGenericSignature(sb);\n    sb.append(';');\n    return sb;\n}",
+    "public StringBuilder getGenericSignature(StringBuilder sb)\n{\n    _classSignature(_class, sb, false);\n    sb.append('<');\n    _referencedType.getGenericSignature(sb);\n    sb.append(';');\n    return sb;\n}",
+    "public StringBuilder getGenericSignature(StringBuilder sb)\n{\n    _classSignature(_class, sb, false);\n    sb.append('<');\n    _referencedType.getGenericSignature(sb);\n    sb.append(';');\n    return sb;\n}",
+    "public StringBuilder getGenericSignature(StringBuilder sb)\n{\n    _classSignature(_class, sb, false);\n    sb.append('<');\n    _referencedType.getGenericSignature(sb);\n    sb.append(';');\n    return sb;\n}",
+    "public StringBuilder getGenericSignature(StringBuilder sb)\n{\n    _classSignature(_class, sb, false);\n    sb.append('<');\n    _referencedType.getGenericSignature(sb);\n    sb.append(';');\n    return sb;\n}",
+    "public StringBuilder getGenericSignature(StringBuilder sb)\n{\n    _classSignature(_class, sb, false);\n    sb.append('<');\n    _referencedType.getGenericSignature(sb);\n    sb.append(';');\n    return sb;\n}",
+    "public StringBuilder getGenericSignature(StringBuilder sb)\n{\n    _classSignature(_class, sb, false);\n    sb.append('<');\n    _referencedType.getGenericSignature(sb);\n    sb.append(';');\n    return sb;\n}",
+    "public StringBuilder getGenericSignature(StringBuilder sb)\n{\n    _classSignature(_class, sb, false);\n    sb.append('<');\n    _referencedType.getGenericSignature(sb);\n    sb.append(';');\n    return sb;\n}",
+    "public StringBuilder getGenericSignature(StringBuilder sb)\n{\n    _classSignature(_class, sb, false);\n    sb.append('<');\n    _referencedType.getGenericSignature(sb);\n    sb.append(';');\n    return sb;\n}",
+    "public StringBuilder getGenericSignature(StringBuilder sb) {\n    _classSignature(_class, sb, false);\n    sb.append('<');\n    _referencedType.getGenericSignature(sb);\n    sb.append(';');\n    return sb;\n}"
+  ]
+}

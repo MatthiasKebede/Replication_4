@@ -1,0 +1,10 @@
+{
+  "bug_id": "JxPath-5",
+  "bug_id_d4j": "JxPath_5",
+  "project": "JxPath",
+  "bug_number": "5",
+  "source_file": "src/java/org/apache/commons/jxpath/ri/model/NodePointer.java",
+  "checkout_path": "/tmp/d4j_checkouts/JxPath_5_buggy",
+  "original_source": "/tmp/d4j_checkouts/JxPath_5_buggy/src/java/org/apache/commons/jxpath/ri/model/NodePointer.java",
+  "n_patches": 10
+}

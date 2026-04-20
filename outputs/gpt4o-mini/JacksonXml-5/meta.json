@@ -1,0 +1,10 @@
+{
+  "bug_id": "JacksonXml-5",
+  "bug_id_d4j": "JacksonXml_5",
+  "project": "JacksonXml",
+  "bug_number": "5",
+  "source_file": "src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java",
+  "checkout_path": "/tmp/d4j_checkouts/JacksonXml_5_buggy",
+  "original_source": "/tmp/d4j_checkouts/JacksonXml_5_buggy/src/main/java/com/fasterxml/jackson/dataformat/xml/ser/XmlSerializerProvider.java",
+  "n_patches": 10
+}

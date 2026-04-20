@@ -1,0 +1,20 @@
+{
+  "bug_id": "Closure-128",
+  "model": "gpt-4o-mini",
+  "buggy_code": "  static boolean isSimpleNumber(String s) {\n    int len = s.length();\n    for (int index = 0; index < len; index++) {\n      char c = s.charAt(index);\n      if (c < '0' || c > '9') {\n        return false;\n      }\n    }\n    return len > 0 && s.charAt(0) != '0';\n  }",
+  "fix_code": "  static boolean isSimpleNumber(String s) {\n    int len = s.length();\n    if (len == 0) {\n      return false;\n    }\n    for (int index = 0; index < len; index++) {\n      char c = s.charAt(index);\n      if (c < '0' || c > '9') {\n        return false;\n      }\n    }\n    return len == 1 || s.charAt(0) != '0';\n  }",
+  "start_line": 783,
+  "end_line": 792,
+  "patches": [
+    "static boolean isSimpleNumber(String s) {\n    int len = s.length();\n    if (len == 0) {\n        return false;\n    }\n    for (int index = 0; index < len; index++) {\n        char c = s.charAt(index);\n        if (c < '0' || c > '9') {\n            return false;\n        }\n    }\n    return s.charAt(0) != '0';\n}",
+    "static boolean isSimpleNumber(String s) {\n    int len = s.length();\n    for (int index = 0; index < len; index++) {\n        char c = s.charAt(index);\n        if (c < '0' || c > '9') {\n            return false;\n        }\n    }\n    return len > 0 && s.charAt(0) != '0' && len > 1; // Ensure it is not just \"0\"\n}",
+    "static boolean isSimpleNumber(String s) {\n    int len = s.length();\n    if (len == 0) {\n        return false;\n    }\n    for (int index = 0; index < len; index++) {\n        char c = s.charAt(index);\n        if (c < '0' || c > '9') {\n            return false;\n        }\n    }\n    return s.charAt(0) != '0';\n}",
+    "static boolean isSimpleNumber(String s) {\n    int len = s.length();\n    for (int index = 0; index < len; index++) {\n        char c = s.charAt(index);\n        if (c < '0' || c > '9') {\n            return false;\n        }\n    }\n    return len > 0 && s.charAt(0) != '0' && len > 1;\n}",
+    "static boolean isSimpleNumber(String s) {\n    int len = s.length();\n    if (len == 0) {\n        return false;\n    }\n    for (int index = 0; index < len; index++) {\n        char c = s.charAt(index);\n        if (c < '0' || c > '9') {\n            return false;\n        }\n    }\n    return s.charAt(0) != '0';\n}",
+    "static boolean isSimpleNumber(String s) {\n    int len = s.length();\n    for (int index = 0; index < len; index++) {\n        char c = s.charAt(index);\n        if (c < '0' || c > '9') {\n            return false;\n        }\n    }\n    return len > 0 && s.charAt(0) != '0' && len > 1; // Ensure it's not just \"0\"\n}",
+    "static boolean isSimpleNumber(String s) {\n    int len = s.length();\n    for (int index = 0; index < len; index++) {\n        char c = s.charAt(index);\n        if (c < '0' || c > '9') {\n            return false;\n        }\n    }\n    return len > 0 && s.charAt(0) != '0' && len > 1;\n}",
+    "static boolean isSimpleNumber(String s) {\n    int len = s.length();\n    for (int index = 0; index < len; index++) {\n        char c = s.charAt(index);\n        if (c < '0' || c > '9') {\n            return false;\n        }\n    }\n    return len > 0 && s.charAt(0) != '0' && len > 1;\n}",
+    "static boolean isSimpleNumber(String s) {\n    int len = s.length();\n    for (int index = 0; index < len; index++) {\n        char c = s.charAt(index);\n        if (c < '0' || c > '9') {\n            return false;\n        }\n    }\n    return len > 0 && s.charAt(0) != '0' && len > 1;\n}",
+    "static boolean isSimpleNumber(String s) {\n    int len = s.length();\n    if (len == 0) {\n        return false;\n    }\n    for (int index = 0; index < len; index++) {\n        char c = s.charAt(index);\n        if (c < '0' || c > '9') {\n            return false;\n        }\n    }\n    return s.charAt(0) != '0';\n}"
+  ]
+}

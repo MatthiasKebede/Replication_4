@@ -1,0 +1,10 @@
+{
+  "bug_id": "Compress-32",
+  "bug_id_d4j": "Compress_32",
+  "project": "Compress",
+  "bug_number": "32",
+  "source_file": "src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java",
+  "checkout_path": "/tmp/d4j_checkouts/Compress_32_buggy",
+  "original_source": "/tmp/d4j_checkouts/Compress_32_buggy/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java",
+  "n_patches": 10
+}

@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-73",
+  "bug_id_d4j": "Closure_73",
+  "project": "Closure",
+  "bug_number": "73",
+  "source_file": "src/com/google/javascript/jscomp/CodeGenerator.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_73_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_73_buggy/src/com/google/javascript/jscomp/CodeGenerator.java",
+  "n_patches": 10
+}

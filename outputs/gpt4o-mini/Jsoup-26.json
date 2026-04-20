@@ -1,0 +1,20 @@
+{
+  "bug_id": "Jsoup-26",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public Document clean(Document dirtyDocument) {\n        Validate.notNull(dirtyDocument);\n\n        Document clean = Document.createShell(dirtyDocument.baseUri());\n            copySafeNodes(dirtyDocument.body(), clean.body());\n\n        return clean;\n    }",
+  "fix_code": "    public Document clean(Document dirtyDocument) {\n        Validate.notNull(dirtyDocument);\n\n        Document clean = Document.createShell(dirtyDocument.baseUri());\n        if (dirtyDocument.body() != null) // frameset documents won't have a body. the clean doc will have empty body.\n            copySafeNodes(dirtyDocument.body(), clean.body());\n\n        return clean;\n    }",
+  "start_line": 39,
+  "end_line": 46,
+  "patches": [
+    "public Document clean(Document dirtyDocument) {\n    Validate.notNull(dirtyDocument);\n\n    Document clean = Document.createShell(dirtyDocument.baseUri());\n    copySafeNodes(dirtyDocument.body(), clean.body());\n\n    // Ensure to copy the title and head elements if needed\n    clean.head().append(dirtyDocument.head().childNodes());\n    \n    return clean;\n}",
+    "public Document clean(Document dirtyDocument) {\n    Validate.notNull(dirtyDocument);\n\n    Document clean = Document.createShell(dirtyDocument.baseUri());\n    copySafeNodes(dirtyDocument.body(), clean.body());\n\n    return clean;\n}",
+    "public Document clean(Document dirtyDocument) {\n    Validate.notNull(dirtyDocument);\n\n    Document clean = Document.createShell(dirtyDocument.baseUri());\n    copySafeNodes(dirtyDocument.body(), clean.body());\n    \n    // Ensure to copy any necessary metadata or attributes from the original document\n    clean.head().append(dirtyDocument.head().html());\n\n    return clean;\n}",
+    "public Document clean(Document dirtyDocument) {\n    Validate.notNull(dirtyDocument);\n\n    Document clean = Document.createShell(dirtyDocument.baseUri());\n    copySafeNodes(dirtyDocument.body(), clean.body());\n\n    return clean;\n}",
+    "public Document clean(Document dirtyDocument) {\n    Validate.notNull(dirtyDocument);\n\n    Document clean = Document.createShell(dirtyDocument.baseUri());\n    copySafeNodes(dirtyDocument.body(), clean.body());\n\n    // Ensure the clean document has a proper title\n    clean.title(dirtyDocument.title());\n\n    return clean;\n}",
+    "public Document clean(Document dirtyDocument) {\n    Validate.notNull(dirtyDocument);\n\n    Document clean = Document.createShell(dirtyDocument.baseUri());\n    copySafeNodes(dirtyDocument.body(), clean.body());\n    \n    // Ensure that the clean document's head is also populated from the dirty document\n    clean.head().append(dirtyDocument.head().childNodes().stream()\n        .map(Node::outerHtml)\n        .collect(Collectors.joining()));\n\n    return clean;\n}",
+    "public Document clean(Document dirtyDocument) {\n    Validate.notNull(dirtyDocument);\n\n    Document clean = Document.createShell(dirtyDocument.baseUri());\n    copySafeNodes(dirtyDocument.body(), clean.body());\n\n    // Ensure the clean document has a proper title and head\n    clean.head().appendElement(\"title\").text(dirtyDocument.title());\n\n    return clean;\n}",
+    "public Document clean(Document dirtyDocument) {\n    Validate.notNull(dirtyDocument);\n\n    Document clean = Document.createShell(dirtyDocument.baseUri());\n    copySafeNodes(dirtyDocument.body(), clean.body());\n\n    return clean;\n}",
+    "public Document clean(Document dirtyDocument) {\n    Validate.notNull(dirtyDocument);\n\n    Document clean = Document.createShell(dirtyDocument.baseUri());\n    copySafeNodes(dirtyDocument.body(), clean.body());\n\n    return clean;\n}",
+    "public Document clean(Document dirtyDocument) {\n    Validate.notNull(dirtyDocument);\n\n    Document clean = Document.createShell(dirtyDocument.baseUri());\n    copySafeNodes(dirtyDocument.body(), clean.body());\n\n    return clean;\n}"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "bug_id": "Math-106",
+  "bug_id_d4j": "Math_106",
+  "project": "Math",
+  "bug_number": "106",
+  "source_file": "src/java/org/apache/commons/math/fraction/ProperFractionFormat.java",
+  "checkout_path": "/tmp/d4j_checkouts/Math_106_buggy",
+  "original_source": "/tmp/d4j_checkouts/Math_106_buggy/src/java/org/apache/commons/math/fraction/ProperFractionFormat.java",
+  "n_patches": 10
+}

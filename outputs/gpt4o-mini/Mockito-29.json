@@ -1,0 +1,20 @@
+{
+  "bug_id": "Mockito-29",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public void describeTo(Description description) {\n        description.appendText(\"same(\");\n        appendQuoting(description);\n        description.appendText(wanted.toString());\n        appendQuoting(description);\n        description.appendText(\")\");\n    }",
+  "fix_code": "    public void describeTo(Description description) {\n        description.appendText(\"same(\");\n        appendQuoting(description);\n        description.appendText(wanted == null ? \"null\" : wanted.toString());\n        appendQuoting(description);\n        description.appendText(\")\");\n    }",
+  "start_line": 26,
+  "end_line": 32,
+  "patches": [
+    "public void describeTo(Description description) {\n    description.appendText(\"same(\");\n    appendQuoting(description);\n    description.appendText(wanted.toString());\n    appendQuoting(description);\n    description.appendText(\")\");\n}",
+    "public void describeTo(Description description) {\n    description.appendText(\"same(\");\n    appendQuoting(description);\n    description.appendText(wanted.toString());\n    appendQuoting(description);\n    description.appendText(\")\");\n}",
+    "public void describeTo(Description description) {\n    description.appendText(\"same(\");\n    appendQuoting(description);\n    description.appendText(wanted.toString());\n    appendQuoting(description);\n    description.appendText(\")\");\n}",
+    "public void describeTo(Description description) {\n    description.appendText(\"same(\");\n    appendQuoting(description);\n    description.appendText(wanted.toString());\n    appendQuoting(description);\n    description.appendText(\")\");\n}",
+    "public void describeTo(Description description) {\n    description.appendText(\"same(\");\n    appendQuoting(description);\n    description.appendText(wanted.toString());\n    appendQuoting(description);\n    description.appendText(\")\");\n}",
+    "public void describeTo(Description description) {\n    description.appendText(\"same(\");\n    appendQuoting(description);\n    description.appendText(wanted.toString());\n    appendQuoting(description);\n    description.appendText(\")\");\n}",
+    "public void describeTo(Description description) {\n    description.appendText(\"same(\");\n    appendQuoting(description);\n    description.appendText(wanted.toString());\n    appendQuoting(description);\n    description.appendText(\")\");\n}",
+    "public void describeTo(Description description) {\n    description.appendText(\"same(\");\n    appendQuoting(description);\n    description.appendText(wanted.toString());\n    appendQuoting(description);\n    description.appendText(\")\");\n}",
+    "public void describeTo(Description description) {\n    description.appendText(\"same(\");\n    appendQuoting(description);\n    description.appendText(wanted.toString());\n    appendQuoting(description);\n    description.appendText(\")\");\n}",
+    "public void describeTo(Description description) {\n    description.appendText(\"same(\");\n    appendQuoting(description);\n    description.appendText(wanted.toString());\n    appendQuoting(description);\n    description.appendText(\")\");\n}"
+  ]
+}

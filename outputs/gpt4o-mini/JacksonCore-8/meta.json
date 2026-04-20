@@ -1,0 +1,10 @@
+{
+  "bug_id": "JacksonCore-8",
+  "bug_id_d4j": "JacksonCore_8",
+  "project": "JacksonCore",
+  "bug_number": "8",
+  "source_file": "src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java",
+  "checkout_path": "/tmp/d4j_checkouts/JacksonCore_8_buggy",
+  "original_source": "/tmp/d4j_checkouts/JacksonCore_8_buggy/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java",
+  "n_patches": 10
+}

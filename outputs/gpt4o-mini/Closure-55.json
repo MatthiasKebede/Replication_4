@@ -1,0 +1,20 @@
+{
+  "bug_id": "Closure-55",
+  "model": "gpt-4o-mini",
+  "buggy_code": "  private static boolean isReduceableFunctionExpression(Node n) {\n    return NodeUtil.isFunctionExpression(n);\n  }",
+  "fix_code": "  private static boolean isReduceableFunctionExpression(Node n) {\n    return NodeUtil.isFunctionExpression(n)\n        && !NodeUtil.isGetOrSetKey(n.getParent());\n  }",
+  "start_line": 116,
+  "end_line": 118,
+  "patches": [
+    "private static boolean isReduceableFunctionExpression(Node n) {\n    return NodeUtil.isFunctionExpression(n) && !NodeUtil.isArrowFunction(n);\n}",
+    "private static boolean isReduceableFunctionExpression(Node n) {\n    return NodeUtil.isFunctionExpression(n) && !NodeUtil.isArrowFunction(n);\n}",
+    "private static boolean isReduceableFunctionExpression(Node n) {\n    return NodeUtil.isFunctionExpression(n) && !NodeUtil.isArrowFunction(n);\n}",
+    "private static boolean isReduceableFunctionExpression(Node n) {\n    return NodeUtil.isFunctionExpression(n) && n.hasChildren();\n}",
+    "private static boolean isReduceableFunctionExpression(Node n) {\n    return NodeUtil.isFunctionExpression(n) && !NodeUtil.isFunctionDeclaration(n);\n}",
+    "private static boolean isReduceableFunctionExpression(Node n) {\n    return NodeUtil.isFunctionExpression(n) && !n.isArrowFunction();\n}",
+    "private static boolean isReduceableFunctionExpression(Node n) {\n    return NodeUtil.isFunctionExpression(n) && !n.isArrowFunction();\n}",
+    "private static boolean isReduceableFunctionExpression(Node n) {\n    return NodeUtil.isFunctionExpression(n) && !n.isArrowFunction();\n}",
+    "private static boolean isReduceableFunctionExpression(Node n) {\n    return NodeUtil.isFunctionExpression(n) && n.hasChildren();\n}",
+    "private static boolean isReduceableFunctionExpression(Node n) {\n    return NodeUtil.isFunctionExpression(n) && !NodeUtil.isArrowFunction(n);\n}"
+  ]
+}

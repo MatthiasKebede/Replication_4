@@ -1,0 +1,20 @@
+{
+  "bug_id": "Cli-29",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    static String stripLeadingAndTrailingQuotes(String str)\n    {\n        if (str.startsWith(\"\\\"\"))\n        {\n            str = str.substring(1, str.length());\n        }\n        int length = str.length();\n        if (str.endsWith(\"\\\"\"))\n        {\n            str = str.substring(0, length - 1);\n        }\n        \n        return str;\n    }",
+  "fix_code": "    static String stripLeadingAndTrailingQuotes(String str)\n    {\n        int length = str.length();\n        if (length > 1 && str.startsWith(\"\\\"\") && str.endsWith(\"\\\"\") && str.substring(1, length - 1).indexOf('\"') == -1)\n        {\n            str = str.substring(1, length - 1);\n        }\n        \n        return str;\n    }",
+  "start_line": 63,
+  "end_line": 76,
+  "patches": [
+    "static String stripLeadingAndTrailingQuotes(String str)\n{\n    if (str.startsWith(\"\\\"\"))\n    {\n        str = str.substring(1);\n    }\n    if (str.endsWith(\"\\\"\"))\n    {\n        str = str.substring(0, str.length() - 1);\n    }\n    \n    return str;\n}",
+    "static String stripLeadingAndTrailingQuotes(String str)\n{\n    if (str.startsWith(\"\\\"\"))\n    {\n        str = str.substring(1);\n    }\n    if (str.endsWith(\"\\\"\"))\n    {\n        str = str.substring(0, str.length() - 1);\n    }\n    \n    return str;\n}",
+    "static String stripLeadingAndTrailingQuotes(String str)\n{\n    if (str.startsWith(\"\\\"\"))\n    {\n        str = str.substring(1);\n    }\n    if (str.endsWith(\"\\\"\"))\n    {\n        str = str.substring(0, str.length() - 1);\n    }\n    \n    return str;\n}",
+    "static String stripLeadingAndTrailingQuotes(String str)\n{\n    if (str.startsWith(\"\\\"\"))\n    {\n        str = str.substring(1);\n    }\n    if (str.endsWith(\"\\\"\"))\n    {\n        str = str.substring(0, str.length() - 1);\n    }\n    \n    return str;\n}",
+    "static String stripLeadingAndTrailingQuotes(String str)\n{\n    if (str.startsWith(\"\\\"\"))\n    {\n        str = str.substring(1);\n    }\n    if (str.endsWith(\"\\\"\"))\n    {\n        str = str.substring(0, str.length() - 1);\n    }\n    \n    return str;\n}",
+    "static String stripLeadingAndTrailingQuotes(String str)\n{\n    if (str.startsWith(\"\\\"\"))\n    {\n        str = str.substring(1);\n    }\n    if (str.endsWith(\"\\\"\"))\n    {\n        str = str.substring(0, str.length() - 1);\n    }\n    \n    return str;\n}",
+    "static String stripLeadingAndTrailingQuotes(String str)\n{\n    if (str == null) {\n        return null;\n    }\n    if (str.startsWith(\"\\\"\")) {\n        str = str.substring(1);\n    }\n    if (str.endsWith(\"\\\"\")) {\n        str = str.substring(0, str.length() - 1);\n    }\n    \n    return str;\n}",
+    "static String stripLeadingAndTrailingQuotes(String str)\n{\n    if (str.startsWith(\"\\\"\"))\n    {\n        str = str.substring(1);\n    }\n    if (str.endsWith(\"\\\"\"))\n    {\n        str = str.substring(0, str.length() - 1);\n    }\n    \n    return str;\n}",
+    "static String stripLeadingAndTrailingQuotes(String str)\n{\n    if (str == null) {\n        return null;\n    }\n    if (str.startsWith(\"\\\"\")) {\n        str = str.substring(1);\n    }\n    if (str.endsWith(\"\\\"\")) {\n        str = str.substring(0, str.length() - 1);\n    }\n    \n    return str;\n}",
+    "static String stripLeadingAndTrailingQuotes(String str) {\n    if (str == null) {\n        return null;\n    }\n    if (str.startsWith(\"\\\"\")) {\n        str = str.substring(1);\n    }\n    if (str.endsWith(\"\\\"\")) {\n        str = str.substring(0, str.length() - 1);\n    }\n    \n    return str;\n}"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "bug_id": "Compress-38",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public boolean isDirectory() {\n        if (file != null) {\n            return file.isDirectory();\n        }\n\n        if (linkFlag == LF_DIR) {\n            return true;\n        }\n\n        if (getName().endsWith(\"/\")) {\n            return true;\n        }\n\n        return false;\n    }",
+  "fix_code": "    public boolean isDirectory() {\n        if (file != null) {\n            return file.isDirectory();\n        }\n\n        if (linkFlag == LF_DIR) {\n            return true;\n        }\n\n        if (!isPaxHeader() && !isGlobalPaxHeader() && getName().endsWith(\"/\")) {\n            return true;\n        }\n\n        return false;\n    }",
+  "start_line": 850,
+  "end_line": 864,
+  "patches": [
+    "public boolean isDirectory() {\n    if (file != null) {\n        return file.isDirectory();\n    }\n\n    if (linkFlag == LF_DIR) {\n        return true;\n    }\n\n    if (getName() != null && getName().endsWith(\"/\")) {\n        return true;\n    }\n\n    return false;\n}",
+    "public boolean isDirectory() {\n    if (file != null) {\n        return file.isDirectory();\n    }\n\n    if (linkFlag == LF_DIR || getName().endsWith(\"/\")) {\n        return true;\n    }\n\n    return false;\n}",
+    "public boolean isDirectory() {\n    if (file != null) {\n        return file.isDirectory();\n    }\n\n    if (linkFlag == LF_DIR) {\n        return true;\n    }\n\n    if (getName() != null && getName().endsWith(\"/\")) {\n        return true;\n    }\n\n    return false;\n}",
+    "public boolean isDirectory() {\n    if (file != null) {\n        return file.isDirectory();\n    }\n\n    if (linkFlag == LF_DIR || getName().endsWith(\"/\")) {\n        return true;\n    }\n\n    return false;\n}",
+    "public boolean isDirectory() {\n    if (file != null) {\n        return file.isDirectory();\n    }\n\n    if (linkFlag == LF_DIR) {\n        return true;\n    }\n\n    if (getName() != null && getName().endsWith(\"/\")) {\n        return true;\n    }\n\n    return false;\n}",
+    "public boolean isDirectory() {\n    if (file != null) {\n        return file.isDirectory();\n    }\n\n    if (linkFlag == LF_DIR || getName().endsWith(\"/\")) {\n        return true;\n    }\n\n    return false;\n}",
+    "public boolean isDirectory() {\n    if (file != null && file.exists()) {\n        return file.isDirectory();\n    }\n\n    if (linkFlag == LF_DIR) {\n        return true;\n    }\n\n    if (getName() != null && getName().endsWith(\"/\")) {\n        return true;\n    }\n\n    return false;\n}",
+    "public boolean isDirectory() {\n    if (file != null) {\n        return file.isDirectory();\n    }\n\n    if (linkFlag == LF_DIR) {\n        return true;\n    }\n\n    if (getName() != null && getName().endsWith(\"/\")) {\n        return true;\n    }\n\n    return false;\n}",
+    "public boolean isDirectory() {\n    if (file != null) {\n        return file.isDirectory();\n    }\n\n    if (linkFlag == LF_DIR || getName().endsWith(\"/\")) {\n        return true;\n    }\n\n    return false;\n}",
+    "public boolean isDirectory() {\n    if (file != null) {\n        return file.isDirectory();\n    }\n\n    if (linkFlag == LF_DIR) {\n        return true;\n    }\n\n    if (getName() != null && getName().endsWith(\"/\")) {\n        return true;\n    }\n\n    return false;\n}"
+  ]
+}

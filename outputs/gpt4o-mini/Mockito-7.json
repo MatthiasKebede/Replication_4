@@ -1,0 +1,20 @@
+{
+  "bug_id": "Mockito-7",
+  "model": "gpt-4o-mini",
+  "buggy_code": "        private void readTypeVariables() {\n            for (Type type : typeVariable.getBounds()) {\n                registerTypeVariablesOn(type);\n            }\n            registerTypeVariablesOn(getActualTypeArgumentFor(typeVariable));\n        }",
+  "fix_code": "        private void readTypeVariables() {\n            for (Type type : typeVariable.getBounds()) {\n                registerTypeVariablesOn(type);\n            }\n            registerTypeParametersOn(new TypeVariable[] { typeVariable });\n            registerTypeVariablesOn(getActualTypeArgumentFor(typeVariable));\n        }",
+  "start_line": 375,
+  "end_line": 380,
+  "patches": [
+    "private void readTypeVariables() {\n    for (Type type : typeVariable.getBounds()) {\n        registerTypeVariablesOn(type);\n    }\n    Type actualTypeArgument = getActualTypeArgumentFor(typeVariable);\n    if (actualTypeArgument != null) {\n        registerTypeVariablesOn(actualTypeArgument);\n    }\n}",
+    "private void readTypeVariables() {\n    for (Type type : typeVariable.getBounds()) {\n        registerTypeVariablesOn(type);\n    }\n    Type actualTypeArgument = getActualTypeArgumentFor(typeVariable);\n    if (actualTypeArgument != null) {\n        registerTypeVariablesOn(actualTypeArgument);\n    }\n}",
+    "private void readTypeVariables() {\n    for (Type type : typeVariable.getBounds()) {\n        registerTypeVariablesOn(type);\n    }\n    Type actualTypeArgument = getActualTypeArgumentFor(typeVariable);\n    if (actualTypeArgument != null) {\n        registerTypeVariablesOn(actualTypeArgument);\n    }\n}",
+    "private void readTypeVariables() {\n    for (Type type : typeVariable.getBounds()) {\n        registerTypeVariablesOn(type);\n    }\n    if (typeVariable.getBounds().length > 0) {\n        registerTypeVariablesOn(getActualTypeArgumentFor(typeVariable));\n    }\n}",
+    "private void readTypeVariables() {\n    for (Type type : typeVariable.getBounds()) {\n        registerTypeVariablesOn(type);\n    }\n    if (typeVariable.getBounds().length > 0) {\n        registerTypeVariablesOn(getActualTypeArgumentFor(typeVariable));\n    }\n}",
+    "private void readTypeVariables() {\n    for (Type type : typeVariable.getBounds()) {\n        registerTypeVariablesOn(type);\n    }\n    if (typeVariable.getBounds().length > 0) {\n        registerTypeVariablesOn(getActualTypeArgumentFor(typeVariable));\n    }\n}",
+    "private void readTypeVariables() {\n    for (Type type : typeVariable.getBounds()) {\n        registerTypeVariablesOn(type);\n    }\n    if (typeVariable.getBounds().length > 0) {\n        registerTypeVariablesOn(getActualTypeArgumentFor(typeVariable));\n    }\n}",
+    "private void readTypeVariables() {\n    for (Type type : typeVariable.getBounds()) {\n        registerTypeVariablesOn(type);\n    }\n    Type actualTypeArgument = getActualTypeArgumentFor(typeVariable);\n    if (actualTypeArgument != null) {\n        registerTypeVariablesOn(actualTypeArgument);\n    }\n}",
+    "private void readTypeVariables() {\n    for (Type type : typeVariable.getBounds()) {\n        registerTypeVariablesOn(type);\n    }\n    Type actualTypeArgument = getActualTypeArgumentFor(typeVariable);\n    if (actualTypeArgument != null) {\n        registerTypeVariablesOn(actualTypeArgument);\n    }\n}",
+    "private void readTypeVariables() {\n    for (Type type : typeVariable.getBounds()) {\n        registerTypeVariablesOn(type);\n    }\n    Type actualTypeArgument = getActualTypeArgumentFor(typeVariable);\n    if (actualTypeArgument != null) {\n        registerTypeVariablesOn(actualTypeArgument);\n    }\n}"
+  ]
+}

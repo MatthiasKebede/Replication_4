@@ -1,0 +1,20 @@
+{
+  "bug_id": "Lang-26",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public String format(Date date) {\n        Calendar c = new GregorianCalendar(mTimeZone);\n        c.setTime(date);\n        return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();\n    }",
+  "fix_code": "    public String format(Date date) {\n        Calendar c = new GregorianCalendar(mTimeZone, mLocale);\n        c.setTime(date);\n        return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();\n    }",
+  "start_line": 819,
+  "end_line": 823,
+  "patches": [
+    "public String format(Date date) {\n    Calendar c = new GregorianCalendar(mTimeZone);\n    c.setTime(date);\n    return applyRules(c, new StringBuilder(mMaxLengthEstimate)).toString();\n}",
+    "public String format(Date date) {\n    if (date == null) {\n        throw new IllegalArgumentException(\"Date cannot be null\");\n    }\n    Calendar c = new GregorianCalendar(mTimeZone);\n    c.setTime(date);\n    return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();\n}",
+    "public String format(Date date) {\n    if (date == null) {\n        throw new IllegalArgumentException(\"Date cannot be null\");\n    }\n    Calendar c = new GregorianCalendar(mTimeZone);\n    c.setTime(date);\n    return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();\n}",
+    "public String format(Date date) {\n    if (date == null) {\n        throw new IllegalArgumentException(\"Date cannot be null\");\n    }\n    Calendar c = new GregorianCalendar(mTimeZone);\n    c.setTime(date);\n    return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();\n}",
+    "public String format(Date date) {\n    if (date == null) {\n        throw new IllegalArgumentException(\"Date cannot be null\");\n    }\n    Calendar c = new GregorianCalendar(mTimeZone);\n    c.setTime(date);\n    return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();\n}",
+    "public String format(Date date) {\n    if (date == null) {\n        throw new IllegalArgumentException(\"Date cannot be null\");\n    }\n    Calendar c = new GregorianCalendar(mTimeZone);\n    c.setTime(date);\n    return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();\n}",
+    "public String format(Date date) {\n    if (date == null) {\n        throw new IllegalArgumentException(\"Date cannot be null\");\n    }\n    Calendar c = new GregorianCalendar(mTimeZone);\n    c.setTime(date);\n    return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();\n}",
+    "public String format(Date date) {\n    if (date == null) {\n        throw new IllegalArgumentException(\"Date cannot be null\");\n    }\n    Calendar c = new GregorianCalendar(mTimeZone);\n    c.setTime(date);\n    return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();\n}",
+    "public String format(Date date) {\n    if (date == null) {\n        throw new IllegalArgumentException(\"Date cannot be null\");\n    }\n    Calendar c = new GregorianCalendar(mTimeZone);\n    c.setTime(date);\n    return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();\n}",
+    "public String format(Date date) {\n    if (date == null) {\n        throw new IllegalArgumentException(\"Date cannot be null\");\n    }\n    Calendar c = new GregorianCalendar(mTimeZone);\n    c.setTime(date);\n    return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();\n}"
+  ]
+}

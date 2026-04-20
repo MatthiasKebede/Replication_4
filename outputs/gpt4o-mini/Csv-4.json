@@ -1,0 +1,20 @@
+{
+  "bug_id": "Csv-4",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public Map<String, Integer> getHeaderMap() {\n        return new LinkedHashMap<String, Integer>(this.headerMap);\n    }",
+  "fix_code": "    public Map<String, Integer> getHeaderMap() {\n        return this.headerMap == null ? null : new LinkedHashMap<String, Integer>(this.headerMap);\n    }",
+  "start_line": 287,
+  "end_line": 289,
+  "patches": [
+    "public Map<String, Integer> getHeaderMap() {\n    return new LinkedHashMap<>(this.headerMap);\n}",
+    "public Map<String, Integer> getHeaderMap() {\n    return new LinkedHashMap<>(this.headerMap);\n}",
+    "public Map<String, Integer> getHeaderMap() {\n    return new LinkedHashMap<>(this.headerMap);\n}",
+    "public Map<String, Integer> getHeaderMap() {\n    return new LinkedHashMap<>(this.headerMap);\n}",
+    "public Map<String, Integer> getHeaderMap() {\n    return new LinkedHashMap<>(this.headerMap);\n}",
+    "public Map<String, Integer> getHeaderMap() {\n    return new LinkedHashMap<>(this.headerMap);\n}",
+    "public Map<String, Integer> getHeaderMap() {\n    return new LinkedHashMap<>(this.headerMap);\n}",
+    "public Map<String, Integer> getHeaderMap() {\n    return new LinkedHashMap<>(this.headerMap);\n}",
+    "public Map<String, Integer> getHeaderMap() {\n    return new LinkedHashMap<>(this.headerMap);\n}",
+    "public Map<String, Integer> getHeaderMap() {\n    return new LinkedHashMap<>(this.headerMap);\n}"
+  ]
+}

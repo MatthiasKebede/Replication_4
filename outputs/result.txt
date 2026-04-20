@@ -1,0 +1,43 @@
+results/ directory not found at ./results
+Looking for results in current directory...
+No results directory found.
+
+========================================================================
+  TABLE 2  —  Correct Fixes on Defects4J
+========================================================================
+Method                 D4J v1.2 raw  D4J v1.2 +GR D4J v2.0 raw  D4J v2.0 +GR
+------------------------------------------------------------------------
+  CodeX (paper)                  43            53           45            53
+  ChatGPT (paper)                42            55           44            54
+  GPT-4 (paper)                  40            51           34            43
+  InCoder (paper)                19            25           18            24
+------------------------------------------------------------------------
+  [YOUR RESULTS]
+  gpt4o-mini                     21 (need ExpressAPR)   (run v2.0) (need ExpressAPR)
+========================================================================
+Your gpt4o-mini raw correct fixes: 21
+Paper's ChatGPT raw correct fixes: 42
+Difference: -21
+
+Your correctly fixed bugs:
+  Chart-1
+  Chart-11
+  Chart-20
+  Chart-24
+  Chart-7
+  Chart-8
+  Cli-8
+  Closure-19
+  Closure-57
+  Csv-5
+  JacksonCore-5
+  JacksonDatabind-1
+  JacksonDatabind-17
+  JacksonDatabind-34
+  JacksonDatabind-57
+  JacksonDatabind-97
+  JacksonDatabind-99
+  Jsoup-57
+  Lang-45
+  Lang-59
+  ... and 1 more

@@ -1,0 +1,2624 @@
+{
+  "patches_dir": "llm_patches/gpt4o-mini",
+  "total_bugs": 483,
+  "n_correct": 21,
+  "correct_bugs": [
+    "Chart-1",
+    "Chart-11",
+    "Chart-20",
+    "Chart-24",
+    "Chart-7",
+    "Chart-8",
+    "Cli-8",
+    "Closure-19",
+    "Closure-57",
+    "Csv-5",
+    "JacksonCore-5",
+    "JacksonDatabind-1",
+    "JacksonDatabind-17",
+    "JacksonDatabind-34",
+    "JacksonDatabind-57",
+    "JacksonDatabind-97",
+    "JacksonDatabind-99",
+    "Jsoup-57",
+    "Lang-45",
+    "Lang-59",
+    "Math-82"
+  ],
+  "per_bug": {
+    "Chart-1": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "Chart-10": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Chart-11": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "Chart-12": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Chart-13": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Chart-17": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Chart-20": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        4,
+        9
+      ]
+    },
+    "Chart-24": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "Chart-26": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Chart-3": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Chart-4": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Chart-5": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Chart-6": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Chart-7": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        7
+      ]
+    },
+    "Chart-8": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "Chart-9": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-11": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-12": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-14": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-15": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-17": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-19": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-20": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-23": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-24": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-25": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-26": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-27": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-28": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-29": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-32": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-35": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-37": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-38": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-4": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-40": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-5": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Cli-8": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "Cli-9": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-1": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-10": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-101": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-102": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-104": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-105": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-107": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-109": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-11": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-111": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-112": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-113": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-114": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-115": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-116": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-117": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-118": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-119": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-12": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-120": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-121": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-122": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-123": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-124": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-125": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-126": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-128": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-129": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-13": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-130": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-131": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-132": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-133": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-14": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-145": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-146": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-15": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-150": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-152": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-159": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-160": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-161": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-164": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-166": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-168": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-17": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-172": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-176": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-18": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-19": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "Closure-2": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-20": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-21": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-22": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-23": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-24": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-25": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-29": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-31": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-32": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-33": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-35": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-36": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-38": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-39": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-4": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-40": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-42": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-44": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-48": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-5": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-50": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-51": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-52": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-53": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-55": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-56": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-57": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "Closure-58": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-59": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-61": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-62": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-65": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-66": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-67": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-69": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-7": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-70": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-71": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-73": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-77": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-78": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-81": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-82": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-83": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-86": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-87": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-88": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-91": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-92": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-94": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-95": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-96": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-97": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Closure-99": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Codec-10": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Codec-15": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Codec-17": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Codec-18": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Codec-2": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Codec-3": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Codec-4": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Codec-5": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Codec-6": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Codec-7": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Codec-9": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Collections-26": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-1": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-10": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-11": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-12": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-13": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-14": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-15": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-16": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-17": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-18": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-19": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-21": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-23": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-24": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-25": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-26": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-27": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-28": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-30": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-31": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-32": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-35": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-36": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-37": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-38": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-40": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-41": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-44": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-45": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-46": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-5": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-7": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Compress-8": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Csv-1": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Csv-10": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Csv-11": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Csv-14": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Csv-15": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Csv-2": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Csv-3": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Csv-4": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Csv-5": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    "Csv-6": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Csv-9": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Gson-11": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Gson-12": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Gson-13": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Gson-15": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Gson-16": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Gson-17": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Gson-18": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Gson-5": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Gson-6": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonCore-11": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonCore-15": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonCore-20": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonCore-21": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonCore-23": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonCore-25": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonCore-26": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonCore-3": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonCore-4": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonCore-5": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "JacksonCore-6": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonCore-7": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonCore-8": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-1": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "JacksonDatabind-100": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-101": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-102": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-107": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-11": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-112": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-12": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-16": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-17": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "JacksonDatabind-19": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-24": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-27": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-28": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-33": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-34": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        4,
+        5
+      ]
+    },
+    "JacksonDatabind-35": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-37": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-39": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-42": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-44": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-45": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-46": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-47": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-49": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-5": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-51": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-54": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-57": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "JacksonDatabind-58": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-6": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-62": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-64": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-67": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-7": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-70": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-71": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-74": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-76": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-8": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-82": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-83": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-85": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-88": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-9": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-91": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-93": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-96": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-97": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "JacksonDatabind-98": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonDatabind-99": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "JacksonXml-1": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonXml-3": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonXml-4": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JacksonXml-5": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-1": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-10": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-13": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-15": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-19": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-2": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-20": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-24": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-26": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-27": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-32": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-33": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-34": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-35": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-37": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-38": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-39": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-40": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-41": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-42": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-43": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-45": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-46": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-47": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-48": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-49": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-5": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-50": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-51": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-53": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-54": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-55": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-57": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        1,
+        4,
+        7
+      ]
+    },
+    "Jsoup-59": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-6": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-61": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-62": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-64": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-68": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-70": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-72": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-75": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-76": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-77": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-80": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-82": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-84": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-85": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-86": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-88": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-89": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-90": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Jsoup-93": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JxPath-10": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JxPath-12": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JxPath-21": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JxPath-22": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JxPath-5": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JxPath-6": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "JxPath-8": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-1": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-10": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-11": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-12": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-14": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-16": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-17": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-18": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-19": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-21": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-22": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-24": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-26": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-27": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-28": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-29": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-3": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-31": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-33": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-37": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-38": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-39": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-40": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-42": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-43": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-44": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-45": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        2
+      ]
+    },
+    "Lang-48": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-49": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-5": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-51": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-52": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-53": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-54": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-55": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-57": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-58": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-59": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "Lang-6": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-61": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-65": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Lang-9": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-10": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-101": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-102": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-103": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-105": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-106": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-11": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-13": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-17": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-19": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-2": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-20": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-21": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-23": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-24": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-25": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-26": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-27": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-28": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-3": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-30": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-31": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-32": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-33": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-34": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-38": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-39": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-40": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-41": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-42": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-43": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-44": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-45": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-48": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-5": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-50": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-51": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-52": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-53": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-55": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-56": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-57": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-58": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-59": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-60": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-63": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-64": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-69": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-7": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-70": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-72": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-73": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-74": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-75": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-78": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-79": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-8": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-80": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-82": {
+      "correct": true,
+      "n_patches": 10,
+      "matched_patches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "Math-84": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-85": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-86": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-87": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-88": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-89": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-9": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-90": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-91": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-94": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-95": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-96": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Math-97": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-1": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-12": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-13": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-18": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-20": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-22": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-24": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-27": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-28": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-29": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-33": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-34": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-38": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-5": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-7": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Mockito-8": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-14": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-15": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-16": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-17": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-18": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-19": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-20": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-22": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-23": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-24": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-25": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-27": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-4": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-5": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-7": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    },
+    "Time-8": {
+      "correct": false,
+      "n_patches": 10,
+      "matched_patches": []
+    }
+  }
+}

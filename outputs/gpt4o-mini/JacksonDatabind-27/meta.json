@@ -1,0 +1,10 @@
+{
+  "bug_id": "JacksonDatabind-27",
+  "bug_id_d4j": "JacksonDatabind_27",
+  "project": "JacksonDatabind",
+  "bug_number": "27",
+  "source_file": "src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java",
+  "checkout_path": "/tmp/d4j_checkouts/JacksonDatabind_27_buggy",
+  "original_source": "/tmp/d4j_checkouts/JacksonDatabind_27_buggy/src/main/java/com/fasterxml/jackson/databind/deser/BeanDeserializer.java",
+  "n_patches": 10
+}

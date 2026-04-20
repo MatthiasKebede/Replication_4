@@ -1,0 +1,10 @@
+{
+  "bug_id": "Lang-45",
+  "bug_id_d4j": "Lang_45",
+  "project": "Lang",
+  "bug_number": "45",
+  "source_file": "src/java/org/apache/commons/lang/WordUtils.java",
+  "checkout_path": "/tmp/d4j_checkouts/Lang_45_buggy",
+  "original_source": "/tmp/d4j_checkouts/Lang_45_buggy/src/java/org/apache/commons/lang/WordUtils.java",
+  "n_patches": 10
+}

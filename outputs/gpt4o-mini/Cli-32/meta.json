@@ -1,0 +1,10 @@
+{
+  "bug_id": "Cli-32",
+  "bug_id_d4j": "Cli_32",
+  "project": "Cli",
+  "bug_number": "32",
+  "source_file": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+  "checkout_path": "/tmp/d4j_checkouts/Cli_32_buggy",
+  "original_source": "/tmp/d4j_checkouts/Cli_32_buggy/src/main/java/org/apache/commons/cli/HelpFormatter.java",
+  "n_patches": 10
+}

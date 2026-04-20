@@ -1,0 +1,10 @@
+{
+  "bug_id": "Time-20",
+  "bug_id_d4j": "Time_20",
+  "project": "Time",
+  "bug_number": "20",
+  "source_file": "src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java",
+  "checkout_path": "/tmp/d4j_checkouts/Time_20_buggy",
+  "original_source": "/tmp/d4j_checkouts/Time_20_buggy/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java",
+  "n_patches": 10
+}

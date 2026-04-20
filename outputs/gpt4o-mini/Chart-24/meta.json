@@ -1,0 +1,10 @@
+{
+  "bug_id": "Chart-24",
+  "bug_id_d4j": "Chart_24",
+  "project": "Chart",
+  "bug_number": "24",
+  "source_file": "source/org/jfree/chart/renderer/GrayPaintScale.java",
+  "checkout_path": "/tmp/d4j_checkouts/Chart_24_buggy",
+  "original_source": "/tmp/d4j_checkouts/Chart_24_buggy/source/org/jfree/chart/renderer/GrayPaintScale.java",
+  "n_patches": 10
+}

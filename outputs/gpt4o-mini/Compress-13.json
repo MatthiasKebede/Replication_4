@@ -1,0 +1,20 @@
+{
+  "bug_id": "Compress-13",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    protected void setName(String name) {\n        this.name = name;\n    }",
+  "fix_code": "    protected void setName(String name) {\n        if (name != null && getPlatform() == PLATFORM_FAT\n            && name.indexOf(\"/\") == -1) {\n            name = name.replace('\\\\', '/');\n        }\n        this.name = name;\n    }",
+  "start_line": 511,
+  "end_line": 513,
+  "patches": [
+    "protected void setName(String name) {\n    if (name == null || name.trim().isEmpty()) {\n        throw new IllegalArgumentException(\"Name cannot be null or empty\");\n    }\n    this.name = name;\n}",
+    "protected void setName(String name) {\n    if (name == null || name.trim().isEmpty()) {\n        throw new IllegalArgumentException(\"Name cannot be null or empty\");\n    }\n    this.name = name;\n}",
+    "protected void setName(String name) {\n    if (name == null || name.isEmpty()) {\n        throw new IllegalArgumentException(\"Name cannot be null or empty\");\n    }\n    this.name = name;\n}",
+    "protected void setName(String name) {\n    if (name == null || name.trim().isEmpty()) {\n        throw new IllegalArgumentException(\"Name cannot be null or empty\");\n    }\n    this.name = name;\n}",
+    "protected void setName(String name) {\n    if (name == null || name.isEmpty()) {\n        throw new IllegalArgumentException(\"Name cannot be null or empty\");\n    }\n    this.name = name;\n}",
+    "protected void setName(String name) {\n    if (name != null) {\n        this.name = name;\n    } else {\n        throw new IllegalArgumentException(\"Name cannot be null\");\n    }\n}",
+    "protected void setName(String name) {\n    if (name == null || name.trim().isEmpty()) {\n        throw new IllegalArgumentException(\"Name cannot be null or empty\");\n    }\n    this.name = name;\n}",
+    "protected void setName(String name) {\n    if (name == null || name.trim().isEmpty()) {\n        throw new IllegalArgumentException(\"Name cannot be null or empty\");\n    }\n    this.name = name;\n}",
+    "protected void setName(String name) {\n    if (name != null && !name.trim().isEmpty()) {\n        this.name = name;\n    } else {\n        throw new IllegalArgumentException(\"Name cannot be null or empty\");\n    }\n}",
+    "protected void setName(String name) {\n    if (name == null || name.trim().isEmpty()) {\n        throw new IllegalArgumentException(\"Name cannot be null or empty\");\n    }\n    this.name = name;\n}"
+  ]
+}

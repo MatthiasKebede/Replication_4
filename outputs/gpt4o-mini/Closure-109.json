@@ -1,0 +1,20 @@
+{
+  "bug_id": "Closure-109",
+  "model": "gpt-4o-mini",
+  "buggy_code": "  private Node parseContextTypeExpression(JsDocToken token) {\n          return parseTypeName(token);\n  }",
+  "fix_code": "  private Node parseContextTypeExpression(JsDocToken token) {\n    if (token == JsDocToken.QMARK) {\n      return newNode(Token.QMARK);\n    } else {\n      return parseBasicTypeExpression(token);\n    }\n  }",
+  "start_line": 1907,
+  "end_line": 1909,
+  "patches": [
+    "private Node parseContextTypeExpression(JsDocToken token) {\n    if (token == null) {\n        throw new IllegalArgumentException(\"Token cannot be null\");\n    }\n    return parseTypeName(token);\n}",
+    "private Node parseContextTypeExpression(JsDocToken token) {\n        if (token == null) {\n            throw new IllegalArgumentException(\"Token cannot be null\");\n        }\n        return parseTypeName(token);\n}",
+    "private Node parseContextTypeExpression(JsDocToken token) {\n    if (token == null) {\n        throw new IllegalArgumentException(\"Token cannot be null\");\n    }\n    return parseTypeName(token);\n}",
+    "private Node parseContextTypeExpression(JsDocToken token) {\n    if (token == null) {\n        throw new IllegalArgumentException(\"Token cannot be null\");\n    }\n    return parseTypeName(token);\n}",
+    "private Node parseContextTypeExpression(JsDocToken token) {\n        if (token == null) {\n            throw new IllegalArgumentException(\"Token cannot be null\");\n        }\n        return parseTypeName(token);\n}",
+    "private Node parseContextTypeExpression(JsDocToken token) {\n    if (token == null) {\n        throw new IllegalArgumentException(\"Token cannot be null\");\n    }\n    return parseTypeName(token);\n}",
+    "private Node parseContextTypeExpression(JsDocToken token) {\n    if (token == null) {\n        throw new IllegalArgumentException(\"Token cannot be null\");\n    }\n    return parseTypeName(token);\n}",
+    "private Node parseContextTypeExpression(JsDocToken token) {\n    if (token == null) {\n        throw new IllegalArgumentException(\"Token cannot be null\");\n    }\n    return parseTypeName(token);\n}",
+    "private Node parseContextTypeExpression(JsDocToken token) {\n        if (token == null) {\n            throw new IllegalArgumentException(\"Token cannot be null\");\n        }\n        return parseTypeName(token);\n}",
+    "private Node parseContextTypeExpression(JsDocToken token) {\n        if (token == null) {\n            throw new IllegalArgumentException(\"Token cannot be null\");\n        }\n        return parseTypeName(token);\n}"
+  ]
+}

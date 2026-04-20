@@ -1,0 +1,20 @@
+{
+  "bug_id": "Gson-12",
+  "model": "gpt-4o-mini",
+  "buggy_code": "  @Override public void skipValue() throws IOException {\n    if (peek() == JsonToken.NAME) {\n      nextName();\n      pathNames[stackSize - 2] = \"null\";\n    } else {\n      popStack();\n        pathNames[stackSize - 1] = \"null\";\n    }\n      pathIndices[stackSize - 1]++;\n  }",
+  "fix_code": "  @Override public void skipValue() throws IOException {\n    if (peek() == JsonToken.NAME) {\n      nextName();\n      pathNames[stackSize - 2] = \"null\";\n    } else {\n      popStack();\n      if (stackSize > 0) {\n        pathNames[stackSize - 1] = \"null\";\n      }\n    }\n    if (stackSize > 0) {\n      pathIndices[stackSize - 1]++;\n    }\n  }",
+  "start_line": 256,
+  "end_line": 265,
+  "patches": [
+    "@Override public void skipValue() throws IOException {\n    if (peek() == JsonToken.NAME) {\n        nextName();\n        pathNames[stackSize - 1] = \"null\";\n    } else {\n        popStack();\n        pathNames[stackSize - 1] = \"null\";\n    }\n    pathIndices[stackSize - 1]++;\n}",
+    "@Override public void skipValue() throws IOException {\n    if (peek() == JsonToken.NAME) {\n        nextName();\n        pathNames[stackSize - 1] = \"null\";\n    } else {\n        popStack();\n        pathNames[stackSize - 1] = \"null\";\n    }\n    pathIndices[stackSize - 1]++;\n}",
+    "@Override public void skipValue() throws IOException {\n    if (peek() == JsonToken.NAME) {\n        nextName();\n        pathNames[stackSize - 1] = \"null\"; // Fix: Use stackSize - 1 instead of stackSize - 2\n    } else {\n        popStack();\n        pathNames[stackSize - 1] = \"null\";\n    }\n    pathIndices[stackSize - 1]++;\n}",
+    "@Override public void skipValue() throws IOException {\n    if (peek() == JsonToken.NAME) {\n        nextName();\n        pathNames[stackSize - 1] = \"null\";\n    } else {\n        popStack();\n        pathNames[stackSize - 1] = \"null\";\n    }\n    pathIndices[stackSize - 1]++;\n}",
+    "@Override public void skipValue() throws IOException {\n    if (peek() == JsonToken.NAME) {\n        nextName();\n        pathNames[stackSize - 1] = \"null\"; // Fix: Change index to stackSize - 1\n    } else {\n        popStack();\n        pathNames[stackSize - 1] = \"null\";\n    }\n    pathIndices[stackSize - 1]++;\n}",
+    "@Override public void skipValue() throws IOException {\n    if (peek() == JsonToken.NAME) {\n        nextName();\n        pathNames[stackSize - 1] = \"null\"; // Fix: Use stackSize - 1 instead of stackSize - 2\n    } else {\n        popStack();\n        pathNames[stackSize - 1] = \"null\";\n    }\n    pathIndices[stackSize - 1]++;\n}",
+    "@Override public void skipValue() throws IOException {\n    if (peek() == JsonToken.NAME) {\n        nextName();\n        pathNames[stackSize - 1] = \"null\";\n    } else {\n        popStack();\n        pathNames[stackSize - 1] = \"null\";\n    }\n    pathIndices[stackSize - 1]++;\n}",
+    "@Override public void skipValue() throws IOException {\n    if (peek() == JsonToken.NAME) {\n        nextName();\n        pathNames[stackSize - 1] = \"null\";\n    } else {\n        popStack();\n        pathNames[stackSize - 1] = \"null\";\n    }\n    pathIndices[stackSize - 1]++;\n}",
+    "@Override public void skipValue() throws IOException {\n    if (peek() == JsonToken.NAME) {\n        nextName();\n        pathNames[stackSize - 1] = \"null\"; // Fix: should update the current path index\n    } else {\n        popStack();\n        pathNames[stackSize - 1] = \"null\";\n    }\n    pathIndices[stackSize - 1]++;\n}",
+    "@Override public void skipValue() throws IOException {\n    if (peek() == JsonToken.NAME) {\n        nextName();\n        pathNames[stackSize - 1] = \"null\"; // Fixed index to stackSize - 1\n    } else {\n        popStack();\n        pathNames[stackSize - 1] = \"null\";\n    }\n    pathIndices[stackSize - 1]++;\n}"
+  ]
+}

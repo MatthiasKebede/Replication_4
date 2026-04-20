@@ -1,0 +1,20 @@
+{
+  "bug_id": "JacksonXml-5",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    protected XmlSerializerProvider(XmlSerializerProvider src) {\n        super(src);\n        // 21-May-2018, tatu: As per [dataformat-xml#282], should NOT really copy\n        //    root name lookup as that may link back to diff version, configuration\n        _rootNameLookup = src._rootNameLookup;\n    }",
+  "fix_code": "    protected XmlSerializerProvider(XmlSerializerProvider src) {\n        super(src);\n        // 21-May-2018, tatu: As per [dataformat-xml#282], should NOT really copy\n        //    root name lookup as that may link back to diff version, configuration\n        _rootNameLookup = new XmlRootNameLookup();\n    }",
+  "start_line": 55,
+  "end_line": 60,
+  "patches": [
+    "protected XmlSerializerProvider(XmlSerializerProvider src) {\n    super(src);\n    // 21-May-2018, tatu: As per [dataformat-xml#282], should NOT really copy\n    //    root name lookup as that may link back to diff version, configuration\n    _rootNameLookup = new HashMap<>(src._rootNameLookup);\n}",
+    "protected XmlSerializerProvider(XmlSerializerProvider src) {\n    super(src);\n    // 21-May-2018, tatu: As per [dataformat-xml#282], should NOT really copy\n    //    root name lookup as that may link back to diff version, configuration\n    _rootNameLookup = new HashMap<>(src._rootNameLookup); // Create a new instance to avoid linking back\n}",
+    "protected XmlSerializerProvider(XmlSerializerProvider src) {\n    super(src);\n    // 21-May-2018, tatu: As per [dataformat-xml#282], should NOT really copy\n    //    root name lookup as that may link back to diff version, configuration\n    _rootNameLookup = new HashMap<>(src._rootNameLookup);\n}",
+    "protected XmlSerializerProvider(XmlSerializerProvider src) {\n    super(src);\n    // 21-May-2018, tatu: As per [dataformat-xml#282], should NOT really copy\n    //    root name lookup as that may link back to diff version, configuration\n    _rootNameLookup = new HashMap<>(src._rootNameLookup);\n}",
+    "protected XmlSerializerProvider(XmlSerializerProvider src) {\n    super(src);\n    // 21-May-2018, tatu: As per [dataformat-xml#282], should NOT really copy\n    //    root name lookup as that may link back to diff version, configuration\n    _rootNameLookup = new HashMap<>(src._rootNameLookup);\n}",
+    "protected XmlSerializerProvider(XmlSerializerProvider src) {\n    super(src);\n    // 21-May-2018, tatu: As per [dataformat-xml#282], should NOT really copy\n    //    root name lookup as that may link back to diff version, configuration\n    _rootNameLookup = new HashMap<>(src._rootNameLookup);\n}",
+    "protected XmlSerializerProvider(XmlSerializerProvider src) {\n    super(src);\n    // 21-May-2018, tatu: As per [dataformat-xml#282], should NOT really copy\n    //    root name lookup as that may link back to diff version, configuration\n    _rootNameLookup = new HashMap<>(src._rootNameLookup);\n}",
+    "protected XmlSerializerProvider(XmlSerializerProvider src) {\n    super(src);\n    // 21-May-2018, tatu: As per [dataformat-xml#282], should NOT really copy\n    //    root name lookup as that may link back to diff version, configuration\n    _rootNameLookup = new HashMap<>(src._rootNameLookup);\n}",
+    "protected XmlSerializerProvider(XmlSerializerProvider src) {\n    super(src);\n    // 21-May-2018, tatu: As per [dataformat-xml#282], should NOT really copy\n    //    root name lookup as that may link back to diff version, configuration\n    _rootNameLookup = new HashMap<>(src._rootNameLookup);\n}",
+    "protected XmlSerializerProvider(XmlSerializerProvider src) {\n    super(src);\n    // 21-May-2018, tatu: As per [dataformat-xml#282], should NOT really copy\n    //    root name lookup as that may link back to diff version, configuration\n    _rootNameLookup = new HashMap<>(src._rootNameLookup);\n}"
+  ]
+}

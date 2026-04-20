@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-124",
+  "bug_id_d4j": "Closure_124",
+  "project": "Closure",
+  "bug_number": "124",
+  "source_file": "src/com/google/javascript/jscomp/ExploitAssigns.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_124_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_124_buggy/src/com/google/javascript/jscomp/ExploitAssigns.java",
+  "n_patches": 10
+}

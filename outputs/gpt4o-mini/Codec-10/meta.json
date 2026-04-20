@@ -1,0 +1,10 @@
+{
+  "bug_id": "Codec-10",
+  "bug_id_d4j": "Codec_10",
+  "project": "Codec",
+  "bug_number": "10",
+  "source_file": "src/java/org/apache/commons/codec/language/Caverphone.java",
+  "checkout_path": "/tmp/d4j_checkouts/Codec_10_buggy",
+  "original_source": "/tmp/d4j_checkouts/Codec_10_buggy/src/java/org/apache/commons/codec/language/Caverphone.java",
+  "n_patches": 10
+}

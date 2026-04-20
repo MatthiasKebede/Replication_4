@@ -1,0 +1,20 @@
+{
+  "bug_id": "Jsoup-51",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    boolean matchesLetter() {\n        if (isEmpty())\n            return false;\n        char c = input[pos];\n        return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');\n    }",
+  "fix_code": "    boolean matchesLetter() {\n        if (isEmpty())\n            return false;\n        char c = input[pos];\n        return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || Character.isLetter(c);\n    }",
+  "start_line": 296,
+  "end_line": 301,
+  "patches": [
+    "boolean matchesLetter() {\n    if (isEmpty() || pos < 0 || pos >= input.length)\n        return false;\n    char c = input[pos];\n    return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');\n}",
+    "boolean matchesLetter() {\n    if (isEmpty() || pos < 0 || pos >= input.length)\n        return false;\n    char c = input[pos];\n    return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');\n}",
+    "boolean matchesLetter() {\n    if (isEmpty() || pos < 0 || pos >= input.length)\n        return false;\n    char c = input[pos];\n    return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');\n}",
+    "boolean matchesLetter() {\n    if (isEmpty() || pos < 0 || pos >= input.length)\n        return false;\n    char c = input[pos];\n    return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');\n}",
+    "boolean matchesLetter() {\n    if (isEmpty() || pos < 0 || pos >= input.length)\n        return false;\n    char c = input[pos];\n    return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');\n}",
+    "boolean matchesLetter() {\n    if (isEmpty() || pos < 0 || pos >= input.length)\n        return false;\n    char c = input[pos];\n    return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');\n}",
+    "boolean matchesLetter() {\n    if (isEmpty() || pos < 0 || pos >= input.length)\n        return false;\n    char c = input[pos];\n    return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');\n}",
+    "boolean matchesLetter() {\n    if (isEmpty() || pos < 0 || pos >= input.length)\n        return false;\n    char c = input[pos];\n    return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');\n}",
+    "boolean matchesLetter() {\n    if (isEmpty() || pos < 0 || pos >= input.length)\n        return false;\n    char c = input[pos];\n    return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');\n}",
+    "boolean matchesLetter() {\n    if (isEmpty() || pos < 0 || pos >= input.length)\n        return false;\n    char c = input[pos];\n    return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');\n}"
+  ]
+}

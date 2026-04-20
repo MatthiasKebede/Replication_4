@@ -1,0 +1,10 @@
+{
+  "bug_id": "Jsoup-2",
+  "bug_id_d4j": "Jsoup_2",
+  "project": "Jsoup",
+  "bug_number": "2",
+  "source_file": "src/main/java/org/jsoup/parser/Parser.java",
+  "checkout_path": "/tmp/d4j_checkouts/Jsoup_2_buggy",
+  "original_source": "/tmp/d4j_checkouts/Jsoup_2_buggy/src/main/java/org/jsoup/parser/Parser.java",
+  "n_patches": 10
+}

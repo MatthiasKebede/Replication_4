@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-36",
+  "bug_id_d4j": "Closure_36",
+  "project": "Closure",
+  "bug_number": "36",
+  "source_file": "src/com/google/javascript/jscomp/InlineVariables.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_36_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_36_buggy/src/com/google/javascript/jscomp/InlineVariables.java",
+  "n_patches": 10
+}

@@ -1,0 +1,20 @@
+{
+  "bug_id": "Closure-82",
+  "model": "gpt-4o-mini",
+  "buggy_code": "  public final boolean isEmptyType() {\n    return isNoType() || isNoObjectType() || isNoResolvedType();\n  }",
+  "fix_code": "  public final boolean isEmptyType() {\n    return isNoType() || isNoObjectType() || isNoResolvedType() ||\n        (registry.getNativeFunctionType(\n             JSTypeNative.LEAST_FUNCTION_TYPE) == this);\n  }",
+  "start_line": 162,
+  "end_line": 164,
+  "patches": [
+    "public final boolean isEmptyType() {\n    return isNoType() && isNoObjectType() && isNoResolvedType();\n}",
+    "public final boolean isEmptyType() {\n    return isNoType() && isNoObjectType() && isNoResolvedType();\n}",
+    "public final boolean isEmptyType() {\n    return isNoType() && isNoObjectType() && isNoResolvedType();\n}",
+    "public final boolean isEmptyType() {\n    return isNoType() || isNoObjectType() || isNoResolvedType() || isNoArrayType();\n}",
+    "public final boolean isEmptyType() {\n    return isNoType() && isNoObjectType() && isNoResolvedType();\n}",
+    "public final boolean isEmptyType() {\n    return isNoType() && isNoObjectType() && isNoResolvedType();\n}",
+    "public final boolean isEmptyType() {\n    return isNoType() && isNoObjectType() && isNoResolvedType();\n}",
+    "public final boolean isEmptyType() {\n    return isNoType() || isNoObjectType() || isNoResolvedType() || isNoArrayType();\n}",
+    "public final boolean isEmptyType() {\n    return isNoType() && isNoObjectType() && isNoResolvedType();\n}",
+    "public final boolean isEmptyType() {\n    return isNoType() && isNoObjectType() && isNoResolvedType();\n}"
+  ]
+}

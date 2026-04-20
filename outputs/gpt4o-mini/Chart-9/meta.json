@@ -1,0 +1,10 @@
+{
+  "bug_id": "Chart-9",
+  "bug_id_d4j": "Chart_9",
+  "project": "Chart",
+  "bug_number": "9",
+  "source_file": "source/org/jfree/data/time/TimeSeries.java",
+  "checkout_path": "/tmp/d4j_checkouts/Chart_9_buggy",
+  "original_source": "/tmp/d4j_checkouts/Chart_9_buggy/source/org/jfree/data/time/TimeSeries.java",
+  "n_patches": 10
+}

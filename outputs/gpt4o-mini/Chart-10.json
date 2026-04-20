@@ -1,0 +1,20 @@
+{
+  "bug_id": "Chart-10",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public String generateToolTipFragment(String toolTipText) {\n        return \" title=\\\"\" + toolTipText\n            + \"\\\" alt=\\\"\\\"\";\n    }",
+  "fix_code": "    public String generateToolTipFragment(String toolTipText) {\n        return \" title=\\\"\" + ImageMapUtilities.htmlEscape(toolTipText) \n            + \"\\\" alt=\\\"\\\"\";\n    }",
+  "start_line": 64,
+  "end_line": 67,
+  "patches": [
+    "public String generateToolTipFragment(String toolTipText) {\n    return \" title=\\\"\" + toolTipText + \"\\\" alt=\\\"\" + toolTipText + \"\\\"\";\n}",
+    "public String generateToolTipFragment(String toolTipText) {\n    return \" title=\\\"\" + toolTipText + \"\\\" alt=\\\"\" + toolTipText + \"\\\"\";\n}",
+    "public String generateToolTipFragment(String toolTipText) {\n    return \" title=\\\"\" + toolTipText + \"\\\" alt=\\\"\" + toolTipText + \"\\\"\";\n}",
+    "public String generateToolTipFragment(String toolTipText) {\n    return \" title=\\\"\" + toolTipText + \"\\\" alt=\\\"\" + toolTipText + \"\\\"\";\n}",
+    "public String generateToolTipFragment(String toolTipText) {\n    return \" title=\\\"\" + toolTipText + \"\\\" alt=\\\"\" + toolTipText + \"\\\"\";\n}",
+    "public String generateToolTipFragment(String toolTipText) {\n    return \" title=\\\"\" + toolTipText + \"\\\" alt=\\\"\" + toolTipText + \"\\\"\";\n}",
+    "public String generateToolTipFragment(String toolTipText) {\n    return \" title=\\\"\" + toolTipText + \"\\\" alt=\\\"\" + toolTipText + \"\\\"\";\n}",
+    "public String generateToolTipFragment(String toolTipText) {\n    return \" title=\\\"\" + toolTipText + \"\\\" alt=\\\"\" + toolTipText + \"\\\"\";\n}",
+    "public String generateToolTipFragment(String toolTipText) {\n    return \" title=\\\"\" + toolTipText + \"\\\" alt=\\\"\" + toolTipText + \"\\\"\";\n}",
+    "public String generateToolTipFragment(String toolTipText) {\n    return \" title=\\\"\" + toolTipText + \"\\\" alt=\\\"\" + toolTipText + \"\\\"\";\n}"
+  ]
+}

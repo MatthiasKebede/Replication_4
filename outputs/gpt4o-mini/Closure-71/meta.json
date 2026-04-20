@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-71",
+  "bug_id_d4j": "Closure_71",
+  "project": "Closure",
+  "bug_number": "71",
+  "source_file": "src/com/google/javascript/jscomp/CheckAccessControls.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_71_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_71_buggy/src/com/google/javascript/jscomp/CheckAccessControls.java",
+  "n_patches": 10
+}

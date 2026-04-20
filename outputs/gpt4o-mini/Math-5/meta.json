@@ -1,0 +1,10 @@
+{
+  "bug_id": "Math-5",
+  "bug_id_d4j": "Math_5",
+  "project": "Math",
+  "bug_number": "5",
+  "source_file": "src/main/java/org/apache/commons/math3/complex/Complex.java",
+  "checkout_path": "/tmp/d4j_checkouts/Math_5_buggy",
+  "original_source": "/tmp/d4j_checkouts/Math_5_buggy/src/main/java/org/apache/commons/math3/complex/Complex.java",
+  "n_patches": 10
+}

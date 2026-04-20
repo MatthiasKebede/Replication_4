@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-55",
+  "bug_id_d4j": "Closure_55",
+  "project": "Closure",
+  "bug_number": "55",
+  "source_file": "src/com/google/javascript/jscomp/FunctionRewriter.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_55_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_55_buggy/src/com/google/javascript/jscomp/FunctionRewriter.java",
+  "n_patches": 10
+}

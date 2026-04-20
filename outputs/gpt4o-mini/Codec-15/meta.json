@@ -1,0 +1,10 @@
+{
+  "bug_id": "Codec-15",
+  "bug_id_d4j": "Codec_15",
+  "project": "Codec",
+  "bug_number": "15",
+  "source_file": "src/main/java/org/apache/commons/codec/language/Soundex.java",
+  "checkout_path": "/tmp/d4j_checkouts/Codec_15_buggy",
+  "original_source": "/tmp/d4j_checkouts/Codec_15_buggy/src/main/java/org/apache/commons/codec/language/Soundex.java",
+  "n_patches": 10
+}

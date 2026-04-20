@@ -1,0 +1,20 @@
+{
+  "bug_id": "JacksonDatabind-99",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    protected String buildCanonicalName()\n    {\n        StringBuilder sb = new StringBuilder();\n        sb.append(_class.getName());\n        sb.append('<');\n        sb.append(_referencedType.toCanonical());\n        return sb.toString();\n    }",
+  "fix_code": "    protected String buildCanonicalName()\n    {\n        StringBuilder sb = new StringBuilder();\n        sb.append(_class.getName());\n        sb.append('<');\n        sb.append(_referencedType.toCanonical());\n        sb.append('>');\n        return sb.toString();\n    }",
+  "start_line": 163,
+  "end_line": 170,
+  "patches": [
+    "protected String buildCanonicalName()\n{\n    StringBuilder sb = new StringBuilder();\n    sb.append(_class.getName());\n    sb.append('<');\n    sb.append(_referencedType.toCanonical());\n    sb.append('>');\n    return sb.toString();\n}",
+    "protected String buildCanonicalName()\n{\n    StringBuilder sb = new StringBuilder();\n    sb.append(_class.getName());\n    sb.append('<');\n    sb.append(_referencedType.toCanonical());\n    sb.append('>');\n    return sb.toString();\n}",
+    "protected String buildCanonicalName()\n{\n    StringBuilder sb = new StringBuilder();\n    sb.append(_class.getName());\n    sb.append('<');\n    sb.append(_referencedType.toCanonical());\n    sb.append('>');\n    return sb.toString();\n}",
+    "protected String buildCanonicalName()\n{\n    StringBuilder sb = new StringBuilder();\n    sb.append(_class.getName());\n    sb.append('<');\n    sb.append(_referencedType.toCanonical());\n    sb.append('>'); // Added closing angle bracket\n    return sb.toString();\n}",
+    "protected String buildCanonicalName()\n{\n    StringBuilder sb = new StringBuilder();\n    sb.append(_class.getName());\n    sb.append('<');\n    sb.append(_referencedType.toCanonical());\n    sb.append('>');\n    return sb.toString();\n}",
+    "protected String buildCanonicalName()\n{\n    StringBuilder sb = new StringBuilder();\n    sb.append(_class.getName());\n    sb.append('<');\n    sb.append(_referencedType.toCanonical());\n    sb.append('>');\n    return sb.toString();\n}",
+    "protected String buildCanonicalName()\n{\n    StringBuilder sb = new StringBuilder();\n    sb.append(_class.getName());\n    sb.append('<');\n    sb.append(_referencedType.toCanonical());\n    sb.append('>');\n    return sb.toString();\n}",
+    "protected String buildCanonicalName()\n{\n    StringBuilder sb = new StringBuilder();\n    sb.append(_class.getName());\n    sb.append('<');\n    sb.append(_referencedType.toCanonical());\n    sb.append('>'); // Added closing angle bracket\n    return sb.toString();\n}",
+    "protected String buildCanonicalName()\n{\n    StringBuilder sb = new StringBuilder();\n    sb.append(_class.getName());\n    sb.append('<');\n    sb.append(_referencedType.toCanonical());\n    sb.append('>');\n    return sb.toString();\n}",
+    "protected String buildCanonicalName()\n{\n    StringBuilder sb = new StringBuilder();\n    sb.append(_class.getName());\n    sb.append('<');\n    sb.append(_referencedType.toCanonical());\n    sb.append('>');\n    return sb.toString();\n}"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "bug_id": "Compress-31",
+  "bug_id_d4j": "Compress_31",
+  "project": "Compress",
+  "bug_number": "31",
+  "source_file": "src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java",
+  "checkout_path": "/tmp/d4j_checkouts/Compress_31_buggy",
+  "original_source": "/tmp/d4j_checkouts/Compress_31_buggy/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java",
+  "n_patches": 10
+}

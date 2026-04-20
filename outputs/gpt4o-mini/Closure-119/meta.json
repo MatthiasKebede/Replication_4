@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-119",
+  "bug_id_d4j": "Closure_119",
+  "project": "Closure",
+  "bug_number": "119",
+  "source_file": "src/com/google/javascript/jscomp/GlobalNamespace.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_119_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_119_buggy/src/com/google/javascript/jscomp/GlobalNamespace.java",
+  "n_patches": 10
+}

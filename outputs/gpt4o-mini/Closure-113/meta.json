@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-113",
+  "bug_id_d4j": "Closure_113",
+  "project": "Closure",
+  "bug_number": "113",
+  "source_file": "src/com/google/javascript/jscomp/ProcessClosurePrimitives.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_113_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_113_buggy/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java",
+  "n_patches": 10
+}

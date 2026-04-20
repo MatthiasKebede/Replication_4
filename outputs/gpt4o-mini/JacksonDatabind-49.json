@@ -1,0 +1,20 @@
+{
+  "bug_id": "JacksonDatabind-49",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public Object generateId(Object forPojo) {\n        // 04-Jun-2016, tatu: As per [databind#1255], need to consider possibility of\n        //    id being generated for \"alwaysAsId\", but not being written as POJO; regardless,\n        //    need to use existing id if there is one:\n            id = generator.generateId(forPojo);\n        return id;\n    }",
+  "fix_code": "    public Object generateId(Object forPojo) {\n        // 04-Jun-2016, tatu: As per [databind#1255], need to consider possibility of\n        //    id being generated for \"alwaysAsId\", but not being written as POJO; regardless,\n        //    need to use existing id if there is one:\n        if (id == null) {\n            id = generator.generateId(forPojo);\n        }\n        return id;\n    }",
+  "start_line": 46,
+  "end_line": 52,
+  "patches": [
+    "public Object generateId(Object forPojo) {\n    if (forPojo == null) {\n        return null;\n    }\n    Object id = generator.generateId(forPojo);\n    return id;\n}",
+    "public Object generateId(Object forPojo) {\n    if (forPojo == null) {\n        return null;\n    }\n    Object id = generator.generateId(forPojo);\n    return id != null ? id : forPojo; // Return existing id if generated id is null\n}",
+    "public Object generateId(Object forPojo) {\n    if (forPojo == null) {\n        throw new IllegalArgumentException(\"forPojo must not be null\");\n    }\n    Object id = generator.generateId(forPojo);\n    return id;\n}",
+    "public Object generateId(Object forPojo) {\n    // 04-Jun-2016, tatu: As per [databind#1255], need to consider possibility of\n    //    id being generated for \"alwaysAsId\", but not being written as POJO; regardless,\n    //    need to use existing id if there is one:\n    Object id = generator.generateId(forPojo);\n    return id != null ? id : forPojo; // Return existing POJO if id is null\n}",
+    "public Object generateId(Object forPojo) {\n    if (forPojo == null) {\n        return null;\n    }\n    Object id = generator.generateId(forPojo);\n    return id;\n}",
+    "public Object generateId(Object forPojo) {\n    if (forPojo == null) {\n        return null;\n    }\n    Object id = generator.generateId(forPojo);\n    return id;\n}",
+    "public Object generateId(Object forPojo) {\n    if (forPojo == null) {\n        throw new IllegalArgumentException(\"forPojo must not be null\");\n    }\n    Object id = generator.generateId(forPojo);\n    return id;\n}",
+    "public Object generateId(Object forPojo) {\n    Object id = generator.generateId(forPojo);\n    return id != null ? id : generator.generateId(forPojo);\n}",
+    "public Object generateId(Object forPojo) {\n    // 04-Jun-2016, tatu: As per [databind#1255], need to consider possibility of\n    //    id being generated for \"alwaysAsId\", but not being written as POJO; regardless,\n    //    need to use existing id if there is one:\n    Object id = generator.generateId(forPojo);\n    return id != null ? id : forPojo; // Return existing ID or the POJO if ID is null\n}",
+    "public Object generateId(Object forPojo) {\n    if (forPojo == null) {\n        return null;\n    }\n    Object id = generator.generateId(forPojo);\n    return id != null ? id : forPojo; // Return existing id if generated id is null\n}"
+  ]
+}

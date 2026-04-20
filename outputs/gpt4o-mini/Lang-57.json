@@ -1,0 +1,20 @@
+{
+  "bug_id": "Lang-57",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public static boolean isAvailableLocale(Locale locale) {\n        return cAvailableLocaleSet.contains(locale);\n    }",
+  "fix_code": "    public static boolean isAvailableLocale(Locale locale) {\n        return availableLocaleList().contains(locale);\n    }",
+  "start_line": 222,
+  "end_line": 224,
+  "patches": [
+    "public static boolean isAvailableLocale(Locale locale) {\n    return locale != null && cAvailableLocaleSet.contains(locale);\n}",
+    "public static boolean isAvailableLocale(Locale locale) {\n    return cAvailableLocaleSet != null && cAvailableLocaleSet.contains(locale);\n}",
+    "public static boolean isAvailableLocale(Locale locale) {\n    return locale != null && cAvailableLocaleSet.contains(locale);\n}",
+    "public static boolean isAvailableLocale(Locale locale) {\n    return locale != null && cAvailableLocaleSet.contains(locale);\n}",
+    "public static boolean isAvailableLocale(Locale locale) {\n    return locale != null && cAvailableLocaleSet.contains(locale);\n}",
+    "public static boolean isAvailableLocale(Locale locale) {\n    return locale != null && cAvailableLocaleSet.contains(locale);\n}",
+    "public static boolean isAvailableLocale(Locale locale) {\n    return locale != null && cAvailableLocaleSet.contains(locale);\n}",
+    "public static boolean isAvailableLocale(Locale locale) {\n    return locale != null && cAvailableLocaleSet.contains(locale);\n}",
+    "public static boolean isAvailableLocale(Locale locale) {\n    return locale != null && cAvailableLocaleSet.contains(locale);\n}",
+    "public static boolean isAvailableLocale(Locale locale) {\n    return locale != null && cAvailableLocaleSet.contains(locale);\n}"
+  ]
+}

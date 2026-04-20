@@ -1,0 +1,20 @@
+{
+  "bug_id": "Math-103",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public double cumulativeProbability(double x) throws MathException {\n            return 0.5 * (1.0 + Erf.erf((x - mean) /\n                    (standardDeviation * Math.sqrt(2.0))));\n    }",
+  "fix_code": "    public double cumulativeProbability(double x) throws MathException {\n        try {\n            return 0.5 * (1.0 + Erf.erf((x - mean) /\n                    (standardDeviation * Math.sqrt(2.0))));\n        } catch (MaxIterationsExceededException ex) {\n            if (x < (mean - 20 * standardDeviation)) { // JDK 1.5 blows at 38\n                return 0.0d;\n            } else if (x > (mean + 20 * standardDeviation)) {\n                return 1.0d;\n            } else {\n                throw ex;\n            }\n        }\n    }",
+  "start_line": 108,
+  "end_line": 111,
+  "patches": [
+    "public double cumulativeProbability(double x) throws MathException {\n        if (standardDeviation <= 0) {\n            throw new MathException(\"Standard deviation must be positive\");\n        }\n        return 0.5 * (1.0 + Erf.erf((x - mean) / (standardDeviation * Math.sqrt(2.0))));\n    }",
+    "public double cumulativeProbability(double x) throws MathException {\n        if (standardDeviation <= 0) {\n            throw new MathException(\"Standard deviation must be positive.\");\n        }\n        return 0.5 * (1.0 + Erf.erf((x - mean) / (standardDeviation * Math.sqrt(2.0))));\n    }",
+    "public double cumulativeProbability(double x) throws MathException {\n        if (standardDeviation <= 0) {\n            throw new MathException(\"Standard deviation must be positive.\");\n        }\n        return 0.5 * (1.0 + Erf.erf((x - mean) / (standardDeviation * Math.sqrt(2.0))));\n    }",
+    "public double cumulativeProbability(double x) throws MathException {\n        if (standardDeviation <= 0) {\n            throw new MathException(\"Standard deviation must be positive.\");\n        }\n        return 0.5 * (1.0 + Erf.erf((x - mean) / (standardDeviation * Math.sqrt(2.0))));\n    }",
+    "public double cumulativeProbability(double x) throws MathException {\n        if (standardDeviation <= 0) {\n            throw new MathException(\"Standard deviation must be positive.\");\n        }\n        return 0.5 * (1.0 + Erf.erf((x - mean) / (standardDeviation * Math.sqrt(2.0))));\n    }",
+    "public double cumulativeProbability(double x) throws MathException {\n        if (standardDeviation <= 0) {\n            throw new MathException(\"Standard deviation must be positive.\");\n        }\n        return 0.5 * (1.0 + Erf.erf((x - mean) / (standardDeviation * Math.sqrt(2.0))));\n    }",
+    "public double cumulativeProbability(double x) throws MathException {\n        if (standardDeviation <= 0) {\n            throw new MathException(\"Standard deviation must be positive.\");\n        }\n        return 0.5 * (1.0 + Erf.erf((x - mean) / (standardDeviation * Math.sqrt(2.0))));\n    }",
+    "public double cumulativeProbability(double x) throws MathException {\n        if (standardDeviation <= 0) {\n            throw new MathException(\"Standard deviation must be positive.\");\n        }\n        return 0.5 * (1.0 + Erf.erf((x - mean) / (standardDeviation * Math.sqrt(2.0))));\n    }",
+    "public double cumulativeProbability(double x) throws MathException {\n        if (standardDeviation <= 0) {\n            throw new MathException(\"Standard deviation must be positive.\");\n        }\n        return 0.5 * (1.0 + Erf.erf((x - mean) / (standardDeviation * Math.sqrt(2.0))));\n    }",
+    "public double cumulativeProbability(double x) throws MathException {\n        if (standardDeviation <= 0) {\n            throw new MathException(\"Standard deviation must be positive.\");\n        }\n        return 0.5 * (1.0 + Erf.erf((x - mean) / (standardDeviation * Math.sqrt(2.0))));\n    }"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "bug_id": "JacksonCore-7",
+  "bug_id_d4j": "JacksonCore_7",
+  "project": "JacksonCore",
+  "bug_number": "7",
+  "source_file": "src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java",
+  "checkout_path": "/tmp/d4j_checkouts/JacksonCore_7_buggy",
+  "original_source": "/tmp/d4j_checkouts/JacksonCore_7_buggy/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java",
+  "n_patches": 10
+}

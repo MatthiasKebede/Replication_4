@@ -1,0 +1,20 @@
+{
+  "bug_id": "Cli-5",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    static String stripLeadingHyphens(String str)\n    {\n        if (str.startsWith(\"--\"))\n        {\n            return str.substring(2, str.length());\n        }\n        else if (str.startsWith(\"-\"))\n        {\n            return str.substring(1, str.length());\n        }\n\n        return str;\n    }",
+  "fix_code": "    static String stripLeadingHyphens(String str)\n    {\n        if (str == null) {\n            return null;\n        }\n        if (str.startsWith(\"--\"))\n        {\n            return str.substring(2, str.length());\n        }\n        else if (str.startsWith(\"-\"))\n        {\n            return str.substring(1, str.length());\n        }\n\n        return str;\n    }",
+  "start_line": 34,
+  "end_line": 46,
+  "patches": [
+    "static String stripLeadingHyphens(String str)\n{\n    while (str.startsWith(\"-\")) {\n        str = str.substring(1);\n    }\n    return str;\n}",
+    "static String stripLeadingHyphens(String str)\n{\n    while (str.startsWith(\"-\")) {\n        str = str.substring(1);\n    }\n    return str;\n}",
+    "static String stripLeadingHyphens(String str)\n{\n    while (str.startsWith(\"-\")) {\n        str = str.substring(1);\n    }\n    return str;\n}",
+    "static String stripLeadingHyphens(String str) {\n    while (str.startsWith(\"-\")) {\n        str = str.substring(1);\n    }\n    return str;\n}",
+    "static String stripLeadingHyphens(String str)\n{\n    while (str.startsWith(\"-\")) {\n        str = str.substring(1);\n    }\n    return str;\n}",
+    "static String stripLeadingHyphens(String str)\n{\n    while (str.startsWith(\"-\")) {\n        str = str.substring(1);\n    }\n    return str;\n}",
+    "static String stripLeadingHyphens(String str)\n{\n    while (str.startsWith(\"-\")) {\n        str = str.substring(1);\n    }\n    return str;\n}",
+    "static String stripLeadingHyphens(String str)\n{\n    while (str.startsWith(\"-\")) {\n        str = str.substring(1);\n    }\n    return str;\n}",
+    "static String stripLeadingHyphens(String str)\n{\n    while (str.startsWith(\"-\")) {\n        str = str.substring(1);\n    }\n    return str;\n}",
+    "static String stripLeadingHyphens(String str)\n{\n    while (str.startsWith(\"-\")) {\n        str = str.substring(1);\n    }\n    return str;\n}"
+  ]
+}

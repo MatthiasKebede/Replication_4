@@ -1,0 +1,20 @@
+{
+  "bug_id": "Jsoup-40",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public DocumentType(String name, String publicId, String systemId, String baseUri) {\n        super(baseUri);\n\n        Validate.notEmpty(name);\n        attr(\"name\", name);\n        attr(\"publicId\", publicId);\n        attr(\"systemId\", systemId);\n    }",
+  "fix_code": "    public DocumentType(String name, String publicId, String systemId, String baseUri) {\n        super(baseUri);\n\n        attr(\"name\", name);\n        attr(\"publicId\", publicId);\n        attr(\"systemId\", systemId);\n    }",
+  "start_line": 19,
+  "end_line": 26,
+  "patches": [
+    "public DocumentType(String name, String publicId, String systemId, String baseUri) {\n    super(baseUri);\n\n    Validate.notEmpty(name);\n    this.name = name; // Assuming 'name' is a field in the class\n    attr(\"publicId\", publicId);\n    attr(\"systemId\", systemId);\n}",
+    "public DocumentType(String name, String publicId, String systemId, String baseUri) {\n    super(baseUri);\n\n    Validate.notEmpty(name);\n    this.name = name; // Assuming there's a field 'name' in the class\n    attr(\"publicId\", publicId);\n    attr(\"systemId\", systemId);\n}",
+    "public DocumentType(String name, String publicId, String systemId, String baseUri) {\n    super(baseUri);\n\n    Validate.notEmpty(name);\n    this.name = name; // Assuming 'name' is a field in the class\n    attr(\"publicId\", publicId);\n    attr(\"systemId\", systemId);\n}",
+    "public DocumentType(String name, String publicId, String systemId, String baseUri) {\n    super(baseUri);\n\n    Validate.notEmpty(name);\n    this.attr(\"name\", name);\n    this.attr(\"publicId\", publicId);\n    this.attr(\"systemId\", systemId);\n}",
+    "public DocumentType(String name, String publicId, String systemId, String baseUri) {\n    super(baseUri);\n\n    Validate.notEmpty(name);\n    this.name = name; // Assuming 'name' is an instance variable\n    this.publicId = publicId; // Assuming 'publicId' is an instance variable\n    this.systemId = systemId; // Assuming 'systemId' is an instance variable\n}",
+    "public DocumentType(String name, String publicId, String systemId, String baseUri) {\n    super(baseUri);\n\n    Validate.notEmpty(name);\n    this.name = name;\n    this.publicId = publicId;\n    this.systemId = systemId;\n}",
+    "public DocumentType(String name, String publicId, String systemId, String baseUri) {\n    super(baseUri);\n\n    Validate.notEmpty(name);\n    this.name = name; // Assuming name is a field in the class\n    this.publicId = publicId; // Assuming publicId is a field in the class\n    this.systemId = systemId; // Assuming systemId is a field in the class\n}",
+    "public DocumentType(String name, String publicId, String systemId, String baseUri) {\n    super(baseUri);\n\n    Validate.notEmpty(name);\n    this.attr(\"name\", name);\n    this.attr(\"publicId\", publicId);\n    this.attr(\"systemId\", systemId);\n}",
+    "public DocumentType(String name, String publicId, String systemId, String baseUri) {\n    super(baseUri);\n\n    Validate.notEmpty(name);\n    this.name = name; // Assuming 'name' is a field in the class\n    this.publicId = publicId; // Assuming 'publicId' is a field in the class\n    this.systemId = systemId; // Assuming 'systemId' is a field in the class\n}",
+    "public DocumentType(String name, String publicId, String systemId, String baseUri) {\n    super(baseUri);\n\n    Validate.notEmpty(name);\n    this.name = name; // Assuming 'name' is a field in the class\n    attr(\"publicId\", publicId);\n    attr(\"systemId\", systemId);\n}"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "bug_id": "JacksonCore-23",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public DefaultPrettyPrinter createInstance() {\n        return new DefaultPrettyPrinter(this);\n    }",
+  "fix_code": "    public DefaultPrettyPrinter createInstance() {\n        if (getClass() != DefaultPrettyPrinter.class) { // since 2.10\n            throw new IllegalStateException(\"Failed `createInstance()`: \"+getClass().getName()\n                    +\" does not override method; it has to\");\n        }\n        return new DefaultPrettyPrinter(this);\n    }",
+  "start_line": 254,
+  "end_line": 256,
+  "patches": [
+    "public DefaultPrettyPrinter createInstance() {\n    return new DefaultPrettyPrinter();\n}",
+    "public DefaultPrettyPrinter createInstance() {\n    return new DefaultPrettyPrinter();\n}",
+    "public DefaultPrettyPrinter createInstance() {\n    return new DefaultPrettyPrinter();\n}",
+    "public DefaultPrettyPrinter createInstance() {\n    return new DefaultPrettyPrinter();\n}",
+    "public DefaultPrettyPrinter createInstance() {\n    return new DefaultPrettyPrinter();\n}",
+    "public DefaultPrettyPrinter createInstance() {\n    return new DefaultPrettyPrinter();\n}",
+    "public DefaultPrettyPrinter createInstance() {\n    return new DefaultPrettyPrinter();\n}",
+    "public DefaultPrettyPrinter createInstance() {\n    return new DefaultPrettyPrinter();\n}",
+    "public DefaultPrettyPrinter createInstance() {\n    return new DefaultPrettyPrinter();\n}",
+    "public DefaultPrettyPrinter createInstance() {\n    return new DefaultPrettyPrinter();\n}"
+  ]
+}

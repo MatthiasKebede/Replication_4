@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-86",
+  "bug_id_d4j": "Closure_86",
+  "project": "Closure",
+  "bug_number": "86",
+  "source_file": "src/com/google/javascript/jscomp/NodeUtil.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_86_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_86_buggy/src/com/google/javascript/jscomp/NodeUtil.java",
+  "n_patches": 10
+}

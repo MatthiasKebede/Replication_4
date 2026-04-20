@@ -1,0 +1,20 @@
+{
+  "bug_id": "Time-22",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    protected BasePeriod(long duration) {\n        this(duration, null, null);\n        // bug [3264409]\n    }",
+  "fix_code": "    protected BasePeriod(long duration) {\n        super();\n        // bug [3264409]\n        iType = PeriodType.time();\n        int[] values = ISOChronology.getInstanceUTC().get(this, duration);\n        iType = PeriodType.standard();\n        iValues = new int[8];\n        System.arraycopy(values, 0, iValues, 4, 4);\n    }",
+  "start_line": 221,
+  "end_line": 224,
+  "patches": [
+    "protected BasePeriod(long duration) {\n    this(duration, null, null);\n    if (duration < 0) {\n        throw new IllegalArgumentException(\"Duration must be non-negative\");\n    }\n}",
+    "protected BasePeriod(long duration) {\n    this(duration, null, null);\n    if (duration < 0) {\n        throw new IllegalArgumentException(\"Duration must be non-negative\");\n    }\n}",
+    "protected BasePeriod(long duration) {\n    this(duration, null, null);\n    if (duration < 0) {\n        throw new IllegalArgumentException(\"Duration cannot be negative\");\n    }\n}",
+    "protected BasePeriod(long duration) {\n    this(duration, null, null);\n    if (duration < 0) {\n        throw new IllegalArgumentException(\"Duration cannot be negative\");\n    }\n}",
+    "protected BasePeriod(long duration) {\n    this(duration, null, null);\n    if (duration < 0) {\n        throw new IllegalArgumentException(\"Duration must be non-negative\");\n    }\n}",
+    "protected BasePeriod(long duration) {\n    this(duration, null, null);\n    if (duration < 0) {\n        throw new IllegalArgumentException(\"Duration must be non-negative\");\n    }\n}",
+    "protected BasePeriod(long duration) {\n    this(duration, null, null);\n    if (duration < 0) {\n        throw new IllegalArgumentException(\"Duration cannot be negative\");\n    }\n}",
+    "protected BasePeriod(long duration) {\n    this(duration, null, null);\n    if (duration < 0) {\n        throw new IllegalArgumentException(\"Duration must be non-negative\");\n    }\n}",
+    "protected BasePeriod(long duration) {\n    this(duration, null, null);\n    if (duration < 0) {\n        throw new IllegalArgumentException(\"Duration cannot be negative\");\n    }\n}",
+    "protected BasePeriod(long duration) {\n    this(duration, null, null);\n    if (duration < 0) {\n        throw new IllegalArgumentException(\"Duration must be non-negative\");\n    }\n}"
+  ]
+}

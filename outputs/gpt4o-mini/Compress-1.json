@@ -1,0 +1,20 @@
+{
+  "bug_id": "Compress-1",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public void close() throws IOException {\n        if (!this.closed) {\n            super.close();\n            this.closed = true;\n        }\n    }",
+  "fix_code": "    public void close() throws IOException {\n        if (!this.closed) {\n            this.finish();\n            super.close();\n            this.closed = true;\n        }\n    }",
+  "start_line": 344,
+  "end_line": 349,
+  "patches": [
+    "public void close() throws IOException {\n    if (!this.closed) {\n        try {\n            super.close();\n        } finally {\n            this.closed = true;\n        }\n    }\n}",
+    "public void close() throws IOException {\n    if (!this.closed) {\n        try {\n            super.close();\n        } finally {\n            this.closed = true;\n        }\n    }\n}",
+    "public void close() throws IOException {\n    if (!this.closed) {\n        try {\n            super.close();\n        } finally {\n            this.closed = true;\n        }\n    }\n}",
+    "public void close() throws IOException {\n    if (!this.closed) {\n        try {\n            super.close();\n        } finally {\n            this.closed = true;\n        }\n    }\n}",
+    "public void close() throws IOException {\n    if (!this.closed) {\n        try {\n            super.close();\n        } finally {\n            this.closed = true;\n        }\n    }\n}",
+    "public void close() throws IOException {\n    if (!this.closed) {\n        try {\n            super.close();\n        } finally {\n            this.closed = true;\n        }\n    }\n}",
+    "public void close() throws IOException {\n    if (!this.closed) {\n        try {\n            super.close();\n        } finally {\n            this.closed = true;\n        }\n    }\n}",
+    "public void close() throws IOException {\n    if (!this.closed) {\n        try {\n            super.close();\n        } finally {\n            this.closed = true;\n        }\n    }\n}",
+    "public void close() throws IOException {\n    if (!this.closed) {\n        try {\n            super.close();\n        } finally {\n            this.closed = true;\n        }\n    }\n}",
+    "public void close() throws IOException {\n    if (!this.closed) {\n        try {\n            super.close();\n        } finally {\n            this.closed = true;\n        }\n    }\n}"
+  ]
+}

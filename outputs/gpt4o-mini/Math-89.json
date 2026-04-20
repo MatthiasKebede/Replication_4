@@ -1,0 +1,20 @@
+{
+  "bug_id": "Math-89",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public void addValue(Object v) {\n            addValue((Comparable<?>) v);            \n    }",
+  "fix_code": "    public void addValue(Object v) {\n        if (v instanceof Comparable<?>){\n            addValue((Comparable<?>) v);            \n        } else {\n            throw new IllegalArgumentException(\"Object must implement Comparable\");\n        }\n    }",
+  "start_line": 109,
+  "end_line": 111,
+  "patches": [
+    "public void addValue(Object v) {\n            if (v instanceof Comparable) {\n                addValue((Comparable<?>) v);\n            } else {\n                throw new IllegalArgumentException(\"The provided value is not comparable.\");\n            }\n    }",
+    "public void addValue(Object v) {\n            if (v instanceof Comparable) {\n                addValue((Comparable<?>) v);\n            } else {\n                throw new IllegalArgumentException(\"Object must be an instance of Comparable\");\n            }\n    }",
+    "public void addValue(Object v) {\n            if (v instanceof Comparable) {\n                addValue((Comparable<?>) v);\n            } else {\n                throw new IllegalArgumentException(\"Object must be an instance of Comparable\");\n            }\n    }",
+    "public void addValue(Object v) {\n            if (v instanceof Comparable<?>) {\n                addValue((Comparable<?>) v);\n            } else {\n                throw new IllegalArgumentException(\"Object must be an instance of Comparable\");\n            }\n    }",
+    "public void addValue(Object v) {\n            if (v instanceof Comparable) {\n                addValue((Comparable<?>) v);\n            } else {\n                throw new IllegalArgumentException(\"Object must be an instance of Comparable\");\n            }\n    }",
+    "public void addValue(Object v) {\n            if (v instanceof Comparable<?>) {\n                addValue((Comparable<?>) v);\n            } else {\n                throw new IllegalArgumentException(\"Object must be an instance of Comparable\");\n            }\n    }",
+    "public void addValue(Object v) {\n            if (v instanceof Comparable<?>) {\n                addValue((Comparable<?>) v);\n            } else {\n                throw new IllegalArgumentException(\"Object must be an instance of Comparable\");\n            }\n    }",
+    "public void addValue(Object v) {\n            if (v instanceof Comparable) {\n                addValue((Comparable<?>) v);\n            } else {\n                throw new IllegalArgumentException(\"Object must be an instance of Comparable\");\n            }\n    }",
+    "public void addValue(Object v) {\n            if (v instanceof Comparable) {\n                addValue((Comparable<?>) v);\n            } else {\n                throw new IllegalArgumentException(\"Object must be an instance of Comparable\");\n            }\n    }",
+    "public void addValue(Object v) {\n        if (v instanceof Comparable) {\n            addValue((Comparable<?>) v);\n        } else {\n            throw new IllegalArgumentException(\"Object must be an instance of Comparable\");\n        }\n    }"
+  ]
+}

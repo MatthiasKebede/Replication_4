@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-24",
+  "bug_id_d4j": "Closure_24",
+  "project": "Closure",
+  "bug_number": "24",
+  "source_file": "src/com/google/javascript/jscomp/ScopedAliases.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_24_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_24_buggy/src/com/google/javascript/jscomp/ScopedAliases.java",
+  "n_patches": 10
+}

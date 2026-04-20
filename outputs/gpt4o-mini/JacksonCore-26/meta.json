@@ -1,0 +1,10 @@
+{
+  "bug_id": "JacksonCore-26",
+  "bug_id_d4j": "JacksonCore_26",
+  "project": "JacksonCore",
+  "bug_number": "26",
+  "source_file": "src/main/java/com/fasterxml/jackson/core/json/async/NonBlockingJsonParser.java",
+  "checkout_path": "/tmp/d4j_checkouts/JacksonCore_26_buggy",
+  "original_source": "/tmp/d4j_checkouts/JacksonCore_26_buggy/src/main/java/com/fasterxml/jackson/core/json/async/NonBlockingJsonParser.java",
+  "n_patches": 10
+}

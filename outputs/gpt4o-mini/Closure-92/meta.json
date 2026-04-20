@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-92",
+  "bug_id_d4j": "Closure_92",
+  "project": "Closure",
+  "bug_number": "92",
+  "source_file": "src/com/google/javascript/jscomp/ProcessClosurePrimitives.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_92_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_92_buggy/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java",
+  "n_patches": 10
+}

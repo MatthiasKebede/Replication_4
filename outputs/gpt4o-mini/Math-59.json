@@ -1,0 +1,20 @@
+{
+  "bug_id": "Math-59",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public static float max(final float a, final float b) {\n        return (a <= b) ? b : (Float.isNaN(a + b) ? Float.NaN : b);\n    }",
+  "fix_code": "    public static float max(final float a, final float b) {\n        return (a <= b) ? b : (Float.isNaN(a + b) ? Float.NaN : a);\n    }",
+  "start_line": 3481,
+  "end_line": 3483,
+  "patches": [
+    "public static float max(final float a, final float b) {\n    return (a >= b) ? a : (Float.isNaN(a) || Float.isNaN(b) ? Float.NaN : b);\n}",
+    "public static float max(final float a, final float b) {\n    return (Float.isNaN(a) || Float.isNaN(b)) ? Float.NaN : (a >= b ? a : b);\n}",
+    "public static float max(final float a, final float b) {\n    return (Float.isNaN(a) || Float.isNaN(b)) ? Float.NaN : (a >= b ? a : b);\n}",
+    "public static float max(final float a, final float b) {\n    return (a >= b) ? a : (Float.isNaN(a) || Float.isNaN(b) ? Float.NaN : b);\n}",
+    "public static float max(final float a, final float b) {\n    return (Float.isNaN(a) || Float.isNaN(b)) ? Float.NaN : (a >= b ? a : b);\n}",
+    "public static float max(final float a, final float b) {\n    return (Float.isNaN(a) || Float.isNaN(b)) ? Float.NaN : (a >= b ? a : b);\n}",
+    "public static float max(final float a, final float b) {\n    return (a >= b) ? a : (Float.isNaN(a + b) ? Float.NaN : b);\n}",
+    "public static float max(final float a, final float b) {\n    return (a >= b) ? a : (Float.isNaN(a) || Float.isNaN(b) ? Float.NaN : b);\n}",
+    "public static float max(final float a, final float b) {\n    return (Float.isNaN(a) || Float.isNaN(b)) ? Float.NaN : (a >= b ? a : b);\n}",
+    "public static float max(final float a, final float b) {\n    return (Float.isNaN(a) || Float.isNaN(b)) ? Float.NaN : (a >= b) ? a : b;\n}"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "bug_id": "Closure-10",
+  "model": "gpt-4o-mini",
+  "buggy_code": "  static boolean mayBeString(Node n, boolean recurse) {\n    if (recurse) {\n      return allResultsMatch(n, MAY_BE_STRING_PREDICATE);\n    } else {\n      return mayBeStringHelper(n);\n    }\n  }",
+  "fix_code": "  static boolean mayBeString(Node n, boolean recurse) {\n    if (recurse) {\n      return anyResultsMatch(n, MAY_BE_STRING_PREDICATE);\n    } else {\n      return mayBeStringHelper(n);\n    }\n  }",
+  "start_line": 1415,
+  "end_line": 1421,
+  "patches": [
+    "static boolean mayBeString(Node n, boolean recurse) {\n    if (n == null) {\n        return false;\n    }\n    if (recurse) {\n        return allResultsMatch(n, MAY_BE_STRING_PREDICATE);\n    } else {\n        return mayBeStringHelper(n);\n    }\n}",
+    "static boolean mayBeString(Node n, boolean recurse) {\n    if (n == null) {\n        return false;\n    }\n    if (recurse) {\n        return allResultsMatch(n, MAY_BE_STRING_PREDICATE);\n    } else {\n        return mayBeStringHelper(n);\n    }\n}",
+    "static boolean mayBeString(Node n, boolean recurse) {\n    if (n == null) {\n        return false;\n    }\n    if (recurse) {\n        return allResultsMatch(n, MAY_BE_STRING_PREDICATE);\n    } else {\n        return mayBeStringHelper(n);\n    }\n}",
+    "static boolean mayBeString(Node n, boolean recurse) {\n    if (n == null) {\n        return false;\n    }\n    if (recurse) {\n        return allResultsMatch(n, MAY_BE_STRING_PREDICATE);\n    } else {\n        return mayBeStringHelper(n);\n    }\n}",
+    "static boolean mayBeString(Node n, boolean recurse) {\n    if (n == null) {\n        return false;\n    }\n    if (recurse) {\n        return allResultsMatch(n, MAY_BE_STRING_PREDICATE);\n    } else {\n        return mayBeStringHelper(n);\n    }\n}",
+    "static boolean mayBeString(Node n, boolean recurse) {\n    if (n == null) {\n        return false;\n    }\n    if (recurse) {\n        return allResultsMatch(n, MAY_BE_STRING_PREDICATE);\n    } else {\n        return mayBeStringHelper(n);\n    }\n}",
+    "static boolean mayBeString(Node n, boolean recurse) {\n    if (n == null) {\n        return false;\n    }\n    if (recurse) {\n        return allResultsMatch(n, MAY_BE_STRING_PREDICATE);\n    } else {\n        return mayBeStringHelper(n);\n    }\n}",
+    "static boolean mayBeString(Node n, boolean recurse) {\n    if (n == null) {\n        return false;\n    }\n    if (recurse) {\n        return allResultsMatch(n, MAY_BE_STRING_PREDICATE);\n    } else {\n        return mayBeStringHelper(n);\n    }\n}",
+    "static boolean mayBeString(Node n, boolean recurse) {\n    if (n == null) {\n        return false;\n    }\n    if (recurse) {\n        return allResultsMatch(n, MAY_BE_STRING_PREDICATE);\n    } else {\n        return mayBeStringHelper(n);\n    }\n}",
+    "static boolean mayBeString(Node n, boolean recurse) {\n    if (n == null) {\n        return false;\n    }\n    if (recurse) {\n        return allResultsMatch(n, MAY_BE_STRING_PREDICATE);\n    } else {\n        return mayBeStringHelper(n);\n    }\n}"
+  ]
+}

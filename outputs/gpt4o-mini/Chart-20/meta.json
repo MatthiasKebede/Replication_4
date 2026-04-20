@@ -1,0 +1,10 @@
+{
+  "bug_id": "Chart-20",
+  "bug_id_d4j": "Chart_20",
+  "project": "Chart",
+  "bug_number": "20",
+  "source_file": "source/org/jfree/chart/plot/ValueMarker.java",
+  "checkout_path": "/tmp/d4j_checkouts/Chart_20_buggy",
+  "original_source": "/tmp/d4j_checkouts/Chart_20_buggy/source/org/jfree/chart/plot/ValueMarker.java",
+  "n_patches": 10
+}

@@ -1,0 +1,20 @@
+{
+  "bug_id": "Compress-46",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    private static ZipLong unixTimeToZipLong(long l) {\n        final long TWO_TO_32 = 0x100000000L;\n        if (l >= TWO_TO_32) {\n            throw new IllegalArgumentException(\"X5455 timestamps must fit in a signed 32 bit integer: \" + l);\n        }\n        return new ZipLong(l);\n    }",
+  "fix_code": "    private static ZipLong unixTimeToZipLong(long l) {\n        if (l < Integer.MIN_VALUE || l > Integer.MAX_VALUE) {\n            throw new IllegalArgumentException(\"X5455 timestamps must fit in a signed 32 bit integer: \" + l);\n        }\n        return new ZipLong(l);\n    }",
+  "start_line": 528,
+  "end_line": 534,
+  "patches": [
+    "private static ZipLong unixTimeToZipLong(long l) {\n    final long TWO_TO_32 = 0x100000000L;\n    if (l < 0 || l >= TWO_TO_32) {\n        throw new IllegalArgumentException(\"X5455 timestamps must fit in a signed 32 bit integer: \" + l);\n    }\n    return new ZipLong(l);\n}",
+    "private static ZipLong unixTimeToZipLong(long l) {\n    final long TWO_TO_32 = 0x100000000L;\n    if (l < 0 || l >= TWO_TO_32) {\n        throw new IllegalArgumentException(\"X5455 timestamps must fit in a signed 32 bit integer: \" + l);\n    }\n    return new ZipLong(l);\n}",
+    "private static ZipLong unixTimeToZipLong(long l) {\n    final long TWO_TO_32 = 0x100000000L;\n    if (l < 0 || l >= TWO_TO_32) {\n        throw new IllegalArgumentException(\"X5455 timestamps must fit in a signed 32 bit integer: \" + l);\n    }\n    return new ZipLong(l);\n}",
+    "private static ZipLong unixTimeToZipLong(long l) {\n    final long TWO_TO_32 = 0x100000000L;\n    if (l < 0 || l >= TWO_TO_32) {\n        throw new IllegalArgumentException(\"X5455 timestamps must fit in a signed 32 bit integer: \" + l);\n    }\n    return new ZipLong(l);\n}",
+    "private static ZipLong unixTimeToZipLong(long l) {\n    final long TWO_TO_32 = 0x100000000L;\n    if (l < 0 || l >= TWO_TO_32) {\n        throw new IllegalArgumentException(\"X5455 timestamps must fit in a signed 32 bit integer: \" + l);\n    }\n    return new ZipLong(l);\n}",
+    "private static ZipLong unixTimeToZipLong(long l) {\n    final long TWO_TO_32 = 0x100000000L;\n    if (l < 0 || l >= TWO_TO_32) {\n        throw new IllegalArgumentException(\"X5455 timestamps must fit in a signed 32 bit integer: \" + l);\n    }\n    return new ZipLong(l);\n}",
+    "private static ZipLong unixTimeToZipLong(long l) {\n    final long TWO_TO_32 = 0x100000000L;\n    if (l < 0 || l >= TWO_TO_32) {\n        throw new IllegalArgumentException(\"X5455 timestamps must fit in a signed 32 bit integer: \" + l);\n    }\n    return new ZipLong(l);\n}",
+    "private static ZipLong unixTimeToZipLong(long l) {\n    final long TWO_TO_32 = 0x100000000L;\n    if (l < 0 || l >= TWO_TO_32) {\n        throw new IllegalArgumentException(\"X5455 timestamps must fit in a signed 32 bit integer: \" + l);\n    }\n    return new ZipLong(l);\n}",
+    "private static ZipLong unixTimeToZipLong(long l) {\n    final long TWO_TO_32 = 0x100000000L;\n    if (l < 0 || l >= TWO_TO_32) {\n        throw new IllegalArgumentException(\"X5455 timestamps must fit in a signed 32 bit integer: \" + l);\n    }\n    return new ZipLong(l);\n}",
+    "private static ZipLong unixTimeToZipLong(long l) {\n    final long TWO_TO_32 = 0x100000000L;\n    if (l < 0 || l >= TWO_TO_32) {\n        throw new IllegalArgumentException(\"X5455 timestamps must fit in a signed 32 bit integer: \" + l);\n    }\n    return new ZipLong(l);\n}"
+  ]
+}

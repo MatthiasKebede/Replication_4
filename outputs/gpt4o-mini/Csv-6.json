@@ -1,0 +1,20 @@
+{
+  "bug_id": "Csv-6",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    <M extends Map<String, String>> M putIn(final M map) {\n        for (final Entry<String, Integer> entry : mapping.entrySet()) {\n            final int col = entry.getValue().intValue();\n                map.put(entry.getKey(), values[col]);\n        }\n        return map;\n    }",
+  "fix_code": "    <M extends Map<String, String>> M putIn(final M map) {\n        for (final Entry<String, Integer> entry : mapping.entrySet()) {\n            final int col = entry.getValue().intValue();\n            if (col < values.length) {\n                map.put(entry.getKey(), values[col]);\n            }\n        }\n        return map;\n    }",
+  "start_line": 179,
+  "end_line": 185,
+  "patches": [
+    "<M extends Map<String, String>> M putIn(final M map) {\n    for (final Entry<String, Integer> entry : mapping.entrySet()) {\n        final int col = entry.getValue();\n        if (col >= 0 && col < values.length) {\n            map.put(entry.getKey(), values[col]);\n        }\n    }\n    return map;\n}",
+    "<M extends Map<String, String>> M putIn(final M map) {\n    for (final Entry<String, Integer> entry : mapping.entrySet()) {\n        final int col = entry.getValue();\n        if (col >= 0 && col < values.length) {\n            map.put(entry.getKey(), values[col]);\n        }\n    }\n    return map;\n}",
+    "<M extends Map<String, String>> M putIn(final M map) {\n    for (final Entry<String, Integer> entry : mapping.entrySet()) {\n        final int col = entry.getValue().intValue();\n        if (col >= 0 && col < values.length) {\n            map.put(entry.getKey(), values[col]);\n        }\n    }\n    return map;\n}",
+    "<M extends Map<String, String>> M putIn(final M map) {\n    for (final Entry<String, Integer> entry : mapping.entrySet()) {\n        final int col = entry.getValue().intValue();\n        if (col >= 0 && col < values.length) {\n            map.put(entry.getKey(), values[col]);\n        }\n    }\n    return map;\n}",
+    "<M extends Map<String, String>> M putIn(final M map) {\n    for (final Entry<String, Integer> entry : mapping.entrySet()) {\n        final int col = entry.getValue();\n        if (col >= 0 && col < values.length) {\n            map.put(entry.getKey(), values[col]);\n        }\n    }\n    return map;\n}",
+    "<M extends Map<String, String>> M putIn(final M map) {\n    for (final Entry<String, Integer> entry : mapping.entrySet()) {\n        final int col = entry.getValue().intValue();\n        if (col >= 0 && col < values.length) {\n            map.put(entry.getKey(), values[col]);\n        }\n    }\n    return map;\n}",
+    "<M extends Map<String, String>> M putIn(final M map) {\n    for (final Entry<String, Integer> entry : mapping.entrySet()) {\n        final int col = entry.getValue().intValue();\n        if (col >= 0 && col < values.length) {\n            map.put(entry.getKey(), values[col]);\n        }\n    }\n    return map;\n}",
+    "<M extends Map<String, String>> M putIn(final M map) {\n    for (final Entry<String, Integer> entry : mapping.entrySet()) {\n        final int col = entry.getValue();\n        if (col >= 0 && col < values.length) {\n            map.put(entry.getKey(), values[col]);\n        }\n    }\n    return map;\n}",
+    "<M extends Map<String, String>> M putIn(final M map) {\n    for (final Entry<String, Integer> entry : mapping.entrySet()) {\n        final int col = entry.getValue().intValue();\n        if (col >= 0 && col < values.length) {\n            map.put(entry.getKey(), values[col]);\n        }\n    }\n    return map;\n}",
+    "<M extends Map<String, String>> M putIn(final M map) {\n    for (final Entry<String, Integer> entry : mapping.entrySet()) {\n        final int col = entry.getValue().intValue();\n        if (col >= 0 && col < values.length) {\n            map.put(entry.getKey(), values[col]);\n        }\n    }\n    return map;\n}"
+  ]
+}
