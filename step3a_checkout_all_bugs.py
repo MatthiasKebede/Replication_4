@@ -1,17 +1,4 @@
-#!/usr/bin/env python3
-"""
-step3a_checkout_all_bugs.py
-============================
-Helper: checks out every bug from single_function_repair.json that
-isn't already checked out. Run this BEFORE step3_prepare_for_java_engine.py.
 
-Usage:
-    python step3a_checkout_all_bugs.py \
-        --d4j_info_dir  d4j-info \
-        --d4j_home      /path/to/defects4j \
-        --checkouts_dir /tmp/d4j_checkouts \
-        [--dry_run]
-"""
 
 import os
 import json

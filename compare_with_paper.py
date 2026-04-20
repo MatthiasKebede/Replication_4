@@ -1,17 +1,4 @@
 #!/usr/bin/env python3
-"""
-compare_with_paper.py
-
-Compares your evaluation results with the paper's results/
-directory to see how many of the paper's "correct" bugs you found.
-
-Usage:
-    python compare_with_paper.py \
-        --your_results ../eval_results_v1.2.json \
-        --paper_results_dir ../results \
-        --version v1.2 \
-        --model gpt-4o
-"""
 
 import os
 import json
@@ -20,11 +7,7 @@ from pathlib import Path
 
 
 def load_paper_correct_bugs(paper_results_dir: str, version: str, model_label: str) -> set:
-    """
-    Load the set of bugs the paper says are correctly fixed.
-    The results/ directory in the repo has JSON files with correct fix lists.
-    Try to find the right file based on version and model.
-    """
+
     results_path = Path(paper_results_dir)
 
     # Try common filename patterns

@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-"""
-step1_gpt_inference.py
-======================
-Reads buggy functions directly from d4j-info/single_function_repair.json
-(no Defects4J checkout needed for this step) and calls the GPT API to
-generate candidate patches.
-
-Output: one JSON file per bug in --output_dir
-"""
 
 import os
 import json
@@ -38,7 +28,6 @@ def build_user_prompt(bug_id: str, buggy_code: str) -> str:
     )
 
 
-# ── API call ──────────────────────────────────────────────────────────────────
 
 def call_gpt(bug_id: str, buggy_code: str, model: str,
              n_patches: int, temperature: float) -> list[str]:
@@ -65,14 +54,13 @@ def clean_patch(raw: str) -> str:
     s = raw.strip()
     if s.startswith("```"):
         lines = s.split("\n")
-        lines = lines[1:]                           # remove opening fence line
+        lines = lines[1:]                           
         if lines and lines[-1].strip() == "```":
-            lines = lines[:-1]                      # remove closing fence
+            lines = lines[:-1]                      
         s = "\n".join(lines).strip()
     return s
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser(
@@ -94,10 +82,9 @@ def main():
                         help="Only process this many bugs (for quick tests)")
     args = parser.parse_args()
 
-    # ── Load metadata ─────────────────────────────────────────────────────────
     sfr_path = os.path.join(args.d4j_info_dir, "single_function_repair.json")
     with open(sfr_path) as f:
-        sfr = json.load(f)          # {"Chart-1": {"buggy": "...", "fix": "...", ...}, ...}
+        sfr = json.load(f)        
 
     os.makedirs(args.output_dir, exist_ok=True)
 

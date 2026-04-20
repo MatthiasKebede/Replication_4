@@ -1,27 +1,5 @@
-#!/usr/bin/env python3
-"""
-step2_evaluate_raw_patches.py
-==============================
-Evaluates GPT patches WITHOUT running Defects4J tests.
-Instead it uses the ground-truth fix already stored in
-single_function_repair.json (the "fix" field) and checks whether
-any GPT patch is functionally equivalent to it.
 
-TWO levels of matching are performed:
-  1. Exact match  : strip whitespace, compare strings directly
-  2. Fuzzy match  : normalize whitespace/formatting differences
 
-This gives you the "LLM raw correct fixes" count — the left half of Table 2.
-
-NOTE: The paper's actual correctness check was done by running the full
-Defects4J test suite + manual semantic comparison. This script is a fast
-approximation. For full test-suite validation see step2b_test_suite.py.
-
-Usage:
-    python step2_evaluate_raw_patches.py \
-        --patches_dir llm_patches/gpt4o \
-        --output_file results/raw_eval_gpt4o.json
-"""
 
 import os
 import re
@@ -30,7 +8,6 @@ import argparse
 from pathlib import Path
 
 
-# ── Normalisation ─────────────────────────────────────────────────────────────
 
 def normalise(code: str) -> str:
     """Collapse whitespace so minor formatting differences don't count as diffs."""
@@ -51,7 +28,6 @@ def is_match(patch: str, fix: str) -> bool:
     return False
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser()
