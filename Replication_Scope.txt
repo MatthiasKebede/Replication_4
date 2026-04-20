@@ -1,0 +1,4 @@
+Giant repair is dependent on ExpressAPR and Defects4J. Something we faced during the replication was Java versions mismatch in ExpressAPR. Its read mention that it is compatible for >= 1.8 but the code is not updated accordingly. We tried to run with the Java 11 but it raised an error. We tried to remove and extend the Java_env checks but both don't really work, hoping that the remainig code will be compatible. But it still broke down. Differnet version of Defects4j had different java versions. We went with the latest one which work on Java11.
+We also found that GiantRepair was hardcoded to use the predefined data sets. We cleaned our patches accordinly but as the expressAPR was not working in the this Java-env Table 2 is not completly repoduced. 
+One possbible solution for above is to run everythign for java 1.8.x. The complications this method are not tested by us. Beacuase GiantRepair itself works on Java11
+
