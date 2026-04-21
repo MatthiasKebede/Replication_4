@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-87",
+  "bug_id_d4j": "Closure_87",
+  "project": "Closure",
+  "bug_number": "87",
+  "source_file": "src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_87_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_87_buggy/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java",
+  "n_patches": 10
+}

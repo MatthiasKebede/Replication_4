@@ -1,0 +1,20 @@
+{
+  "bug_id": "Math-9",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public Line revert() {\n        final Line reverted = new Line(zero, zero.subtract(direction));\n        return reverted;\n    }",
+  "fix_code": "    public Line revert() {\n        final Line reverted = new Line(this);\n        reverted.direction = reverted.direction.negate();\n        return reverted;\n    }",
+  "start_line": 86,
+  "end_line": 89,
+  "patches": [
+    "public Line revert() {\n    final Line reverted = new Line(zero, direction.subtract(zero));\n    return reverted;\n}",
+    "public Line revert() {\n    final Line reverted = new Line(zero, direction.subtract(zero));\n    return reverted;\n}",
+    "public Line revert() {\n    final Line reverted = new Line(zero, direction.subtract(zero));\n    return reverted;\n}",
+    "public Line revert() {\n    final Line reverted = new Line(zero, direction.subtract(zero));\n    return reverted;\n}",
+    "public Line revert() {\n    final Line reverted = new Line(zero, direction.subtract(zero));\n    return reverted;\n}",
+    "public Line revert() {\n    final Line reverted = new Line(zero, direction.subtract(zero));\n    return reverted;\n}",
+    "public Line revert() {\n    final Line reverted = new Line(zero, direction.subtract(zero));\n    return reverted;\n}",
+    "public Line revert() {\n    final Line reverted = new Line(zero, direction.subtract(zero));\n    return reverted;\n}",
+    "public Line revert() {\n    final Line reverted = new Line(zero, direction.subtract(zero));\n    return reverted;\n}",
+    "public Line revert() {\n    final Line reverted = new Line(zero, direction.subtract(zero));\n    return reverted;\n}"
+  ]
+}

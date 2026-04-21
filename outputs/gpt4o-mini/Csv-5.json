@@ -1,0 +1,20 @@
+{
+  "bug_id": "Csv-5",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public void println() throws IOException {\n        final String recordSeparator = format.getRecordSeparator();\n            out.append(recordSeparator);\n        newRecord = true;\n    }",
+  "fix_code": "    public void println() throws IOException {\n        final String recordSeparator = format.getRecordSeparator();\n        if (recordSeparator != null) {\n            out.append(recordSeparator);\n        }\n        newRecord = true;\n    }",
+  "start_line": 323,
+  "end_line": 327,
+  "patches": [
+    "public void println() throws IOException {\n    final String recordSeparator = format.getRecordSeparator();\n    out.append(recordSeparator);\n    out.flush(); // Ensure the output is written\n    newRecord = true;\n}",
+    "public void println() throws IOException {\n    final String recordSeparator = format.getRecordSeparator();\n    if (recordSeparator != null) {\n        out.append(recordSeparator);\n    }\n    newRecord = true;\n}",
+    "public void println() throws IOException {\n    final String recordSeparator = format.getRecordSeparator();\n    out.append(recordSeparator);\n    out.flush(); // Ensure the output is written\n    newRecord = true;\n}",
+    "public void println() throws IOException {\n    final String recordSeparator = format.getRecordSeparator();\n    if (recordSeparator != null) {\n        out.append(recordSeparator);\n    }\n    newRecord = true;\n}",
+    "public void println() throws IOException {\n    final String recordSeparator = format.getRecordSeparator();\n    out.append(recordSeparator);\n    out.flush(); // Ensure the output is written out\n    newRecord = true;\n}",
+    "public void println() throws IOException {\n    final String recordSeparator = format.getRecordSeparator();\n    if (recordSeparator != null) {\n        out.append(recordSeparator);\n    }\n    newRecord = true;\n}",
+    "public void println() throws IOException {\n    final String recordSeparator = format.getRecordSeparator();\n    if (recordSeparator != null) {\n        out.append(recordSeparator);\n    }\n    newRecord = true;\n}",
+    "public void println() throws IOException {\n    final String recordSeparator = format.getRecordSeparator();\n    if (recordSeparator != null) {\n        out.append(recordSeparator);\n    }\n    newRecord = true;\n}",
+    "public void println() throws IOException {\n    final String recordSeparator = format.getRecordSeparator();\n    out.append(recordSeparator);\n    out.flush(); // Ensure the output is written\n    newRecord = true;\n}",
+    "public void println() throws IOException {\n    final String recordSeparator = format.getRecordSeparator();\n    if (recordSeparator != null) {\n        out.append(recordSeparator);\n    }\n    newRecord = true;\n}"
+  ]
+}

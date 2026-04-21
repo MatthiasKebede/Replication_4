@@ -1,0 +1,20 @@
+{
+  "bug_id": "Jsoup-32",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public Element clone() {\n        Element clone = (Element) super.clone();\n        clone.classNames();\n        return clone;\n    }",
+  "fix_code": "    public Element clone() {\n        Element clone = (Element) super.clone();\n        clone.classNames = null; // derived on first hit, otherwise gets a pointer to source classnames\n        return clone;\n    }",
+  "start_line": 1136,
+  "end_line": 1140,
+  "patches": [
+    "public Element clone() {\n    Element clone = (Element) super.clone();\n    clone.classNames = new HashSet<>(this.classNames); // Assuming classNames is a Set\n    return clone;\n}",
+    "public Element clone() {\n    Element clone = (Element) super.clone();\n    clone.classNames = new HashSet<>(this.classNames); // Assuming classNames is a Set\n    return clone;\n}",
+    "public Element clone() {\n    Element clone = (Element) super.clone();\n    clone.classNames = new HashSet<>(this.classNames); // Assuming classNames is a Set\n    return clone;\n}",
+    "public Element clone() {\n    Element clone = (Element) super.clone();\n    clone.classNames = new HashSet<>(this.classNames); // Assuming classNames is a Set\n    return clone;\n}",
+    "public Element clone() {\n    Element clone = (Element) super.clone();\n    clone.classNames = new HashSet<>(this.classNames); // Assuming classNames is a Set\n    return clone;\n}",
+    "public Element clone() {\n    Element clone = (Element) super.clone();\n    clone.classNames = new HashSet<>(this.classNames); // Assuming classNames is a Set\n    return clone;\n}",
+    "public Element clone() {\n    Element clone = (Element) super.clone();\n    clone.classNames = new HashSet<>(this.classNames); // Assuming classNames is a Set\n    return clone;\n}",
+    "public Element clone() {\n    Element clone = (Element) super.clone();\n    clone.classNames = new HashSet<>(this.classNames); // Assuming classNames is a collection\n    return clone;\n}",
+    "public Element clone() {\n    Element clone = (Element) super.clone();\n    clone.classNames = new HashSet<>(this.classNames); // Assuming classNames is a Set\n    return clone;\n}",
+    "public Element clone() {\n    Element clone = (Element) super.clone();\n    clone.classNames = new HashSet<>(this.classNames); // Assuming classNames is a Set\n    return clone;\n}"
+  ]
+}

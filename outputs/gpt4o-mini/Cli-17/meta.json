@@ -1,0 +1,10 @@
+{
+  "bug_id": "Cli-17",
+  "bug_id_d4j": "Cli_17",
+  "project": "Cli",
+  "bug_number": "17",
+  "source_file": "src/java/org/apache/commons/cli/PosixParser.java",
+  "checkout_path": "/tmp/d4j_checkouts/Cli_17_buggy",
+  "original_source": "/tmp/d4j_checkouts/Cli_17_buggy/src/java/org/apache/commons/cli/PosixParser.java",
+  "n_patches": 10
+}

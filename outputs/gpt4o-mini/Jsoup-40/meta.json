@@ -1,0 +1,10 @@
+{
+  "bug_id": "Jsoup-40",
+  "bug_id_d4j": "Jsoup_40",
+  "project": "Jsoup",
+  "bug_number": "40",
+  "source_file": "src/main/java/org/jsoup/nodes/DocumentType.java",
+  "checkout_path": "/tmp/d4j_checkouts/Jsoup_40_buggy",
+  "original_source": "/tmp/d4j_checkouts/Jsoup_40_buggy/src/main/java/org/jsoup/nodes/DocumentType.java",
+  "n_patches": 10
+}

@@ -1,0 +1,10 @@
+{
+  "bug_id": "JacksonDatabind-107",
+  "bug_id_d4j": "JacksonDatabind_107",
+  "project": "JacksonDatabind",
+  "bug_number": "107",
+  "source_file": "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/TypeDeserializerBase.java",
+  "checkout_path": "/tmp/d4j_checkouts/JacksonDatabind_107_buggy",
+  "original_source": "/tmp/d4j_checkouts/JacksonDatabind_107_buggy/src/main/java/com/fasterxml/jackson/databind/jsontype/impl/TypeDeserializerBase.java",
+  "n_patches": 10
+}

@@ -1,0 +1,10 @@
+{
+  "bug_id": "Math-91",
+  "bug_id_d4j": "Math_91",
+  "project": "Math",
+  "bug_number": "91",
+  "source_file": "src/java/org/apache/commons/math/fraction/Fraction.java",
+  "checkout_path": "/tmp/d4j_checkouts/Math_91_buggy",
+  "original_source": "/tmp/d4j_checkouts/Math_91_buggy/src/java/org/apache/commons/math/fraction/Fraction.java",
+  "n_patches": 10
+}

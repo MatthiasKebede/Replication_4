@@ -1,0 +1,10 @@
+{
+  "bug_id": "Time-22",
+  "bug_id_d4j": "Time_22",
+  "project": "Time",
+  "bug_number": "22",
+  "source_file": "src/main/java/org/joda/time/base/BasePeriod.java",
+  "checkout_path": "/tmp/d4j_checkouts/Time_22_buggy",
+  "original_source": "/tmp/d4j_checkouts/Time_22_buggy/src/main/java/org/joda/time/base/BasePeriod.java",
+  "n_patches": 10
+}

@@ -1,0 +1,10 @@
+{
+  "bug_id": "Csv-10",
+  "bug_id_d4j": "Csv_10",
+  "project": "Csv",
+  "bug_number": "10",
+  "source_file": "src/main/java/org/apache/commons/csv/CSVPrinter.java",
+  "checkout_path": "/tmp/d4j_checkouts/Csv_10_buggy",
+  "original_source": "/tmp/d4j_checkouts/Csv_10_buggy/src/main/java/org/apache/commons/csv/CSVPrinter.java",
+  "n_patches": 10
+}

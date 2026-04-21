@@ -1,0 +1,20 @@
+{
+  "bug_id": "Codec-4",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public Base64() {\n        this(false);\n    }",
+  "fix_code": "    public Base64() {\n        this(0);\n    }",
+  "start_line": 224,
+  "end_line": 226,
+  "patches": [
+    "public Base64() {\n    this(true);\n}",
+    "public Base64() {\n    this(true);\n}",
+    "public Base64() {\n    this(true);\n}",
+    "public Base64() {\n    this(true);\n}",
+    "public Base64() {\n    this(true);\n}",
+    "public Base64() {\n    this(false, false);\n}",
+    "public Base64() {\n    this(true);\n}",
+    "public Base64() {\n    this(true);\n}",
+    "public Base64() {\n    this(true);\n}",
+    "public Base64() {\n    this(true);\n}"
+  ]
+}

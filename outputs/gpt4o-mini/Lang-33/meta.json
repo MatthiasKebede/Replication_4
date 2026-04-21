@@ -1,0 +1,10 @@
+{
+  "bug_id": "Lang-33",
+  "bug_id_d4j": "Lang_33",
+  "project": "Lang",
+  "bug_number": "33",
+  "source_file": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+  "checkout_path": "/tmp/d4j_checkouts/Lang_33_buggy",
+  "original_source": "/tmp/d4j_checkouts/Lang_33_buggy/src/main/java/org/apache/commons/lang3/ClassUtils.java",
+  "n_patches": 10
+}

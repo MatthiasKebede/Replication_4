@@ -1,0 +1,10 @@
+{
+  "bug_id": "Compress-19",
+  "bug_id_d4j": "Compress_19",
+  "project": "Compress",
+  "bug_number": "19",
+  "source_file": "src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java",
+  "checkout_path": "/tmp/d4j_checkouts/Compress_19_buggy",
+  "original_source": "/tmp/d4j_checkouts/Compress_19_buggy/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java",
+  "n_patches": 10
+}

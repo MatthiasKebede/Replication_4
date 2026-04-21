@@ -1,0 +1,20 @@
+{
+  "bug_id": "Math-27",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public double percentageValue() {\n        return multiply(100).doubleValue();\n    }",
+  "fix_code": "    public double percentageValue() {\n        return 100 * doubleValue();\n    }",
+  "start_line": 596,
+  "end_line": 598,
+  "patches": [
+    "public double percentageValue() {\n    return multiply(100.0);\n}",
+    "public double percentageValue() {\n    return multiply(100).doubleValue() / 100.0;\n}",
+    "public double percentageValue() {\n    return multiply(100.0);\n}",
+    "public double percentageValue() {\n    return multiply(100).doubleValue() / 100.0;\n}",
+    "public double percentageValue() {\n    return multiply(100).doubleValue() / 100.0;\n}",
+    "public double percentageValue() {\n    return multiply(100).doubleValue() / 100;\n}",
+    "public double percentageValue() {\n    return multiply(100.0);\n}",
+    "public double percentageValue() {\n    return multiply(100).doubleValue() / 100.0;\n}",
+    "public double percentageValue() {\n    return multiply(100).doubleValue() / 100;\n}",
+    "public double percentageValue() {\n    return multiply(100).doubleValue() / 100;\n}"
+  ]
+}

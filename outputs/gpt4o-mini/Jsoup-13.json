@@ -1,0 +1,20 @@
+{
+  "bug_id": "Jsoup-13",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public boolean hasAttr(String attributeKey) {\n        Validate.notNull(attributeKey);\n\n        return attributes.hasKey(attributeKey);\n    }",
+  "fix_code": "    public boolean hasAttr(String attributeKey) {\n        Validate.notNull(attributeKey);\n\n        if (attributeKey.toLowerCase().startsWith(\"abs:\")) {\n            String key = attributeKey.substring(\"abs:\".length());\n            if (attributes.hasKey(key) && !absUrl(key).equals(\"\"))\n                return true;\n        }\n        return attributes.hasKey(attributeKey);\n    }",
+  "start_line": 104,
+  "end_line": 108,
+  "patches": [
+    "public boolean hasAttr(String attributeKey) {\n    Validate.notNull(attributeKey, \"Attribute key must not be null\");\n\n    return attributes.hasKey(attributeKey);\n}",
+    "public boolean hasAttr(String attributeKey) {\n    Validate.notNull(attributeKey, \"Attribute key must not be null\");\n\n    return attributes.hasKey(attributeKey);\n}",
+    "public boolean hasAttr(String attributeKey) {\n    Validate.notNull(attributeKey, \"Attribute key must not be null\");\n\n    return attributes.hasKey(attributeKey);\n}",
+    "public boolean hasAttr(String attributeKey) {\n    Validate.notNull(attributeKey, \"Attribute key cannot be null\");\n\n    return attributes.hasKey(attributeKey);\n}",
+    "public boolean hasAttr(String attributeKey) {\n    Validate.notNull(attributeKey, \"Attribute key must not be null\");\n\n    return attributes.hasKey(attributeKey);\n}",
+    "public boolean hasAttr(String attributeKey) {\n    Validate.notNull(attributeKey);\n\n    return attributes != null && attributes.hasKey(attributeKey);\n}",
+    "public boolean hasAttr(String attributeKey) {\n    Validate.notNull(attributeKey, \"Attribute key must not be null\");\n\n    return attributes.hasKey(attributeKey);\n}",
+    "public boolean hasAttr(String attributeKey) {\n    Validate.notNull(attributeKey, \"Attribute key must not be null\");\n\n    return attributes.hasKey(attributeKey);\n}",
+    "public boolean hasAttr(String attributeKey) {\n    Validate.notNull(attributeKey, \"Attribute key must not be null\");\n\n    return attributes.hasKey(attributeKey);\n}",
+    "public boolean hasAttr(String attributeKey) {\n    Validate.notNull(attributeKey, \"Attribute key cannot be null\");\n\n    return attributes.hasKey(attributeKey);\n}"
+  ]
+}

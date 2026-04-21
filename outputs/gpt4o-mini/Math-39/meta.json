@@ -1,0 +1,10 @@
+{
+  "bug_id": "Math-39",
+  "bug_id_d4j": "Math_39",
+  "project": "Math",
+  "bug_number": "39",
+  "source_file": "src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java",
+  "checkout_path": "/tmp/d4j_checkouts/Math_39_buggy",
+  "original_source": "/tmp/d4j_checkouts/Math_39_buggy/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java",
+  "n_patches": 10
+}

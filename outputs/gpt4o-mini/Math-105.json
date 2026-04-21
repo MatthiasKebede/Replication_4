@@ -1,0 +1,20 @@
+{
+  "bug_id": "Math-105",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public double getSumSquaredErrors() {\n        return sumYY - sumXY * sumXY / sumXX;\n    }",
+  "fix_code": "    public double getSumSquaredErrors() {\n        return Math.max(0d, sumYY - sumXY * sumXY / sumXX);\n    }",
+  "start_line": 263,
+  "end_line": 265,
+  "patches": [
+    "public double getSumSquaredErrors() {\n    return sumYY - (sumXY * sumXY / sumXX);\n}",
+    "public double getSumSquaredErrors() {\n    return sumYY - (sumXY * sumXY) / sumXX;\n}",
+    "public double getSumSquaredErrors() {\n    return sumYY - (sumXY * sumXY) / sumXX;\n}",
+    "public double getSumSquaredErrors() {\n    return sumYY - (sumXY * sumXY) / sumXX;\n}",
+    "public double getSumSquaredErrors() {\n    return sumYY - (sumXY * sumXY / sumXX);\n}",
+    "public double getSumSquaredErrors() {\n    return sumYY - (sumXY * sumXY / sumXX);\n}",
+    "public double getSumSquaredErrors() {\n    return sumYY - (sumXY * sumXY) / sumXX;\n}",
+    "public double getSumSquaredErrors() {\n    return sumYY - (sumXY * sumXY) / sumXX;\n}",
+    "public double getSumSquaredErrors() {\n    return sumYY - (sumXY * sumXY) / sumXX;\n}",
+    "public double getSumSquaredErrors() {\n    return sumYY - (sumXY * sumXY) / sumXX;\n}"
+  ]
+}

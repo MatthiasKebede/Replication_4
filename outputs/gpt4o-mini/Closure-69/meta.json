@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-69",
+  "bug_id_d4j": "Closure_69",
+  "project": "Closure",
+  "bug_number": "69",
+  "source_file": "src/com/google/javascript/jscomp/TypeCheck.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_69_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_69_buggy/src/com/google/javascript/jscomp/TypeCheck.java",
+  "n_patches": 10
+}

@@ -1,0 +1,10 @@
+{
+  "bug_id": "Math-41",
+  "bug_id_d4j": "Math_41",
+  "project": "Math",
+  "bug_number": "41",
+  "source_file": "src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+  "checkout_path": "/tmp/d4j_checkouts/Math_41_buggy",
+  "original_source": "/tmp/d4j_checkouts/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java",
+  "n_patches": 10
+}

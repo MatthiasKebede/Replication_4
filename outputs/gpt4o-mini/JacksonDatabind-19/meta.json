@@ -1,0 +1,10 @@
+{
+  "bug_id": "JacksonDatabind-19",
+  "bug_id_d4j": "JacksonDatabind_19",
+  "project": "JacksonDatabind",
+  "bug_number": "19",
+  "source_file": "src/main/java/com/fasterxml/jackson/databind/type/TypeFactory.java",
+  "checkout_path": "/tmp/d4j_checkouts/JacksonDatabind_19_buggy",
+  "original_source": "/tmp/d4j_checkouts/JacksonDatabind_19_buggy/src/main/java/com/fasterxml/jackson/databind/type/TypeFactory.java",
+  "n_patches": 10
+}

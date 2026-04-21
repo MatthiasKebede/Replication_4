@@ -1,0 +1,10 @@
+{
+  "bug_id": "Math-75",
+  "bug_id_d4j": "Math_75",
+  "project": "Math",
+  "bug_number": "75",
+  "source_file": "src/main/java/org/apache/commons/math/stat/Frequency.java",
+  "checkout_path": "/tmp/d4j_checkouts/Math_75_buggy",
+  "original_source": "/tmp/d4j_checkouts/Math_75_buggy/src/main/java/org/apache/commons/math/stat/Frequency.java",
+  "n_patches": 10
+}

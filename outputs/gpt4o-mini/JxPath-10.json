@@ -1,0 +1,20 @@
+{
+  "bug_id": "JxPath-10",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public final Object computeValue(EvalContext context) {\n        return compute(args[0].computeValue(context), args[1].computeValue(context)) \n                ? Boolean.TRUE : Boolean.FALSE;\n    }",
+  "fix_code": "    public final Object computeValue(EvalContext context) {\n        return compute(args[0].compute(context), args[1].compute(context))\n                ? Boolean.TRUE : Boolean.FALSE;\n    }",
+  "start_line": 41,
+  "end_line": 44,
+  "patches": [
+    "public final Object computeValue(EvalContext context) {\n    return compute(args[0].computeValue(context), args[1].computeValue(context)) \n            ? Boolean.TRUE : Boolean.FALSE;\n}",
+    "public final Object computeValue(EvalContext context) {\n    return compute(args[0].computeValue(context), args[1].computeValue(context)) \n            ? Boolean.TRUE : Boolean.FALSE;\n}",
+    "public final Object computeValue(EvalContext context) {\n    return compute(args[0].computeValue(context), args[1].computeValue(context)) \n            ? Boolean.TRUE : Boolean.FALSE;\n}",
+    "public final Object computeValue(EvalContext context) {\n    return compute(args[0].computeValue(context), args[1].computeValue(context)) \n            ? Boolean.TRUE : Boolean.FALSE;\n}",
+    "public final Object computeValue(EvalContext context) {\n    return compute(args[0].computeValue(context), args[1].computeValue(context)) \n            ? Boolean.TRUE : Boolean.FALSE;\n}",
+    "public final Object computeValue(EvalContext context) {\n    return compute(args[0].computeValue(context), args[1].computeValue(context)) \n            ? Boolean.TRUE : Boolean.FALSE;\n}",
+    "public final Object computeValue(EvalContext context) {\n    return compute(args[0].computeValue(context), args[1].computeValue(context)) \n            ? Boolean.TRUE : Boolean.FALSE;\n}",
+    "public final Object computeValue(EvalContext context) {\n    return compute(args[0].computeValue(context), args[1].computeValue(context)) \n            ? Boolean.TRUE : Boolean.FALSE;\n}",
+    "public final Object computeValue(EvalContext context) {\n    return compute(args[0].computeValue(context), args[1].computeValue(context)) \n            ? Boolean.TRUE : Boolean.FALSE;\n}",
+    "public final Object computeValue(EvalContext context) {\n    return compute(args[0].computeValue(context), args[1].computeValue(context)) \n            ? Boolean.TRUE : Boolean.FALSE;\n}"
+  ]
+}

@@ -18,27 +18,22 @@ Your repository README should include the following sections:
 
 ### 1. Project Title and Overview
 
-- **Paper Title**: [Full title of the replicated paper]
-- **Authors**: [Original paper authors]
-- **Replication Team**: [Your team members' names]
+- **Paper Title**: Hybrid Automated Program Repair by Combining Large Language Models and Program Analysis
+- **Authors**: HONGYU ZHANG, FENGJIE LI, JIAJUN JIANG, and JIAJUN SUN
+- **Replication Team**: Matthias and Arhum
 - **Course**: CS-UH 3260 Software Analytics, NYUAD
 - **Brief Description**: 
-  - 2-3 sentences summarizing what the original paper is about
-  - 2-3 sentences summarizing what this replication study does
+  - The paper develops GiantRepair which improves automated bug fixing by combining large language model–generated patches with systematic validation using Defects4J, increasing the number of correctly repaired bugs
+  - We replicate GiantRepair by generating patches with an LLM and evaluating them on Defects4J, reproducing raw fix results
 
 ### 2. Repository Structure
 
 Document your repository structure clearly. Organize your repository using the following standard structure:
 
 ```
-README                    # Documentation for your repository
-datasets/                 # Subset of data you used (if any). If you used the whole dataset, include instructions on how to download it
-replication_scripts/      # Scripts used in your replication:
-                          #   - If you used scripts as-is: document which scripts you ran
-                          #   - If you modified scripts: include the modified scripts
-                          #   - If you created new scripts: include all new scripts
-outputs/                  # Your generated results only
-logs/                     # Console output, errors, screenshots
+README                    # Documentation for repository  
+replication_scripts/      # Scripts used in replication 
+outputs/                  # Your generated results/                     
 notes/                    # Optional if you have any notes you took during reproduction (E.g., where you noted discrepencies etc)
 ```
 
@@ -47,22 +42,19 @@ notes/                    # Optional if you have any notes you took during repro
 ### 3. Setup Instructions
 
 - **Prerequisites**: Required software, tools, and versions
-  - OS requirements
-  - Programming language versions (Python, R, etc.)
-  - Required packages/libraries and versions
-  - Any other dependencies
+  - OS requirements: We conducted this on Ubuntu 24
+  - Programming language versions:Python3.9,Java1.8, and Java11
+  - Required packages/libraries: Required are present in the repositories as requirments.txt and 
 - **Installation Steps**: Step-by-step instructions to set up the environment
-  - How to install dependencies
-  - How to configure paths or settings
-  - Any environment variables needed
+  - Setup insturction for GiantRepair and it dependies is provided in their README
+  - we cloned all repos in ~. and the congig file we used is provided
+  - Please Export you Java paths, Defects4j path and Openai API key
 
 ### 4. GenAI Usage
 
 **GenAI Usage**: Briefly document any use of generative AI tools (e.g., ChatGPT, GitHub Copilot, Cursor) during the replication process. Include:
 
-  - Which tools were used
-  - How they were used (e.g., understanding scripts, exploring datasets, understanding data fields, debugging)
-  - Brief description of the assistance provided
+  - ChatGPt and Claude were used in this replication. Their main usage was setting up the Javas and making them work. Claude was specifically used to create the pipeline file called run_all.sh
 
 
 ## Grading Criteria for README

@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-81",
+  "bug_id_d4j": "Closure_81",
+  "project": "Closure",
+  "bug_number": "81",
+  "source_file": "src/com/google/javascript/jscomp/parsing/IRFactory.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_81_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_81_buggy/src/com/google/javascript/jscomp/parsing/IRFactory.java",
+  "n_patches": 10
+}

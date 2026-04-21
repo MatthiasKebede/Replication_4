@@ -1,0 +1,20 @@
+{
+  "bug_id": "Chart-20",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public ValueMarker(double value, Paint paint, Stroke stroke, \n                       Paint outlinePaint, Stroke outlineStroke, float alpha) {\n        super(paint, stroke, paint, stroke, alpha);\n        this.value = value;\n    }",
+  "fix_code": "    public ValueMarker(double value, Paint paint, Stroke stroke, \n                       Paint outlinePaint, Stroke outlineStroke, float alpha) {\n        super(paint, stroke, outlinePaint, outlineStroke, alpha);\n        this.value = value;\n    }",
+  "start_line": 93,
+  "end_line": 97,
+  "patches": [
+    "public ValueMarker(double value, Paint paint, Stroke stroke, \n                   Paint outlinePaint, Stroke outlineStroke, float alpha) {\n    super(paint, stroke, outlinePaint, outlineStroke, alpha);\n    this.value = value;\n}",
+    "public ValueMarker(double value, Paint paint, Stroke stroke, \n                   Paint outlinePaint, Stroke outlineStroke, float alpha) {\n    super(paint, stroke, outlinePaint, outlineStroke, alpha);\n    this.value = value;\n}",
+    "public ValueMarker(double value, Paint paint, Stroke stroke, \n                   Paint outlinePaint, Stroke outlineStroke, float alpha) {\n    super(outlinePaint, outlineStroke, paint, stroke, alpha);\n    this.value = value;\n}",
+    "public ValueMarker(double value, Paint paint, Stroke stroke, \n                   Paint outlinePaint, Stroke outlineStroke, float alpha) {\n    super(outlinePaint, outlineStroke, paint, stroke, alpha);\n    this.value = value;\n}",
+    "public ValueMarker(double value, Paint paint, Stroke stroke, \n                   Paint outlinePaint, Stroke outlineStroke, float alpha) {\n    super(paint, stroke, outlinePaint, outlineStroke, alpha);\n    this.value = value;\n}",
+    "public ValueMarker(double value, Paint paint, Stroke stroke, \n                   Paint outlinePaint, Stroke outlineStroke, float alpha) {\n    super(outlinePaint, outlineStroke, paint, stroke, alpha);\n    this.value = value;\n}",
+    "public ValueMarker(double value, Paint paint, Stroke stroke, \n                   Paint outlinePaint, Stroke outlineStroke, float alpha) {\n    super(outlinePaint, outlineStroke, paint, stroke, alpha);\n    this.value = value;\n}",
+    "public ValueMarker(double value, Paint paint, Stroke stroke, \n                   Paint outlinePaint, Stroke outlineStroke, float alpha) {\n    super(outlinePaint, outlineStroke, paint, stroke, alpha);\n    this.value = value;\n}",
+    "public ValueMarker(double value, Paint paint, Stroke stroke, \n                   Paint outlinePaint, Stroke outlineStroke, float alpha) {\n    super(outlinePaint, outlineStroke, paint, stroke, alpha);\n    this.value = value;\n}",
+    "public ValueMarker(double value, Paint paint, Stroke stroke, \n                   Paint outlinePaint, Stroke outlineStroke, float alpha) {\n    super(paint, stroke, outlinePaint, outlineStroke, alpha);\n    this.value = value;\n}"
+  ]
+}

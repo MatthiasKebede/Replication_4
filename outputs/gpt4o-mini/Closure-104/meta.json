@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-104",
+  "bug_id_d4j": "Closure_104",
+  "project": "Closure",
+  "bug_number": "104",
+  "source_file": "src/com/google/javascript/rhino/jstype/UnionType.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_104_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_104_buggy/src/com/google/javascript/rhino/jstype/UnionType.java",
+  "n_patches": 10
+}

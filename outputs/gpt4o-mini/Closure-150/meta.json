@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-150",
+  "bug_id_d4j": "Closure_150",
+  "project": "Closure",
+  "bug_number": "150",
+  "source_file": "src/com/google/javascript/jscomp/TypedScopeCreator.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_150_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_150_buggy/src/com/google/javascript/jscomp/TypedScopeCreator.java",
+  "n_patches": 10
+}

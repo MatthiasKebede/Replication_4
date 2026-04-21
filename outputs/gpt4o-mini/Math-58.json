@@ -1,0 +1,20 @@
+{
+  "bug_id": "Math-58",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public double[] fit() {\n        final double[] guess = (new ParameterGuesser(getObservations())).guess();\n        return fit(new Gaussian.Parametric(), guess);\n    }",
+  "fix_code": "    public double[] fit() {\n        final double[] guess = (new ParameterGuesser(getObservations())).guess();\n        return fit(guess);\n    }",
+  "start_line": 119,
+  "end_line": 122,
+  "patches": [
+    "public double[] fit() {\n    final double[] guess = (new ParameterGuesser(getObservations())).guess();\n    return fit(new Gaussian.Parametric(), guess);\n}",
+    "public double[] fit() {\n    final double[] guess = (new ParameterGuesser(getObservations())).guess();\n    return fit(new Gaussian.Parametric(), guess.clone());\n}",
+    "public double[] fit() {\n    final double[] guess = (new ParameterGuesser(getObservations())).guess();\n    return fit(new Gaussian.Parametric(), guess);\n}",
+    "public double[] fit() {\n    final double[] guess = (new ParameterGuesser(getObservations())).guess();\n    return fit(new Gaussian.Parametric(), guess.clone());\n}",
+    "public double[] fit() {\n    final double[] guess = (new ParameterGuesser(getObservations())).guess();\n    return fit(new Gaussian.Parametric(), guess.clone());\n}",
+    "public double[] fit() {\n    final double[] guess = (new ParameterGuesser(getObservations())).guess();\n    return fit(new Gaussian.Parametric(), guess);\n}",
+    "public double[] fit() {\n    final double[] guess = (new ParameterGuesser(getObservations())).guess();\n    return fit(new Gaussian.Parametric(), guess.clone());\n}",
+    "public double[] fit() {\n    final double[] guess = (new ParameterGuesser(getObservations())).guess();\n    return fit(new Gaussian.Parametric(), guess);\n}",
+    "public double[] fit() {\n    final double[] guess = (new ParameterGuesser(getObservations())).guess();\n    return fit(new Gaussian.Parametric(), guess.clone());\n}",
+    "public double[] fit() {\n    final double[] guess = (new ParameterGuesser(getObservations())).guess();\n    return fit(new Gaussian.Parametric(), guess.clone());\n}"
+  ]
+}

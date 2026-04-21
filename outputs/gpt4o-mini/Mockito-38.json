@@ -1,0 +1,20 @@
+{
+  "bug_id": "Mockito-38",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    private boolean toStringEquals(Matcher m, Object arg) {\n        return StringDescription.toString(m).equals(arg.toString());\n    }",
+  "fix_code": "    private boolean toStringEquals(Matcher m, Object arg) {\n        return StringDescription.toString(m).equals(arg == null? \"null\" : arg.toString());\n    }",
+  "start_line": 47,
+  "end_line": 49,
+  "patches": [
+    "private boolean toStringEquals(Matcher m, Object arg) {\n    return StringDescription.toString(m).equals(arg != null ? arg.toString() : null);\n}",
+    "private boolean toStringEquals(Matcher m, Object arg) {\n    return StringDescription.toString(m).equals(arg != null ? arg.toString() : null);\n}",
+    "private boolean toStringEquals(Matcher m, Object arg) {\n    return StringDescription.toString(m).equals(arg != null ? arg.toString() : null);\n}",
+    "private boolean toStringEquals(Matcher m, Object arg) {\n    return StringDescription.toString(m).equals(arg != null ? arg.toString() : null);\n}",
+    "private boolean toStringEquals(Matcher m, Object arg) {\n    return StringDescription.toString(m).equals(arg != null ? arg.toString() : null);\n}",
+    "private boolean toStringEquals(Matcher m, Object arg) {\n    return StringDescription.toString(m).equals(arg != null ? arg.toString() : null);\n}",
+    "private boolean toStringEquals(Matcher m, Object arg) {\n    return StringDescription.toString(m).equals(arg != null ? arg.toString() : null);\n}",
+    "private boolean toStringEquals(Matcher m, Object arg) {\n    return StringDescription.toString(m).equals(arg != null ? arg.toString() : null);\n}",
+    "private boolean toStringEquals(Matcher m, Object arg) {\n    return StringDescription.toString(m).equals(arg != null ? arg.toString() : null);\n}",
+    "private boolean toStringEquals(Matcher m, Object arg) {\n    return StringDescription.toString(m).equals(arg != null ? arg.toString() : null);\n}"
+  ]
+}

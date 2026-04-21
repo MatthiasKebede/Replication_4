@@ -1,0 +1,10 @@
+{
+  "bug_id": "Compress-23",
+  "bug_id_d4j": "Compress_23",
+  "project": "Compress",
+  "bug_number": "23",
+  "source_file": "src/main/java/org/apache/commons/compress/archivers/sevenz/Coders.java",
+  "checkout_path": "/tmp/d4j_checkouts/Compress_23_buggy",
+  "original_source": "/tmp/d4j_checkouts/Compress_23_buggy/src/main/java/org/apache/commons/compress/archivers/sevenz/Coders.java",
+  "n_patches": 10
+}

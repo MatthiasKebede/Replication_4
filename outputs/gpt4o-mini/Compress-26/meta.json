@@ -1,0 +1,10 @@
+{
+  "bug_id": "Compress-26",
+  "bug_id_d4j": "Compress_26",
+  "project": "Compress",
+  "bug_number": "26",
+  "source_file": "src/main/java/org/apache/commons/compress/utils/IOUtils.java",
+  "checkout_path": "/tmp/d4j_checkouts/Compress_26_buggy",
+  "original_source": "/tmp/d4j_checkouts/Compress_26_buggy/src/main/java/org/apache/commons/compress/utils/IOUtils.java",
+  "n_patches": 10
+}

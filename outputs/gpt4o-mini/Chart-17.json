@@ -1,0 +1,20 @@
+{
+  "bug_id": "Chart-17",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public Object clone() throws CloneNotSupportedException {\n        Object clone = createCopy(0, getItemCount() - 1);\n        return clone;\n    }",
+  "fix_code": "    public Object clone() throws CloneNotSupportedException {\n        TimeSeries clone = (TimeSeries) super.clone();\n        clone.data = (List) ObjectUtilities.deepClone(this.data);\n        return clone;\n    }",
+  "start_line": 856,
+  "end_line": 859,
+  "patches": [
+    "public Object clone() throws CloneNotSupportedException {\n    Object clone = super.clone();\n    return clone;\n}",
+    "public Object clone() throws CloneNotSupportedException {\n    Object clone = super.clone();\n    return clone;\n}",
+    "public Object clone() throws CloneNotSupportedException {\n    Object clone = super.clone();\n    return clone;\n}",
+    "public Object clone() throws CloneNotSupportedException {\n    Object clone = super.clone();\n    return clone;\n}",
+    "public Object clone() throws CloneNotSupportedException {\n    Object clone = super.clone();\n    return clone;\n}",
+    "public Object clone() throws CloneNotSupportedException {\n    Object clone = super.clone();\n    return clone;\n}",
+    "public Object clone() throws CloneNotSupportedException {\n    Object clone = super.clone();\n    return clone;\n}",
+    "public Object clone() throws CloneNotSupportedException {\n    Object clone = super.clone();\n    return clone;\n}",
+    "public Object clone() throws CloneNotSupportedException {\n    Object clone = super.clone();\n    return clone;\n}",
+    "public Object clone() throws CloneNotSupportedException {\n    Object clone = super.clone();\n    return clone;\n}"
+  ]
+}

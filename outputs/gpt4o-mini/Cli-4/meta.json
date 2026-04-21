@@ -1,0 +1,10 @@
+{
+  "bug_id": "Cli-4",
+  "bug_id_d4j": "Cli_4",
+  "project": "Cli",
+  "bug_number": "4",
+  "source_file": "src/java/org/apache/commons/cli/Parser.java",
+  "checkout_path": "/tmp/d4j_checkouts/Cli_4_buggy",
+  "original_source": "/tmp/d4j_checkouts/Cli_4_buggy/src/java/org/apache/commons/cli/Parser.java",
+  "n_patches": 10
+}

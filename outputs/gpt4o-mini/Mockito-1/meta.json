@@ -1,0 +1,10 @@
+{
+  "bug_id": "Mockito-1",
+  "bug_id_d4j": "Mockito_1",
+  "project": "Mockito",
+  "bug_number": "1",
+  "source_file": "src/org/mockito/internal/invocation/InvocationMatcher.java",
+  "checkout_path": "/tmp/d4j_checkouts/Mockito_1_buggy",
+  "original_source": "/tmp/d4j_checkouts/Mockito_1_buggy/src/org/mockito/internal/invocation/InvocationMatcher.java",
+  "n_patches": 10
+}

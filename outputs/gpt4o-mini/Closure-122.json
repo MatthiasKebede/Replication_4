@@ -1,0 +1,20 @@
+{
+  "bug_id": "Closure-122",
+  "model": "gpt-4o-mini",
+  "buggy_code": "  private void handleBlockComment(Comment comment) {\n    if (comment.getValue().indexOf(\"/* @\") != -1 || comment.getValue().indexOf(\"\\n * @\") != -1) {\n      errorReporter.warning(\n          SUSPICIOUS_COMMENT_WARNING,\n          sourceName,\n          comment.getLineno(), \"\", 0);\n    }\n  }",
+  "fix_code": "  private void handleBlockComment(Comment comment) {\n    Pattern p = Pattern.compile(\"(/|(\\n[ \\t]*))\\\\*[ \\t]*@[a-zA-Z]\");\n    if (p.matcher(comment.getValue()).find()) {\n      errorReporter.warning(\n          SUSPICIOUS_COMMENT_WARNING,\n          sourceName,\n          comment.getLineno(), \"\", 0);\n    }\n  }",
+  "start_line": 251,
+  "end_line": 258,
+  "patches": [
+    "private void handleBlockComment(Comment comment) {\n    if (comment.getValue().contains(\"/* @\") || comment.getValue().contains(\"\\n * @\")) {\n      errorReporter.warning(\n          SUSPICIOUS_COMMENT_WARNING,\n          sourceName,\n          comment.getLineno(), \"\", 0);\n    }\n}",
+    "private void handleBlockComment(Comment comment) {\n    String value = comment.getValue();\n    if (value.contains(\"/* @\") || value.contains(\"\\n * @\")) {\n        errorReporter.warning(\n            SUSPICIOUS_COMMENT_WARNING,\n            sourceName,\n            comment.getLineno(), \"\", 0);\n    }\n}",
+    "private void handleBlockComment(Comment comment) {\n    if (comment.getValue().contains(\"/* @\") || comment.getValue().contains(\"\\n * @\")) {\n      errorReporter.warning(\n          SUSPICIOUS_COMMENT_WARNING,\n          sourceName,\n          comment.getLineno(), \"\", 0);\n    }\n}",
+    "private void handleBlockComment(Comment comment) {\n    if (comment.getValue().contains(\"/* @\") || comment.getValue().contains(\"\\n * @\")) {\n        errorReporter.warning(\n            SUSPICIOUS_COMMENT_WARNING,\n            sourceName,\n            comment.getLineno(), \"\", 0);\n    }\n}",
+    "private void handleBlockComment(Comment comment) {\n    if (comment.getValue().contains(\"/* @\") || comment.getValue().contains(\"\\n * @\")) {\n      errorReporter.warning(\n          SUSPICIOUS_COMMENT_WARNING,\n          sourceName,\n          comment.getLineno(), \"\", 0);\n    }\n}",
+    "private void handleBlockComment(Comment comment) {\n    if (comment.getValue().contains(\"/* @\") || comment.getValue().contains(\"\\n * @\")) {\n      errorReporter.warning(\n          SUSPICIOUS_COMMENT_WARNING,\n          sourceName,\n          comment.getLineno(), \"\", 0);\n    }\n}",
+    "private void handleBlockComment(Comment comment) {\n    String value = comment.getValue();\n    if (value.contains(\"/* @\") || value.contains(\"\\n * @\")) {\n        errorReporter.warning(\n            SUSPICIOUS_COMMENT_WARNING,\n            sourceName,\n            comment.getLineno(), \"\", 0);\n    }\n}",
+    "private void handleBlockComment(Comment comment) {\n    String value = comment.getValue();\n    if (value.contains(\"/* @\") || value.contains(\"\\n * @\")) {\n      errorReporter.warning(\n          SUSPICIOUS_COMMENT_WARNING,\n          sourceName,\n          comment.getLineno(), \"\", 0);\n    }\n}",
+    "private void handleBlockComment(Comment comment) {\n    if (comment.getValue().contains(\"/* @\") || comment.getValue().contains(\"\\n * @\")) {\n        errorReporter.warning(\n            SUSPICIOUS_COMMENT_WARNING,\n            sourceName,\n            comment.getLineno(), \"\", 0);\n    }\n}",
+    "private void handleBlockComment(Comment comment) {\n    if (comment.getValue().contains(\"/* @\") || comment.getValue().contains(\"\\n * @\")) {\n        errorReporter.warning(\n            SUSPICIOUS_COMMENT_WARNING,\n            sourceName,\n            comment.getLineno(), \"\", 0);\n    }\n}"
+  ]
+}

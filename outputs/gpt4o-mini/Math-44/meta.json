@@ -1,0 +1,10 @@
+{
+  "bug_id": "Math-44",
+  "bug_id_d4j": "Math_44",
+  "project": "Math",
+  "bug_number": "44",
+  "source_file": "src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java",
+  "checkout_path": "/tmp/d4j_checkouts/Math_44_buggy",
+  "original_source": "/tmp/d4j_checkouts/Math_44_buggy/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java",
+  "n_patches": 10
+}

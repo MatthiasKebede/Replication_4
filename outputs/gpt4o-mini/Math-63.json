@@ -1,0 +1,20 @@
+{
+  "bug_id": "Math-63",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public static boolean equals(double x, double y) {\n        return (Double.isNaN(x) && Double.isNaN(y)) || x == y;\n    }",
+  "fix_code": "    public static boolean equals(double x, double y) {\n        return equals(x, y, 1);\n    }",
+  "start_line": 416,
+  "end_line": 418,
+  "patches": [
+    "public static boolean equals(double x, double y) {\n    return (Double.isNaN(x) && Double.isNaN(y)) || (!Double.isNaN(x) && !Double.isNaN(y) && x == y);\n}",
+    "public static boolean equals(double x, double y) {\n    return (Double.isNaN(x) && Double.isNaN(y)) || (x == y);\n}",
+    "public static boolean equals(double x, double y) {\n    return (Double.isNaN(x) && Double.isNaN(y)) || (x == y);\n}",
+    "public static boolean equals(double x, double y) {\n    return (Double.isNaN(x) && Double.isNaN(y)) || (!Double.isNaN(x) && !Double.isNaN(y) && x == y);\n}",
+    "public static boolean equals(double x, double y) {\n    return (Double.isNaN(x) && Double.isNaN(y)) || (!Double.isNaN(x) && !Double.isNaN(y) && x == y);\n}",
+    "public static boolean equals(double x, double y) {\n    return (Double.isNaN(x) && Double.isNaN(y)) || (x == y);\n}",
+    "public static boolean equals(double x, double y) {\n    return (Double.isNaN(x) && Double.isNaN(y)) || (x == y);\n}",
+    "public static boolean equals(double x, double y) {\n    return (Double.isNaN(x) && Double.isNaN(y)) || (!Double.isNaN(x) && !Double.isNaN(y) && x == y);\n}",
+    "public static boolean equals(double x, double y) {\n    return (Double.isNaN(x) && Double.isNaN(y)) || (x == y);\n}",
+    "public static boolean equals(double x, double y) {\n    return (Double.isNaN(x) && Double.isNaN(y)) || (x == y);\n}"
+  ]
+}

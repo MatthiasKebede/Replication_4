@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-14",
+  "bug_id_d4j": "Closure_14",
+  "project": "Closure",
+  "bug_number": "14",
+  "source_file": "src/com/google/javascript/jscomp/ControlFlowAnalysis.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_14_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_14_buggy/src/com/google/javascript/jscomp/ControlFlowAnalysis.java",
+  "n_patches": 10
+}

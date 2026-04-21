@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-111",
+  "bug_id_d4j": "Closure_111",
+  "project": "Closure",
+  "bug_number": "111",
+  "source_file": "src/com/google/javascript/jscomp/type/ClosureReverseAbstractInterpreter.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_111_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_111_buggy/src/com/google/javascript/jscomp/type/ClosureReverseAbstractInterpreter.java",
+  "n_patches": 10
+}

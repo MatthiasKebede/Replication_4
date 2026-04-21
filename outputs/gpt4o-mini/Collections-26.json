@@ -1,0 +1,20 @@
+{
+  "bug_id": "Collections-26",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    private Object readResolve() {\n        calculateHashCode(keys);\n        return this;\n    }",
+  "fix_code": "    protected Object readResolve() {\n        calculateHashCode(keys);\n        return this;\n    }",
+  "start_line": 277,
+  "end_line": 280,
+  "patches": [
+    "private Object readResolve() {\n    calculateHashCode(keys);\n    return this;\n}",
+    "private Object readResolve() {\n    calculateHashCode();\n    return this;\n}",
+    "private Object readResolve() {\n    calculateHashCode(keys);\n    return this;\n}",
+    "private Object readResolve() {\n    calculateHashCode();\n    return this;\n}",
+    "private Object readResolve() {\n    calculateHashCode();\n    return this;\n}",
+    "private Object readResolve() {\n    calculateHashCode(keys);\n    return this;\n}",
+    "private Object readResolve() {\n    calculateHashCode(keys);\n    return this;\n}",
+    "private Object readResolve() {\n    calculateHashCode();\n    return this;\n}",
+    "private Object readResolve() {\n    calculateHashCode();\n    return this;\n}",
+    "private Object readResolve() {\n    calculateHashCode(keys);\n    return this instanceof Serializable ? this : null;\n}"
+  ]
+}

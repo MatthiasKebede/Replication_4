@@ -1,0 +1,20 @@
+{
+  "bug_id": "Math-17",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public Dfp multiply(final int x) {\n            return multiplyFast(x);\n    }",
+  "fix_code": "    public Dfp multiply(final int x) {\n        if (x >= 0 && x < RADIX) {\n            return multiplyFast(x);\n        } else {\n            return multiply(newInstance(x));\n        }\n    }",
+  "start_line": 1602,
+  "end_line": 1604,
+  "patches": [
+    "public Dfp multiply(final int x) {\n    return multiplyFast((double) x);\n}",
+    "public Dfp multiply(final int x) {\n    return multiplyFast((double) x);\n}",
+    "public Dfp multiply(final int x) {\n    return multiplyFast((double) x);\n}",
+    "public Dfp multiply(final int x) {\n    return multiplyFast(new Dfp(x));\n}",
+    "public Dfp multiply(final int x) {\n    return multiplyFast((double) x);\n}",
+    "public Dfp multiply(final int x) {\n    return multiplyFast((double) x);\n}",
+    "public Dfp multiply(final int x) {\n    return multiplyFast((double) x);\n}",
+    "public Dfp multiply(final int x) {\n    return multiplyFast((double) x);\n}",
+    "public Dfp multiply(final int x) {\n    return multiplyFast((double) x);\n}",
+    "public Dfp multiply(final int x) {\n    return multiplyFast((double) x);\n}"
+  ]
+}

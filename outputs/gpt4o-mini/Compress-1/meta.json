@@ -1,0 +1,10 @@
+{
+  "bug_id": "Compress-1",
+  "bug_id_d4j": "Compress_1",
+  "project": "Compress",
+  "bug_number": "1",
+  "source_file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java",
+  "checkout_path": "/tmp/d4j_checkouts/Compress_1_buggy",
+  "original_source": "/tmp/d4j_checkouts/Compress_1_buggy/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java",
+  "n_patches": 10
+}

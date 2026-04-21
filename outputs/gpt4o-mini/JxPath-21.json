@@ -1,0 +1,20 @@
+{
+  "bug_id": "JxPath-21",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public int getLength() {\n        return ValueUtils.getLength(getBaseValue());\n    }",
+  "fix_code": "    public int getLength() {\n        Object baseValue = getBaseValue();\n        return baseValue == null ? 1 : ValueUtils.getLength(baseValue);\n    }",
+  "start_line": 151,
+  "end_line": 153,
+  "patches": [
+    "public int getLength() {\n    if (getBaseValue() == null) {\n        return 0;\n    }\n    return ValueUtils.getLength(getBaseValue());\n}",
+    "public int getLength() {\n    Object baseValue = getBaseValue();\n    return ValueUtils.getLength(baseValue);\n}",
+    "public int getLength() {\n    Object baseValue = getBaseValue();\n    return ValueUtils.getLength(baseValue);\n}",
+    "public int getLength() {\n    Object baseValue = getBaseValue();\n    return ValueUtils.getLength(baseValue);\n}",
+    "public int getLength() {\n    Object baseValue = getBaseValue();\n    return ValueUtils.getLength(baseValue);\n}",
+    "public int getLength() {\n    Object baseValue = getBaseValue();\n    return ValueUtils.getLength(baseValue);\n}",
+    "public int getLength() {\n    Object baseValue = getBaseValue();\n    return ValueUtils.getLength(baseValue);\n}",
+    "public int getLength() {\n    Object baseValue = getBaseValue();\n    return ValueUtils.getLength(baseValue);\n}",
+    "public int getLength() {\n    Object baseValue = getBaseValue();\n    return ValueUtils.getLength(baseValue);\n}",
+    "public int getLength() {\n    Object baseValue = getBaseValue();\n    return ValueUtils.getLength(baseValue);\n}"
+  ]
+}

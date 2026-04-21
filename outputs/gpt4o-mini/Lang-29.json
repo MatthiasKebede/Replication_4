@@ -1,0 +1,20 @@
+{
+  "bug_id": "Lang-29",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    static float toJavaVersionInt(String version) {\n        return toVersionInt(toJavaVersionIntArray(version, JAVA_VERSION_TRIM_SIZE));\n    }",
+  "fix_code": "    static int toJavaVersionInt(String version) {\n        return toVersionInt(toJavaVersionIntArray(version, JAVA_VERSION_TRIM_SIZE));\n    }",
+  "start_line": 1672,
+  "end_line": 1674,
+  "patches": [
+    "static float toJavaVersionInt(String version) {\n    return toVersionInt(toJavaVersionIntArray(version.trim(), JAVA_VERSION_TRIM_SIZE));\n}",
+    "static float toJavaVersionInt(String version) {\n    return toVersionInt(toJavaVersionIntArray(version.trim(), JAVA_VERSION_TRIM_SIZE));\n}",
+    "static float toJavaVersionInt(String version) {\n    return toVersionInt(toJavaVersionIntArray(version.trim(), JAVA_VERSION_TRIM_SIZE));\n}",
+    "static float toJavaVersionInt(String version) {\n    return toVersionInt(toJavaVersionIntArray(version.trim(), JAVA_VERSION_TRIM_SIZE));\n}",
+    "static float toJavaVersionInt(String version) {\n    return toVersionInt(toJavaVersionIntArray(version.trim(), JAVA_VERSION_TRIM_SIZE));\n}",
+    "static float toJavaVersionInt(String version) {\n    return toVersionInt(toJavaVersionIntArray(version.trim(), JAVA_VERSION_TRIM_SIZE));\n}",
+    "static float toJavaVersionInt(String version) {\n    return toVersionInt(toJavaVersionIntArray(version.trim(), JAVA_VERSION_TRIM_SIZE));\n}",
+    "static float toJavaVersionInt(String version) {\n    return toVersionInt(toJavaVersionIntArray(version.trim(), JAVA_VERSION_TRIM_SIZE));\n}",
+    "static float toJavaVersionInt(String version) {\n    return toVersionInt(toJavaVersionIntArray(version.trim(), JAVA_VERSION_TRIM_SIZE));\n}",
+    "static float toJavaVersionInt(String version) {\n    return toVersionInt(toJavaVersionIntArray(version.trim(), JAVA_VERSION_TRIM_SIZE));\n}"
+  ]
+}

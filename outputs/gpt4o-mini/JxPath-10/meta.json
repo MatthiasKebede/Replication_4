@@ -1,0 +1,10 @@
+{
+  "bug_id": "JxPath-10",
+  "bug_id_d4j": "JxPath_10",
+  "project": "JxPath",
+  "bug_number": "10",
+  "source_file": "src/java/org/apache/commons/jxpath/ri/compiler/CoreOperationRelationalExpression.java",
+  "checkout_path": "/tmp/d4j_checkouts/JxPath_10_buggy",
+  "original_source": "/tmp/d4j_checkouts/JxPath_10_buggy/src/java/org/apache/commons/jxpath/ri/compiler/CoreOperationRelationalExpression.java",
+  "n_patches": 10
+}

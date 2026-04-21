@@ -1,0 +1,20 @@
+{
+  "bug_id": "Chart-8",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public Week(Date time, TimeZone zone) {\n        // defer argument checking...\n        this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());\n    }",
+  "fix_code": "    public Week(Date time, TimeZone zone) {\n        // defer argument checking...\n        this(time, zone, Locale.getDefault());\n    }",
+  "start_line": 173,
+  "end_line": 176,
+  "patches": [
+    "public Week(Date time, TimeZone zone) {\n    // defer argument checking...\n    this(time, zone, Locale.getDefault());\n}",
+    "public Week(Date time, TimeZone zone) {\n    // defer argument checking...\n    this(time, zone, Locale.getDefault());\n}",
+    "public Week(Date time, TimeZone zone) {\n    // defer argument checking...\n    this(time, zone, Locale.getDefault());\n}",
+    "public Week(Date time, TimeZone zone) {\n    // defer argument checking...\n    this(time, zone, Locale.getDefault());\n}",
+    "public Week(Date time, TimeZone zone) {\n    // defer argument checking...\n    this(time, zone, Locale.getDefault());\n}",
+    "public Week(Date time, TimeZone zone) {\n    // defer argument checking...\n    this(time, zone, Locale.getDefault());\n}",
+    "public Week(Date time, TimeZone zone) {\n    // defer argument checking...\n    this(time, zone, Locale.getDefault());\n}",
+    "public Week(Date time, TimeZone zone) {\n    // defer argument checking...\n    this(time, zone, Locale.getDefault());\n}",
+    "public Week(Date time, TimeZone zone) {\n    // defer argument checking...\n    this(time, zone, Locale.getDefault());\n}",
+    "public Week(Date time, TimeZone zone) {\n    // defer argument checking...\n    this(time, zone, Locale.getDefault());\n}"
+  ]
+}

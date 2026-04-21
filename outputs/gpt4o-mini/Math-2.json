@@ -1,0 +1,20 @@
+{
+  "bug_id": "Math-2",
+  "model": "gpt-4o-mini",
+  "buggy_code": "    public double getNumericalMean() {\n        return (double) (getSampleSize() * getNumberOfSuccesses()) / (double) getPopulationSize();\n    }",
+  "fix_code": "    public double getNumericalMean() {\n        return getSampleSize() * (getNumberOfSuccesses() / (double) getPopulationSize());\n    }",
+  "start_line": 267,
+  "end_line": 269,
+  "patches": [
+    "public double getNumericalMean() {\n    if (getPopulationSize() == 0) {\n        throw new IllegalArgumentException(\"Population size cannot be zero.\");\n    }\n    return (double) getNumberOfSuccesses() / getPopulationSize();\n}",
+    "public double getNumericalMean() {\n    return (double) getNumberOfSuccesses() / (double) getSampleSize();\n}",
+    "public double getNumericalMean() {\n    if (getPopulationSize() == 0) {\n        throw new IllegalArgumentException(\"Population size cannot be zero.\");\n    }\n    return (double) getNumberOfSuccesses() / getPopulationSize();\n}",
+    "public double getNumericalMean() {\n    if (getPopulationSize() == 0) {\n        throw new IllegalArgumentException(\"Population size cannot be zero.\");\n    }\n    return (double) getNumberOfSuccesses() / getPopulationSize();\n}",
+    "public double getNumericalMean() {\n    if (getPopulationSize() == 0) {\n        throw new IllegalArgumentException(\"Population size cannot be zero.\");\n    }\n    return (double) getNumberOfSuccesses() / getPopulationSize();\n}",
+    "public double getNumericalMean() {\n    if (getPopulationSize() == 0) {\n        throw new IllegalArgumentException(\"Population size cannot be zero.\");\n    }\n    return (double) getNumberOfSuccesses() / getPopulationSize();\n}",
+    "public double getNumericalMean() {\n    if (getPopulationSize() == 0) {\n        throw new IllegalArgumentException(\"Population size cannot be zero.\");\n    }\n    return (double) getNumberOfSuccesses() / getPopulationSize();\n}",
+    "public double getNumericalMean() {\n    if (getPopulationSize() == 0) {\n        throw new IllegalArgumentException(\"Population size cannot be zero.\");\n    }\n    return (double) getNumberOfSuccesses() / getPopulationSize();\n}",
+    "public double getNumericalMean() {\n    if (getPopulationSize() == 0) {\n        throw new IllegalArgumentException(\"Population size cannot be zero.\");\n    }\n    return (double) getNumberOfSuccesses() / getPopulationSize();\n}",
+    "public double getNumericalMean() {\n    if (getPopulationSize() == 0) {\n        throw new IllegalArgumentException(\"Population size cannot be zero.\");\n    }\n    return (double) getNumberOfSuccesses() / getPopulationSize();\n}"
+  ]
+}

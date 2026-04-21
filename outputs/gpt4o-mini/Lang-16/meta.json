@@ -1,0 +1,10 @@
+{
+  "bug_id": "Lang-16",
+  "bug_id_d4j": "Lang_16",
+  "project": "Lang",
+  "bug_number": "16",
+  "source_file": "src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
+  "checkout_path": "/tmp/d4j_checkouts/Lang_16_buggy",
+  "original_source": "/tmp/d4j_checkouts/Lang_16_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
+  "n_patches": 10
+}

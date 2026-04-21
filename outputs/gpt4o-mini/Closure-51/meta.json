@@ -1,0 +1,10 @@
+{
+  "bug_id": "Closure-51",
+  "bug_id_d4j": "Closure_51",
+  "project": "Closure",
+  "bug_number": "51",
+  "source_file": "src/com/google/javascript/jscomp/CodeConsumer.java",
+  "checkout_path": "/tmp/d4j_checkouts/Closure_51_buggy",
+  "original_source": "/tmp/d4j_checkouts/Closure_51_buggy/src/com/google/javascript/jscomp/CodeConsumer.java",
+  "n_patches": 10
+}

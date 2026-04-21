@@ -1,0 +1,10 @@
+{
+  "bug_id": "JacksonDatabind-35",
+  "bug_id_d4j": "JacksonDatabind_35",
+  "project": "JacksonDatabind",
+  "bug_number": "35",
+  "source_file": "src/main/java/com/fasterxml/jackson/databind/jsontype/impl/AsWrapperTypeDeserializer.java",
+  "checkout_path": "/tmp/d4j_checkouts/JacksonDatabind_35_buggy",
+  "original_source": "/tmp/d4j_checkouts/JacksonDatabind_35_buggy/src/main/java/com/fasterxml/jackson/databind/jsontype/impl/AsWrapperTypeDeserializer.java",
+  "n_patches": 10
+}

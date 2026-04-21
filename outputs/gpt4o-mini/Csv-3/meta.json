@@ -1,0 +1,10 @@
+{
+  "bug_id": "Csv-3",
+  "bug_id_d4j": "Csv_3",
+  "project": "Csv",
+  "bug_number": "3",
+  "source_file": "src/main/java/org/apache/commons/csv/Lexer.java",
+  "checkout_path": "/tmp/d4j_checkouts/Csv_3_buggy",
+  "original_source": "/tmp/d4j_checkouts/Csv_3_buggy/src/main/java/org/apache/commons/csv/Lexer.java",
+  "n_patches": 10
+}

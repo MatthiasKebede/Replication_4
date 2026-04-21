@@ -1,0 +1,10 @@
+{
+  "bug_id": "Chart-12",
+  "bug_id_d4j": "Chart_12",
+  "project": "Chart",
+  "bug_number": "12",
+  "source_file": "source/org/jfree/chart/plot/MultiplePiePlot.java",
+  "checkout_path": "/tmp/d4j_checkouts/Chart_12_buggy",
+  "original_source": "/tmp/d4j_checkouts/Chart_12_buggy/source/org/jfree/chart/plot/MultiplePiePlot.java",
+  "n_patches": 10
+}

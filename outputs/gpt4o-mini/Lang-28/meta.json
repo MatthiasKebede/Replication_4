@@ -1,0 +1,10 @@
+{
+  "bug_id": "Lang-28",
+  "bug_id_d4j": "Lang_28",
+  "project": "Lang",
+  "bug_number": "28",
+  "source_file": "src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java",
+  "checkout_path": "/tmp/d4j_checkouts/Lang_28_buggy",
+  "original_source": "/tmp/d4j_checkouts/Lang_28_buggy/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java",
+  "n_patches": 10
+}
