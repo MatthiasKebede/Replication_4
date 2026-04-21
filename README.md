@@ -4,17 +4,13 @@ Replication Study Guidelines<br/>
 Dr. Sarah Nadi, NYUAD
 </p>
 
-# Replication Repository README Template -- CS-UH-3260 Software Analytics
+# Replication 4 -- CS-UH-3260 Software Analytics
 
 
 ## Overview
 
-This repo provides a template and and guidelines for creating a README file for your replication study repository. The README serves as the primary documentation for your repository and helps evaluators understand your work, navigate your repository structure, and reproduce your replication. You can create a repo based on this template and modify the README and content as needed.
+This repo contains the scripts and data used for the `Replication 4` assignment, focusing on the paper *Hybrid Automated Program Repair by Combining Large Language Models and Program Analysis*. The scope of our replication includes RQ1 (specifically using `gpt4o-mini` to recreate Table 2) and manually analyzing the repair patches provided in the replication artifact.
 
-
-## README Structure Template
-
-Your repository README should include the following sections:
 
 ### 1. Project Title and Overview
 
@@ -31,13 +27,13 @@ Your repository README should include the following sections:
 Document your repository structure clearly. Organize your repository using the following standard structure:
 
 ```
-README                    # Documentation for repository  
-replication_scripts/      # Scripts used in replication 
-outputs/                  # Your generated results/                     
-notes/                    # Optional if you have any notes you took during reproduction (E.g., where you noted discrepencies etc)
+README                    # Documentation for repository
+datasets/                 # Original dataset files taken from the GiantRepair GitHub repository
+replication_scripts/      # Scripts used in replication
+outputs/                  # Your generated results
+notes/                    # Notes (patch analysis, explanation of replication scope)
 ```
 
-**For each folder and file, provide a brief description of what it contains.**
 
 ### 3. Setup Instructions
 
